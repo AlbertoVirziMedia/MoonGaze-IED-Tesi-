@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2213992659	Exterior			\Default Work Unit\Ambience\Exterior	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2311456796	Kria_Elevation			\Default Work Unit\Kria_Elevation	
+	3355108795	Kria_Ocean			\Default Work Unit\Kria_Ocean	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	56689358	Ambience_Sea_far_002wav	C:\Users\alber\Downloads\Prototipo Tesi\Prototipo Tesi\.cache\Windows\SFX\Ambience_Sea_far_002wav_0A253772.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambience_Exterior\Exterior\Ambience_Sea_far_002wav		6270128
+	83092420	Ambience_Wind_001	C:\Users\alber\Downloads\Prototipo Tesi\Prototipo Tesi\.cache\Windows\SFX\Ambience_Wind_001_AB500627.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambience_Exterior\Exterior\Ambience_Wind_001		10655304
+	793516244	Ambience_Wind_002	C:\Users\alber\Downloads\Prototipo Tesi\Prototipo Tesi\.cache\Windows\SFX\Ambience_Wind_002_E8A134FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambience_Exterior\Exterior\Ambience_Wind_002		10936448
+	899945534	ambience_sea_close_001	C:\Users\alber\Downloads\Prototipo Tesi\Prototipo Tesi\.cache\Windows\SFX\ambience_sea_close_001_AD55C43C.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambience_Exterior\Exterior\ambience_sea_close_001		19408040
+
