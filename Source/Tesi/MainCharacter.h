@@ -121,6 +121,12 @@ public:
 	bool bAttackButtonDown;
 
 	/**/
+	/*Player Combat Collider
+	/**/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat | BP")
+	class UBoxComponent* SwordAttack;
+
+	/**/
 	/*Player Combat Blocking
 	/**/
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat | Blocking")
