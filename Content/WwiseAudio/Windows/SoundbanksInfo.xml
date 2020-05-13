@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\alber\Downloads\Prototipo Tesi\Prototipo Tesi\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\alber\Downloads\Prototipo Tesi\Prototipo Tesi\.cache\Windows\</SourceFilesRoot>
+		<ProjectRoot>C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\</SourceFilesRoot>
 		<SoundBanksRoot>C:\Users\alber\Documents\Unreal Projects\Tesi 4.24\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\alber\Downloads\Prototipo Tesi\Prototipo Tesi\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -38,6 +38,7 @@
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
+				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
 				<GameParameter Id="2311456796" Name="Kria_Elevation" ObjectPath="\Game Parameters\Default Work Unit\Kria_Elevation"/>
 				<GameParameter Id="3355108795" Name="Kria_Ocean" ObjectPath="\Game Parameters\Default Work Unit\Kria_Ocean"/>
 			</GameParameters>
@@ -46,6 +47,9 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="1945819544" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Kria</ObjectPath>
@@ -188,6 +192,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2152744325" Name="Kria_Health" ObjectPath="\Events\Default Work Unit\Kria\Kria_Health">
+					<IncludedMemoryFiles>
+						<File Id="587859985" Language="SFX">
+							<ShortName>XyloKriaHP.wav</ShortName>
+							<Path>SFX\XyloKriaHP_5F86597C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="391505112" Name="Kria_Hurt" ObjectPath="\Events\Default Work Unit\Kria\Kria_Hurt">
 					<IncludedMemoryFiles>
 						<File Id="62146140" Language="SFX">
@@ -285,14 +297,6 @@
 				</Event>
 				<Event Id="3169425489" Name="Kria_Idle" ObjectPath="\Events\Default Work Unit\Kria\Kria_Idle">
 					<IncludedMemoryFiles>
-						<File Id="591073901" Language="SFX">
-							<ShortName>Kria Voice Exhale 2.wav</ShortName>
-							<Path>SFX\Kria Voice Exhale 2_10C4C929.wem</Path>
-						</File>
-						<File Id="629307721" Language="SFX">
-							<ShortName>Kria Voice Exhale 1.wav</ShortName>
-							<Path>SFX\Kria Voice Exhale 1_10C4C929.wem</Path>
-						</File>
 						<File Id="638623626" Language="SFX">
 							<ShortName>Kria Voice Breath ALL.wav</ShortName>
 							<Path>SFX\Kria Voice Breath ALL_4469839D.wem</Path>
@@ -710,6 +714,7 @@
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
+				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
 				<GameParameter Id="3824661808" Name="Kria_Movement_Speed" ObjectPath="\Game Parameters\Default Work Unit\Kria_Movement_Speed"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -1074,6 +1079,9 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="789730089" Name="Enemies_Movement" ObjectPath="\Switches\Default Work Unit\Enemies\Enemies_Movement">
 					<Switches>

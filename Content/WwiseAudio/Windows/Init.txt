@@ -24,6 +24,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1873957695	Anechoic			\Factory Reflect Acoustic Textures\Textures\Anechoic	
 	1970351858	Fabric			\Factory Reflect Acoustic Textures\Textures\Fabric	
 	2058049674	Wood			\Factory Reflect Acoustic Textures\Textures\Wood	
+	2152744325	Kria_Health			\Default Work Unit\Kria_Health	
 	2412606308	Carpet			\Factory Reflect Acoustic Textures\Textures\Carpet	
 	2637588553	Tile			\Factory Reflect Acoustic Textures\Textures\Tile	
 	2928161104	Curtains			\Factory Reflect Acoustic Textures\Textures\Curtains	
@@ -33,10 +34,19 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Reflect Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	419292172	Ambient Music Bus			\Default Work Unit\Ambient Music Bus	
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\World\Ambience	
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
-	2479639702	Fight Music Bus			\Default Work Unit\Fight Music Bus	
+	1564565979	Ambient_Music			\Default Work Unit\Master Audio Bus\Non_World\Music\Ambient_Music	
+	1929840817	Fight_Music			\Default Work Unit\Master Audio Bus\Non_World\Music\Fight_Music	
+	1945819544	Kria			\Default Work Unit\Master Audio Bus\World\Kria	
+	2242381963	Enemies			\Default Work Unit\Master Audio Bus\World\Enemies	
+	2609808943	World			\Default Work Unit\Master Audio Bus\World	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3869140995	Non_World			\Default Work Unit\Master Audio Bus\Non_World	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Non_World\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1396341940	Tape_Slap_Back	iZotope Trash Delay			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
