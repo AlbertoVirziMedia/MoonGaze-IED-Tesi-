@@ -1,0 +1,44 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1233121652	Start_Level			\Default Work Unit\Music\Start_Level	
+	1643114936	Crab_Aggro			\Default Work Unit\Music\Crab_Aggro	
+	4258958663	Fight_End			\Default Work Unit\Music\Fight_End	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3863955802	Figthing_Variable			\Default Work Unit\Figthing_Variable	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Figthing_Variable			
+	1600559959	No_Fight	Figthing_Variable			
+	2458972060	Crab_Fight	Figthing_Variable			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	816121651	No_Fight	Figthing_Variable	\Interactive Music Hierarchy\Default Work Unit\Fight_Monster		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1796724183	Kria_Distance_Enemy			\Default Work Unit\Kria_Distance_Enemy	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	27450099	piano7	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\piano7_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano7\piano7		9404148
+	178064013	MGBT_MASTER_06	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\MGBT_MASTER_06_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\MGBT_MASTER_06\MGBT_MASTER_06		705664
+	178669634	MGBT_MASTER_03	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\MGBT_MASTER_03_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\MGBT_MASTER_03\MGBT_MASTER_03		705664
+	235571209	piano4	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\piano4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano4\piano4		2351088
+	254889037	MGBT_MASTER_05	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\MGBT_MASTER_05_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\MGBT_MASTER_05\MGBT_MASTER_05		705664
+	314241571	MGBT_MASTER_02	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\MGBT_MASTER_02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\MGBT_MASTER_02\MGBT_MASTER_02		705664
+	351212500	MGBT_MASTER_01	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\MGBT_MASTER_01_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\MGBT_MASTER_01\MGBT_MASTER_01		1058464
+	399711432	piano8	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\piano8_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano8\piano8		5642516
+	412320655	piano	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\piano_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano\piano		4231904
+	417929539	MGBT_MASTER_07	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\MGBT_MASTER_07_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\MGBT_MASTER_07\MGBT_MASTER_07		705664
+	478355079	violin5	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\violin5_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin5\violin5		5642516
+	526713644	MGBT_MASTER_04	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\MGBT_MASTER_04_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\MGBT_MASTER_04\MGBT_MASTER_04		705664
+	589759264	violin2	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\violin2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin2\violin2		3291496
+	644843942	TensionBrass	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\TensionBrass_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Tension_Layer\Tension_Segment\TensionBrass		12225372
+	683698442	piano5	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\piano5_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano5\piano5		2351088
+	694833976	piano2	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\piano2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano2\piano2		5642516
+	828975824	TensionNovo	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\TensionNovo_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Tension_Layer\Tension_Segment\TensionNovo		19748636
+	834072984	piano6	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\piano6_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano6\piano6		6112720
+	838040734	MGBT_MASTER_ENDING	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\MGBT_MASTER_ENDING_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Ending\MGBT_MASTER_ENDING		1764064
+	883622085	piano3	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\piano3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano3\piano3		3761700
+	982686293	violin1	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\violin1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin1\violin1		2351088
+	1012717257	violin3	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\violin3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin3\violin3		2821292
+	1030601659	violin4	C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\SFX\violin4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin4\violin4		4231904
+
