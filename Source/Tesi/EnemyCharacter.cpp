@@ -247,7 +247,6 @@ void AEnemyCharacter::Attack()
 			{
 				if (EnemyCombatMontage)
 				{
-					UE_LOG(LogTemp, Warning, TEXT("Attack"));
 					AnimInstance->Montage_Play(EnemyCombatMontage, 1.f);
 					AnimInstance->Montage_JumpToSection(FName("Attack"), EnemyCombatMontage);
 				}
@@ -271,9 +270,9 @@ void AEnemyCharacter::AttackEnd()
 //
 void AEnemyCharacter::DamageColliderOnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
+	UE_LOG(LogTemp, Warning, TEXT("DamageCollider"));
 	if (OtherActor)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("DamageCollider"));
 		AMainCharacter* MainCharacter = Cast<AMainCharacter>(OtherActor);
 		if (MainCharacter)
 		{

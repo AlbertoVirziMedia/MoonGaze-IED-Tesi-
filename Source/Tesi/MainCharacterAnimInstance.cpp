@@ -41,7 +41,6 @@ void UMainCharacterAnimInstance::UpdateAnimationProperties()
 
 		if (MainTargetSystem)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("Tick TargetSystem"));
 			bIsInTarget = MainTargetSystem->TargetLocked;
 		}
 		
