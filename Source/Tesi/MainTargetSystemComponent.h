@@ -54,6 +54,12 @@ public:
 	//Timer for switching target
 	FTimerHandle SwitchingTargetTimerHandle;
 
+	/**/
+	/*Change Camera Position Variables
+	/**/
+	FVector StartingCameraPosition;
+	FRotator StartingCameraRotation;
+
 
 	//
 	AActor* MainCharacter;

@@ -103,6 +103,35 @@ void UMainTargetSystemComponent::TickComponent(float DeltaTime, ELevelTick TickT
 			}
 		}
 	}
+
+	if (TargetLocked)
+	{
+		UCameraComponent* CameraComponent = MainCharacter->FindComponentByClass<UCameraComponent>();
+		if (!CameraComponent)
+		{
+			
+		}
+		if (CameraComponent)
+		{
+			CameraComponent->SetRelativeLocation(FMath::Lerp(FVector(StartingCameraPosition), FVector(StartingCameraPosition.X, StartingCameraPosition.Y, 300.f), 1.f));
+//			CameraComponent->SetRelativeRotation(FMath::Lerp(FRotator(StartingCameraRotation), FRotator(StartingCameraRotation.Roll, 350.f, StartingCameraRotation.Yaw), 5.f));
+			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(StartingCameraRotation), FRotator(StartingCameraRotation.Roll, 550.f, StartingCameraRotation.Yaw), 5.f, 0.5f));
+		}
+	}
+
+	if (!TargetLocked)
+	{
+		UCameraComponent* CameraComponent = MainCharacter->FindComponentByClass<UCameraComponent>();
+		if (!CameraComponent)
+		{
+
+		}
+		if (CameraComponent)
+		{
+			CameraComponent->SetRelativeLocation(StartingCameraPosition);
+			CameraComponent->SetRelativeRotation(StartingCameraRotation);
+		}
+	}
 }
 
 bool UMainTargetSystemComponent::TargetIsTargetable(AActor* Actor)
@@ -303,6 +332,18 @@ void UMainTargetSystemComponent::TargetLockOn(AActor* TargetToLockOn)
 		{
 			OnTargetLockedOn.Broadcast(TargetToLockOn);
 		}
+
+		UCameraComponent* CameraComponent = MainCharacter->FindComponentByClass<UCameraComponent>();
+		if (!CameraComponent)
+		{
+
+		}
+		if (CameraComponent)
+		{
+			StartingCameraPosition = CameraComponent->GetRelativeLocation();
+			StartingCameraRotation = CameraComponent->GetRelativeRotation();
+		}
+
 	}
 }
 
