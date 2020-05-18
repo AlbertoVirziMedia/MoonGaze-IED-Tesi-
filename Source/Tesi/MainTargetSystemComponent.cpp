@@ -37,6 +37,12 @@ UMainTargetSystemComponent::UMainTargetSystemComponent()
 	TargetableActors = APawn::StaticClass();
 
 	/**/
+	/*Target System Camera Variables
+	/**/
+	ChangeZCameraPosition = 300;
+	ChangeRollCameraRotation = 350;
+
+	/**/
 	/*Widgets Variables
 	/**/
 	TargetLockedOnWidgetDrawSize = 32.0f;
@@ -64,6 +70,16 @@ void UMainTargetSystemComponent::BeginPlay()
 		return;
 	}
 	
+	UCameraComponent* CameraComponent = MainCharacter->FindComponentByClass<UCameraComponent>();
+	if (!CameraComponent)
+	{
+
+	}
+	if (CameraComponent)
+	{
+		StartingCameraPosition = CameraComponent->GetRelativeLocation();
+		StartingCameraRotation = FRotator(0.f,0.f,0.f);
+	}
 }
 
 
@@ -113,9 +129,8 @@ void UMainTargetSystemComponent::TickComponent(float DeltaTime, ELevelTick TickT
 		}
 		if (CameraComponent)
 		{
-			CameraComponent->SetRelativeLocation(FMath::Lerp(FVector(StartingCameraPosition), FVector(StartingCameraPosition.X, StartingCameraPosition.Y, 300.f), 1.f));
-//			CameraComponent->SetRelativeRotation(FMath::Lerp(FRotator(StartingCameraRotation), FRotator(StartingCameraRotation.Roll, 350.f, StartingCameraRotation.Yaw), 5.f));
-			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(StartingCameraRotation), FRotator(StartingCameraRotation.Roll, 550.f, StartingCameraRotation.Yaw), 5.f, 0.5f));
+			CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(StartingCameraPosition), FVector(StartingCameraPosition.X, StartingCameraPosition.Y, ChangeZCameraPosition), 5.f, 0.1f));
+			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(StartingCameraRotation), FRotator(ChangeRollCameraRotation, StartingCameraRotation.Pitch, StartingCameraRotation.Yaw), 5.f, 0.5f));
 		}
 	}
 
@@ -128,8 +143,8 @@ void UMainTargetSystemComponent::TickComponent(float DeltaTime, ELevelTick TickT
 		}
 		if (CameraComponent)
 		{
-			CameraComponent->SetRelativeLocation(StartingCameraPosition);
-			CameraComponent->SetRelativeRotation(StartingCameraRotation);
+			CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(OnTargetCameraPosition), FVector(StartingCameraPosition), 5.f, 0.1f));
+			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(OnTargetCameraRotation), FRotator(StartingCameraRotation), 5.f, 0.1f));
 		}
 	}
 }
@@ -333,17 +348,6 @@ void UMainTargetSystemComponent::TargetLockOn(AActor* TargetToLockOn)
 			OnTargetLockedOn.Broadcast(TargetToLockOn);
 		}
 
-		UCameraComponent* CameraComponent = MainCharacter->FindComponentByClass<UCameraComponent>();
-		if (!CameraComponent)
-		{
-
-		}
-		if (CameraComponent)
-		{
-			StartingCameraPosition = CameraComponent->GetRelativeLocation();
-			StartingCameraRotation = CameraComponent->GetRelativeRotation();
-		}
-
 	}
 }
 
@@ -385,6 +389,17 @@ void UMainTargetSystemComponent::TargetLockOff()
 			OnTargetLockedOff.Broadcast(NearestTarget);
 		}
 */
+	}
+
+	UCameraComponent* CameraComponent = MainCharacter->FindComponentByClass<UCameraComponent>();
+	if (!CameraComponent)
+	{
+
+	}
+	if (CameraComponent)
+	{
+		OnTargetCameraPosition = CameraComponent->GetRelativeLocation();
+		OnTargetCameraRotation = CameraComponent->GetRelativeRotation();
 	}
 
 	NearestTarget = nullptr;

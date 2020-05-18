@@ -60,6 +60,14 @@ public:
 	FVector StartingCameraPosition;
 	FRotator StartingCameraRotation;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target System | Camera")
+	float ChangeZCameraPosition;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target System | Camera")
+	float ChangeRollCameraRotation;
+
+	FVector OnTargetCameraPosition;
+	FRotator OnTargetCameraRotation;
+
 
 	//
 	AActor* MainCharacter;
