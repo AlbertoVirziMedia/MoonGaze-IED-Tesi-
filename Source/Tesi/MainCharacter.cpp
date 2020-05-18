@@ -272,7 +272,8 @@ void AMainCharacter::Dash()
 {
 	if (CanDash)
 	{
-		LaunchCharacter(AMainCharacter::GetActorForwardVector() * DashDistance, true, true);
+		FVector InputVector = GetLastMovementInputVector();
+		LaunchCharacter(InputVector * DashDistance, true, true);
 		CanDash = false;
 		GetWorldTimerManager().SetTimer(DashHandle, this, &AMainCharacter::StopDashing, DashStop, false);
 		IsDashing = true;
