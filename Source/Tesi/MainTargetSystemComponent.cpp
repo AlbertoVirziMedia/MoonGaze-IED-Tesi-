@@ -39,6 +39,7 @@ UMainTargetSystemComponent::UMainTargetSystemComponent()
 	/**/
 	/*Target System Camera Variables
 	/**/
+	StartingCameraRotation = FRotator(0.f, 0.f, 0.f);
 	ChangeZCameraPosition = 300;
 	ChangeRollCameraRotation = 350;
 
@@ -78,7 +79,6 @@ void UMainTargetSystemComponent::BeginPlay()
 	if (CameraComponent)
 	{
 		StartingCameraPosition = CameraComponent->GetRelativeLocation();
-		StartingCameraRotation = FRotator(0.f,0.f,0.f);
 	}
 }
 
@@ -129,6 +129,7 @@ void UMainTargetSystemComponent::TickComponent(float DeltaTime, ELevelTick TickT
 		}
 		if (CameraComponent)
 		{
+			UE_LOG(LogTemp, Warning, TEXT("Some warning message"));
 			CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(StartingCameraPosition), FVector(StartingCameraPosition.X, StartingCameraPosition.Y, ChangeZCameraPosition), 5.f, 0.1f));
 			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(StartingCameraRotation), FRotator(ChangeRollCameraRotation, StartingCameraRotation.Pitch, StartingCameraRotation.Yaw), 5.f, 0.5f));
 		}
