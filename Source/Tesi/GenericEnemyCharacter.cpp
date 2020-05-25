@@ -69,12 +69,15 @@ AGenericEnemyCharacter::AGenericEnemyCharacter()
 void AGenericEnemyCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
 }
 
 // Called every frame
 void AGenericEnemyCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	EnemyPosition = GetActorLocation();
 
 }
 

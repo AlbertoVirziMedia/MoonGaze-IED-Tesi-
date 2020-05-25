@@ -19,14 +19,10 @@ public:
 	/*Only Variables
 	/**/
 	//Enemy Character position in the world
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Position")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Position")
 	FVector EnemyPosition;
 
-	/**/
-	/*IA Variables
-	/**/
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
-	class AAIController* AIController;
+
 	//BehaviourTree Reference
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
 	class UBehaviorTree* CharacterBehaviorTree;

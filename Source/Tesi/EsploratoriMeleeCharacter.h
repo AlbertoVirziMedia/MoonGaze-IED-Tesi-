@@ -18,6 +18,12 @@ public:
 
 	AEsploratoriMeleeCharacter();
 
+	/**/
+	/*IA Variables
+	/**/
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+	class AEsploratoriMeleeAIController* AIController;
+
 
 protected:
 	// Called when the game starts or when spawned

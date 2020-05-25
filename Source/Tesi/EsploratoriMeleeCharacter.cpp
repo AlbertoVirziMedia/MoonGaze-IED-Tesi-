@@ -13,7 +13,7 @@
 
 AEsploratoriMeleeCharacter::AEsploratoriMeleeCharacter()
 {
-
+	
 }
 
 void AEsploratoriMeleeCharacter::BeginPlay()
@@ -25,6 +25,15 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 	/**/
 	//IA Controller Reference
 	AIController = Cast<AEsploratoriMeleeAIController>(GetController());
+	if (!AIController)
+	{
+		GLog->Log("Ai Controller non creato");
+	}
+	else
+	{
+		GLog->Log("AI");
+	}
+
 	//Register the function that is going to fire when the character sees a Pawn
 	if (PawnSensingComp)
 	{
@@ -43,7 +52,7 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 	}
 	else
 	{
-		GLog->Log("Creato");
+		GLog->Log("Zone of Combat Creato");
 		//ZoneOfCombat Binding
 		ZoneOfCombat->OnComponentBeginOverlap.AddDynamic(this, &AEsploratoriMeleeCharacter::OnZoneOfCombatBeginOverlap);
 		ZoneOfCombat->OnComponentEndOverlap.AddDynamic(this, &AEsploratoriMeleeCharacter::OnZoneOfCombatEndOverlap);
@@ -70,7 +79,7 @@ void AEsploratoriMeleeCharacter::OnSeePlayer(APawn* Pawn)
 	if (AIController)
 	{
 		GLog->Log("I See you");
-//		AIController->SetSeenTarget(Pawn);
+		AIController->SetSeenTarget(Pawn);
 	}
 
 }
@@ -82,14 +91,18 @@ void AEsploratoriMeleeCharacter::OnHearNoise(APawn* PawnInstigator, const FVecto
 	{
 		GLog->Log("I hear you");
 		//Updates our target based on what we've heard.
-//		AIController->SetSensedTarget(PawnInstigator);
+		AIController->SetSensedTarget(PawnInstigator);
 	}
 
 }
 
 void AEsploratoriMeleeCharacter::OnZoneOfCombatBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
-
+	if (AIController)
+	{
+		AIController->ChangeBoolIsInZoneOfCombat();
+	}
+	
 }
 
 void AEsploratoriMeleeCharacter::OnZoneOfCombatEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)

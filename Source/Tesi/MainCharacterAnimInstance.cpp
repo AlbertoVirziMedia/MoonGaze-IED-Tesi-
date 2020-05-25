@@ -35,7 +35,11 @@ void UMainCharacterAnimInstance::UpdateAnimationProperties()
 		FVector Speed = Pawn->GetVelocity();
 		FVector LateralSpeed = FVector(Speed.X, Speed.Y, 0.0f);
 		MovementSpeed = Speed.Size();
-		VerticalSpeed = LateralSpeed.Size();
+
+		/**/
+		/*Get Right and Forward velocity for OnTarget Blendspace
+		/**/
+//		FVector MainCharacterGeneralVelocity = MainCharacter->GetVelocity();
 
 		bIsInAir = Pawn->GetMovementComponent()->IsFalling();
 
