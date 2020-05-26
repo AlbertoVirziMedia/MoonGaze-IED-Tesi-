@@ -152,6 +152,8 @@ public:
 	//
 	void CreateAndAttachTargetLockedOnWidgetComponent(AActor* TargetActor);
 	//
+	void DestroyTargetLockedOnWidgetComponent();
+	//
 	AActor* FindNearestTarget(TArray<AActor*> Actors);
 	//
 	bool LineTraceForActor(AActor* OtherActor, TArray<AActor*> ActorsToIgnore = TArray<AActor*>());

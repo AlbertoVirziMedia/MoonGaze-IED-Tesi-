@@ -403,7 +403,14 @@ void UMainTargetSystemComponent::TargetLockOff()
 		OnTargetCameraRotation = CameraComponent->GetRelativeRotation();
 	}
 
+	DestroyTargetLockedOnWidgetComponent();
+
 	NearestTarget = nullptr;
+}
+
+void UMainTargetSystemComponent::DestroyTargetLockedOnWidgetComponent()
+{
+	TargetLockedOnWidgetComponent->DestroyComponent();
 }
 
 //
