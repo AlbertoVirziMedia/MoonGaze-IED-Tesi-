@@ -8,7 +8,7 @@
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "MainCharacter.h"
-#include "EnemyCharacter.h"
+#include "GenericEnemyCharacter.h"
 
 
 // Sets default values
@@ -57,12 +57,12 @@ void AWeapon::BeginPlay()
 	/**/
 	/*Set the Overlapping channel at the beginning
 	/**/
-	CombatCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+/*	CombatCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	CombatCollision->SetCollisionObjectType(ECollisionChannel::ECC_WorldDynamic);
 	CombatCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 	CombatCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
 	CombatCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_WorldDynamic, ECollisionResponse::ECR_Overlap);
-
+*/
 	/**/
 	/*Binding of the collision of the combat collider
 	/**/
@@ -105,10 +105,10 @@ void AWeapon::CombatOnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AAc
 {
 	if (OtherActor)
 	{
-		AEnemyCharacter* Enemy = Cast<AEnemyCharacter>(OtherActor);
+		AGenericEnemyCharacter* Enemy = Cast<AGenericEnemyCharacter>(OtherActor);
 		if (Enemy)
 		{
-			if (Enemy->HitParticle)
+/*			if (Enemy->HitParticle)
 			{
 				const USkeletalMeshSocket* WeaponSocket = SkeletalMesh->GetSocketByName("WeaponSocket");
 				if (WeaponSocket)
@@ -117,7 +117,7 @@ void AWeapon::CombatOnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AAc
 					UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Enemy->HitParticle, SocketLocation, FRotator(0.f), false);
 				}
 			}
-			
+*/			
 			if (WeaponDamageType)
 			{
 				UE_LOG(LogTemp, Warning, TEXT("WeaponDamageType"));

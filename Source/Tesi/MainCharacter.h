@@ -100,7 +100,7 @@ public:
 	/**/
 	//Reference to the Enemy
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat")
-	class AEnemyCharacter* CombatTarget;
+	class AGenericEnemyCharacter* CombatTarget;
 	//bool that check if Enemy have a CombatTarget
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat")
 	bool bHasEnemyCombatTarget;
@@ -148,7 +148,7 @@ public:
 
 	//
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Enemy Distance")
-	class AEnemyCharacter* EnemyTargetRefToDistance;
+	class AGenericEnemyCharacter* EnemyTargetRefToDistance;
 
 
 protected:

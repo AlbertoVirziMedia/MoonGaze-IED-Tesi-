@@ -10,6 +10,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/SkeletalMesh.h"
 #include "Engine/SkeletalMeshSocket.h"
+#include "MainCharacter.h"
 
 AEsploratoriMeleeCharacter::AEsploratoriMeleeCharacter()
 {
@@ -80,6 +81,14 @@ void AEsploratoriMeleeCharacter::OnSeePlayer(APawn* Pawn)
 	{
 		GLog->Log("I See you");
 		AIController->SetSeenTarget(Pawn);
+		if (Pawn)
+		{
+			class AMainCharacter* MainCharacter = Cast<AMainCharacter>(Pawn);
+			if (MainCharacter)
+			{
+				MainCharacter->CombatTarget = this;
+			}
+		}
 	}
 
 }

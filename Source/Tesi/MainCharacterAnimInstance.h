@@ -24,6 +24,20 @@ public:
 	float MovementSpeed;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
 	float VerticalSpeed;
+
+	//Right Vector
+	FVector RightVector;
+	//Forward Vector
+	FVector ForwardVector;
+
+	//
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+	float MainCharacterRightVelocity;
+	//
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+	float MainCharacterForwardVelocity;
+
+
 	//Bool that check if the player is in air
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
 	bool bIsInAir;
@@ -50,6 +64,12 @@ public:
 	//bool that check if player can do second attack
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bAcceptSecondAttack;
+	//
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool bAcceptThirdAttack;
+	//
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool bAcceptFourthAttack;
 
 	/**/
 	/*Character AnimInstance Movement Function

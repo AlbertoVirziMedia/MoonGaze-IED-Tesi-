@@ -22,7 +22,6 @@ void UMainCharacterAnimInstance::UpdateAnimationProperties()
 		if (Pawn)
 		{
 			MainCharacter = Cast<AMainCharacter>(Pawn);
-
 		}
 	}
 
@@ -39,7 +38,13 @@ void UMainCharacterAnimInstance::UpdateAnimationProperties()
 		/**/
 		/*Get Right and Forward velocity for OnTarget Blendspace
 		/**/
-//		FVector MainCharacterGeneralVelocity = MainCharacter->GetVelocity();
+//		RightVector = Pawn->GetActorRightVector();
+//		ForwardVector = Pawn->GetActorForwardVector();
+		RightVector = Pawn->FindComponentByClass<USkeletalMeshComponent>()->GetRightVector();
+		ForwardVector = Pawn->FindComponentByClass<USkeletalMeshComponent>()->GetForwardVector();
+
+		MainCharacterRightVelocity = (FVector::DotProduct(RightVector, Speed) * MovementSpeed);
+		MainCharacterForwardVelocity = (FVector::DotProduct(ForwardVector, Speed) * MovementSpeed);
 
 		bIsInAir = Pawn->GetMovementComponent()->IsFalling();
 
@@ -65,12 +70,22 @@ void UMainCharacterAnimInstance::Attack()
 
 		if (CurrentSection.IsNone())
 		{
-			Montage_Play(CombatMontage, 2.f);
+			Montage_Play(CombatMontage, 1.8f);
 		}
 		else if (CurrentSection.IsEqual("FirstAttack") && bAcceptSecondAttack)
 		{
 			Montage_JumpToSection(FName("SecondAttack"), CombatMontage);
 			bAcceptSecondAttack = false;
+		}
+		else if (CurrentSection.IsEqual("SecondAttack") && bAcceptThirdAttack)
+		{
+			Montage_JumpToSection(FName("ThirdAttack"), CombatMontage);
+			bAcceptThirdAttack = false;
+		}
+		else if (CurrentSection.IsEqual("ThirdAttack") && bAcceptFourthAttack)
+		{
+			Montage_JumpToSection(FName("FourthAttack"), CombatMontage);
+			bAcceptFourthAttack = false;
 		}
 
 	}
