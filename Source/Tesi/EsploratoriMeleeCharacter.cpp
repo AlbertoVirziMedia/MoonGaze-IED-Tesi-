@@ -87,6 +87,8 @@ void AEsploratoriMeleeCharacter::OnSeePlayer(APawn* Pawn)
 			if (MainCharacter)
 			{
 				MainCharacter->CombatTarget = this;
+				MainCharacter->bHasEnemyCombatTarget = true;
+				GLog->Log("NewTarget");
 			}
 		}
 	}
@@ -101,6 +103,14 @@ void AEsploratoriMeleeCharacter::OnHearNoise(APawn* PawnInstigator, const FVecto
 		GLog->Log("I hear you");
 		//Updates our target based on what we've heard.
 		AIController->SetSensedTarget(PawnInstigator);
+		if (PawnInstigator)
+		{
+			class AMainCharacter* MainCharacter = Cast<AMainCharacter>(PawnInstigator);
+			if (MainCharacter)
+			{
+				MainCharacter->CombatTarget = this;
+			}
+		}
 	}
 
 }
@@ -137,11 +147,6 @@ void AEsploratoriMeleeCharacter::MeleeAttack()
 void AEsploratoriMeleeCharacter::MeleeAttackEnd()
 {
 
-}
-
-float AEsploratoriMeleeCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
-{
-	return DamageAmount;
 }
 
 void AEsploratoriMeleeCharacter::Die()

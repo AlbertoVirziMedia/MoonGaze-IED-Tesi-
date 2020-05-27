@@ -36,8 +36,9 @@ public:
 	/*Weapon Stats
 	/**/
 	//Combat Collider
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Item | Combat")
-	class UBoxComponent* CombatCollision;
+	//The Collider Logic is in Weapon BP
+
+
 	//Weapon Stats
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item | Combat")
 	float Damage;
@@ -72,19 +73,8 @@ public:
 	/**/
 	/*CombatCollider Functions
 	/**/
-	//On Combat Collider Overlap Begin
-	UFUNCTION()
-	void CombatOnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
-	//On Combat Collider Overlap End
-	UFUNCTION()
-	void CombatOnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	//This Functions are called in MainCharacterAnim_BP
-	//The Function that Activate the Collider
-	UFUNCTION(BlueprintCallable)
-	void ActivateCollision();
-	//The Function that Deactivate the Collider
-	UFUNCTION(BlueprintCallable)
-	void EndCollision();
+	UFUNCTION(BlueprintImplementableEvent)
+	void WeaponAttack();
 
 
 };

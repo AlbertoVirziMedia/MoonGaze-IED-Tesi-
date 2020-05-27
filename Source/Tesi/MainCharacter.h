@@ -118,13 +118,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	class UAnimMontage* CombatMontage;
 	//bool that check if attack button is pressed
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bAttackButtonDown;
 
 	/**/
-	/*Player Combat Collider
+	/*Player Combat 
 	/**/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat | BP")
-	class UBoxComponent* SwordAttack;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool bIsAttacking;
 
 	/**/
 	/*Player Combat Blocking

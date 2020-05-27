@@ -110,8 +110,7 @@ AMainCharacter::AMainCharacter()
 	/**/
 	/*Attack Settings
 	/**/
-	SwordAttack = CreateDefaultSubobject<UBoxComponent>(TEXT("SwordAttack"));
-	SwordAttack->SetupAttachment(GetMesh());
+	bIsAttacking = false;
 
 	/**/
 	/*Attack Settings Blocking
@@ -310,6 +309,10 @@ void AMainCharacter::Attack()
 {
 	//Set the attack button bool
 	bAttackButtonDown = true;
+	if (EquippedWeapon)
+	{
+		EquippedWeapon->WeaponAttack();
+	}
 	//Reference to the main character anim instance
 	UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (MainCharacterAnimInstanceRef)

@@ -65,12 +65,6 @@ public:
 	void DamageColliderEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 	/**/
-	/*TakeDamage Functions override
-	/**/
-	//Enemy Take Damage function
-	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser) override;
-
-	/**/
 	/*Attack Functions
 	/**/
 	void MeleeAttack();
