@@ -4,6 +4,7 @@
 #include "EsploratoriMeleeCharacter.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "Perception/PawnSensingComponent.h"
+#include "Perception/AIPerceptionComponent.h"
 #include "Classes/AIController.h"
 #include "EsploratoriMeleeAIController.h"
 #include "Components/BoxComponent.h"
@@ -38,10 +39,11 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 	//Register the function that is going to fire when the character sees a Pawn
 	if (PawnSensingComp)
 	{
-		//Sight Sense
+/*		//Sight Sense
 		PawnSensingComp->OnSeePawn.AddDynamic(this, &AEsploratoriMeleeCharacter::OnSeePlayer);
 		//Hearing Sense
 		PawnSensingComp->OnHearNoise.AddDynamic(this, &AEsploratoriMeleeCharacter::OnHearNoise);
+*/
 	}
 
 	/**/
@@ -74,6 +76,7 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 
 }
 
+/*
 void AEsploratoriMeleeCharacter::OnSeePlayer(APawn* Pawn)
 {
 	//Set the seen target on the blackboard
@@ -114,6 +117,7 @@ void AEsploratoriMeleeCharacter::OnHearNoise(APawn* PawnInstigator, const FVecto
 	}
 
 }
+*/
 
 void AEsploratoriMeleeCharacter::OnZoneOfCombatBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {

@@ -2,6 +2,7 @@
 
 
 #include "EsploratoriMeleeAIController.h"
+#include "Perception/AIPerceptionComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "BehaviorTree/BlackboardComponent.h"
@@ -10,6 +11,10 @@
 
 AEsploratoriMeleeAIController::AEsploratoriMeleeAIController()
 {
+	//AI Perception Comp that update every frame what Enmies see
+	AIPerceptionComp = CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("AIPerceptionComp"));
+	//OnUpdatefunction of this component is in BP
+
 	//Create Reference to BlackBoard
 	EMBlackboardComp = CreateDefaultSubobject<UBlackboardComponent>(TEXT("EMBlackboardComp"));
 	//Create Reference to BehaviourTree
@@ -47,6 +52,7 @@ void AEsploratoriMeleeAIController::OnPossess(APawn* InPawn)
 	}
 }
 
+/*
 void AEsploratoriMeleeAIController::SetSeenTarget(APawn* MainCharacterSeen)
 {
 	//Registers the Pawn that the AI has seen in the blackboard
@@ -70,6 +76,7 @@ void  AEsploratoriMeleeAIController::SetSensedTarget(APawn* MainCharacterHeard)
 	}
 
 }
+*/
 
 void AEsploratoriMeleeAIController::ChangeBoolIsInZoneOfCombat()
 {

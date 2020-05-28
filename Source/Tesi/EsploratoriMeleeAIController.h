@@ -22,6 +22,10 @@ public:
 	/*Only Variables
 	/**/
 
+	//AI Perception
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+	class UAIPerceptionComponent* AIPerceptionComp;
+
 	/**/
 	/*IA Behavior Variables
 	/**/
@@ -54,15 +58,15 @@ public:
 	/*IA Sight Function
 	/**/
 	/*Sets the sensed target in the blackboard*/
-	UFUNCTION(BlueprintCallable)
-	void SetSeenTarget(APawn* MainCharacterSeen);
+//	UFUNCTION(BlueprintCallable)
+//	void SetSeenTarget(APawn* MainCharacterSeen);
 
 	/**/
 	/*IA Hearing Function
 	/**/
 	/*Sets the new sensed target value inside our Blackboard values*/
-	UFUNCTION(BlueprintCallable)
-	void SetSensedTarget(APawn* MainCharacterHeard);
+//	UFUNCTION(BlueprintCallable)
+//	void SetSensedTarget(APawn* MainCharacterHeard);
 
 	/**/
 	/*IA Combat Function

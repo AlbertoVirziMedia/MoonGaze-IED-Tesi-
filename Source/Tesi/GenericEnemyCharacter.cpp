@@ -34,6 +34,8 @@ AGenericEnemyCharacter::AGenericEnemyCharacter()
 	PawnSensingComp = CreateDefaultSubobject<UPawnSensingComponent>(TEXT("PawnSensingComp"));
 	//Set the peripheral vision angle to 90 degrees
 	PawnSensingComp->SetPeripheralVisionAngle(60.f);
+	//Set the update functions
+	PawnSensingComp->bEnableSensingUpdates = true;
 
 	/**/
 	/*Enemy Stats

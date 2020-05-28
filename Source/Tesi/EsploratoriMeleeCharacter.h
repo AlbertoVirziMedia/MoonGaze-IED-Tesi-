@@ -39,14 +39,15 @@ public:
 	/*IA Sight Functions
 	/**/
 	// Function Called when enemy sight spot the Main Character
-	UFUNCTION(BlueprintCallable, Category = "AI | Sight")
-	virtual void OnSeePlayer(APawn* Pawn);
+//	UFUNCTION(BlueprintCallable, Category = "AI | Sight")
+//	virtual void OnSeePlayer(APawn* Pawn);
 	/**/
 	/*IA SoundListener Functions
 	/**/
 	/*Hearing function - will be executed when we hear a Pawn*/
-	UFUNCTION()
-	virtual void OnHearNoise(APawn* PawnInstigator, const FVector& Location, float Volume);
+//	UFUNCTION()
+//	virtual void OnHearNoise(APawn* PawnInstigator, const FVector& Location, float Volume);
+	//
 
 	/**/
 	/*Component Collision Functions
