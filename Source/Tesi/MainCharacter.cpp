@@ -248,7 +248,7 @@ void AMainCharacter::Jump()
 //DoubleJumpFunction
 void AMainCharacter::DoubleJump()
 {
-	if (bIsAlive)
+	if (bIsAlive && !IsDashing)
 	{
 		if (DoubleJumpCounter <= 1)
 		{

@@ -30,7 +30,7 @@ public:
 	/*IA Behavior Variables
 	/**/
 	//Blackboard Reference
-	UPROPERTY(transient)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "IA")
 	class UBlackboardComponent* EMBlackboardComp;
 	//BehaviorTree Reference
 	UPROPERTY(transient)
