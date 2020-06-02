@@ -272,6 +272,10 @@ void AMainCharacter::Dash()
 	if (CanDash)
 	{
 		FVector InputVector = GetLastMovementInputVector();
+		if (InputVector == FVector(0,0,0))
+		{
+			InputVector = GetActorForwardVector();
+		}
 		LaunchCharacter(InputVector * DashDistance, true, true);
 		CanDash = false;
 		GetWorldTimerManager().SetTimer(DashHandle, this, &AMainCharacter::StopDashing, DashStop, false);
@@ -311,7 +315,7 @@ void AMainCharacter::Attack()
 	bAttackButtonDown = true;
 	if (EquippedWeapon)
 	{
-		EquippedWeapon->WeaponAttack();
+//		EquippedWeapon->WeaponAttack();
 	}
 	//Reference to the main character anim instance
 	UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());

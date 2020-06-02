@@ -70,14 +70,15 @@ void UMainCharacterAnimInstance::Attack()
 
 		if (CurrentSection.IsNone())
 		{
-			Montage_Play(CombatMontage, 1.8f);
+			Montage_Play(CombatMontage, 1.f);
+			Montage_JumpToSection(FName("FirstAttack"), CombatMontage);
 		}
 		else if (CurrentSection.IsEqual("FirstAttack") && bAcceptSecondAttack)
 		{
 			Montage_JumpToSection(FName("SecondAttack"), CombatMontage);
-			bAcceptSecondAttack = false;
+			bAcceptSecondAttack = false;		
 		}
-		else if (CurrentSection.IsEqual("SecondAttack") && bAcceptThirdAttack)
+/*		else if (CurrentSection.IsEqual("SecondAttack") && bAcceptThirdAttack)
 		{
 			Montage_JumpToSection(FName("ThirdAttack"), CombatMontage);
 			bAcceptThirdAttack = false;
@@ -87,7 +88,7 @@ void UMainCharacterAnimInstance::Attack()
 			Montage_JumpToSection(FName("FourthAttack"), CombatMontage);
 			bAcceptFourthAttack = false;
 		}
-
+*/		
 	}
 }
 
