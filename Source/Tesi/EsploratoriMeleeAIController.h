@@ -57,21 +57,6 @@ public:
 	/**/
 	/*IA Sight Function
 	/**/
-	/*Sets the sensed target in the blackboard*/
-//	UFUNCTION(BlueprintCallable)
-//	void SetSeenTarget(APawn* MainCharacterSeen);
 
-	/**/
-	/*IA Hearing Function
-	/**/
-	/*Sets the new sensed target value inside our Blackboard values*/
-//	UFUNCTION(BlueprintCallable)
-//	void SetSensedTarget(APawn* MainCharacterHeard);
-
-	/**/
-	/*IA Combat Function
-	/**/
-	UFUNCTION(BlueprintCallable)
-	void ChangeBoolIsInZoneOfCombat();
 
 };

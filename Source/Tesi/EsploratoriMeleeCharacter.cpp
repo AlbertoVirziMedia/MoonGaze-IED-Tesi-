@@ -39,11 +39,7 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 	//Register the function that is going to fire when the character sees a Pawn
 	if (PawnSensingComp)
 	{
-/*		//Sight Sense
-		PawnSensingComp->OnSeePawn.AddDynamic(this, &AEsploratoriMeleeCharacter::OnSeePlayer);
-		//Hearing Sense
-		PawnSensingComp->OnHearNoise.AddDynamic(this, &AEsploratoriMeleeCharacter::OnHearNoise);
-*/
+
 	}
 
 	/**/
@@ -76,55 +72,8 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 
 }
 
-/*
-void AEsploratoriMeleeCharacter::OnSeePlayer(APawn* Pawn)
-{
-	//Set the seen target on the blackboard
-	if (AIController)
-	{
-		GLog->Log("I See you");
-		AIController->SetSeenTarget(Pawn);
-		if (Pawn)
-		{
-			class AMainCharacter* MainCharacter = Cast<AMainCharacter>(Pawn);
-			if (MainCharacter)
-			{
-				MainCharacter->CombatTarget = this;
-				MainCharacter->bHasEnemyCombatTarget = true;
-				GLog->Log("NewTarget");
-			}
-		}
-	}
-
-}
-
-void AEsploratoriMeleeCharacter::OnHearNoise(APawn* PawnInstigator, const FVector& Location, float Volume)
-{
-	//We don't want to hear ourselves
-	if (AIController && PawnInstigator != this)
-	{
-		GLog->Log("I hear you");
-		//Updates our target based on what we've heard.
-		AIController->SetSensedTarget(PawnInstigator);
-		if (PawnInstigator)
-		{
-			class AMainCharacter* MainCharacter = Cast<AMainCharacter>(PawnInstigator);
-			if (MainCharacter)
-			{
-				MainCharacter->CombatTarget = this;
-			}
-		}
-	}
-
-}
-*/
-
 void AEsploratoriMeleeCharacter::OnZoneOfCombatBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
-	if (AIController)
-	{
-		AIController->ChangeBoolIsInZoneOfCombat();
-	}
 	
 }
 

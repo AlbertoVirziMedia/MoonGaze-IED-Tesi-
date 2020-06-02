@@ -34,56 +34,7 @@ void AEsploratoriMeleeAIController::OnPossess(APawn* InPawn)
 	{
 		//Initialize the Blackboard
 		EMBlackboardComp->InitializeBlackboard(*(EMCharacter->CharacterBehaviorTree->BlackboardAsset));
-		//Get the Target Key
-		EnemyKeyID = EMBlackboardComp->GetKeyID("TargetKey");
-		//Get the EnemyState Key
-		EnemyState = EMBlackboardComp->GetKeyID("EnemyStateKey");
-
-		/**/
-		/*EnemyState 
-		/*Int: 0:Idle
-		/*Int: 1:Move To Target
-		/*Int: 2:MeleeAttack
-		/**/
 
 		EMBehaviorTreeComp->StartTree(*EMCharacter->CharacterBehaviorTree);
-
-		EMBlackboardComp->SetValue<UBlackboardKeyType_Int>(EnemyState, 0);
-	}
-}
-
-/*
-void AEsploratoriMeleeAIController::SetSeenTarget(APawn* MainCharacterSeen)
-{
-	//Registers the Pawn that the AI has seen in the blackboard
-	if (EMBlackboardComp)
-	{
-		GLog->Log("Follow");
-		EMBlackboardComp->SetValue<UBlackboardKeyType_Object>(EnemyKeyID, MainCharacterSeen);
-		EMBlackboardComp->SetValue<UBlackboardKeyType_Int>(EnemyState, 1);
-	}
-
-}
-
-void  AEsploratoriMeleeAIController::SetSensedTarget(APawn* MainCharacterHeard)
-{
-	//Registers the Pawn that the AI has hear in the blackboard
-	if (EMBlackboardComp)
-	{
-		GLog->Log("Follow");
-		EMBlackboardComp->SetValue<UBlackboardKeyType_Object>(EnemyKeyID, MainCharacterHeard);
-		EMBlackboardComp->SetValue<UBlackboardKeyType_Int>(EnemyState, 1);
-	}
-
-}
-*/
-
-void AEsploratoriMeleeAIController::ChangeBoolIsInZoneOfCombat()
-{
-	//Registers the Pawn that the AI has hear in the blackboard
-	if (EMBlackboardComp)
-	{
-		GLog->Log("Attack");
-		EMBlackboardComp->SetValue<UBlackboardKeyType_Int>(EnemyState, 2);
 	}
 }
