@@ -48,6 +48,9 @@ public:
 	//Jump height of the second jump
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Movement")
 	float JumpHeight;
+	//
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool bIsJumping;
 
 	/**/
 	/*Main Character Ability
@@ -202,6 +205,8 @@ public:
 	//Double Jump Function
 	UFUNCTION(BlueprintCallable)
 	void DoubleJump();
+	//
+	virtual void StopJumping() override;
 	//Override Unreal Landed Function in order to add camera shake
 	UFUNCTION(BlueprintCallable)
 	virtual void Landed(const FHitResult& Hit);

@@ -69,6 +69,8 @@ AMainCharacter::AMainCharacter()
 	DoubleJumpCounter = 0;
 	//Second Jump Height
 	JumpHeight = 600.f;
+	//
+	bIsJumping = false;
 
 	/**/
 	/*Character Ability Settings
@@ -172,7 +174,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("MoveRight", this, &AMainCharacter::MoveRight);
 	//Jump
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMainCharacter::DoubleJump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AMainCharacter::StopJumping);
 
 	/**/
 	/*Character Ability
@@ -250,18 +252,26 @@ void AMainCharacter::DoubleJump()
 {
 	if (bIsAlive && !IsDashing)
 	{
+		bIsJumping = true;
+		GLog->Log("Jump");
 		if (DoubleJumpCounter <= 1)
 		{
 			ACharacter::LaunchCharacter(FVector(0, 0, JumpHeight), false, true);
 			DoubleJumpCounter++;
 		}
-	}	
+	}
+}
+
+void AMainCharacter::StopJumping()
+{
+	Super::StopJumping();
+	bIsJumping = false;
 }
 
 //Override Unreal Landed Function
 void AMainCharacter::Landed(const FHitResult& Hit)
 {
-	Super::Landed(Hit);
+	Super::Landed(Hit);	
 	DoubleJumpCounter = 0;
 	MainCharacterPlayerController->PlayerCameraManager->PlayCameraShake(CameraJumpShake, 1.f);
 }
