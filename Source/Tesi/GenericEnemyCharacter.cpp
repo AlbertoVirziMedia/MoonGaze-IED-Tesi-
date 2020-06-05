@@ -58,7 +58,6 @@ AGenericEnemyCharacter::AGenericEnemyCharacter()
 	AttackMaxTime = 3.f;
 	//Set Attack Delay (Min)
 	AttackMinTime = 0.5f;
-	bIsGettingDameged = false;
 
 	/**/
 	/*Death Variables
@@ -96,7 +95,6 @@ float AGenericEnemyCharacter::TakeDamage(float DamageAmount, struct FDamageEvent
 	if (Health - DamageAmount <= 0.f)
 	{
 		Health -= DamageAmount;
-		bIsGettingDameged = true;
 	}
 	else
 	{

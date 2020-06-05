@@ -102,6 +102,12 @@ void AEsploratoriMeleeCharacter::MeleeAttackEnd()
 
 }
 
+float AEsploratoriMeleeCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
+{
+	bIsGettingDameged = true;
+	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+}
+
 void AEsploratoriMeleeCharacter::Die()
 {
 

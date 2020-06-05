@@ -23,6 +23,9 @@ public:
 	/**/
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	class AEsploratoriMeleeAIController* AIController;
+	//bool that check when the enemy his hitten
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool bIsGettingDameged;
 
 
 protected:
@@ -39,15 +42,7 @@ public:
 	/*IA Sight Functions
 	/**/
 	// Function Called when enemy sight spot the Main Character
-//	UFUNCTION(BlueprintCallable, Category = "AI | Sight")
-//	virtual void OnSeePlayer(APawn* Pawn);
-	/**/
-	/*IA SoundListener Functions
-	/**/
-	/*Hearing function - will be executed when we hear a Pawn*/
-//	UFUNCTION()
-//	virtual void OnHearNoise(APawn* PawnInstigator, const FVector& Location, float Volume);
-	//
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser) override;
 
 	/**/
 	/*Component Collision Functions

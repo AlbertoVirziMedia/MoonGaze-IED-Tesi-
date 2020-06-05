@@ -325,7 +325,7 @@ void AMainCharacter::Attack()
 	bAttackButtonDown = true;
 	if (EquippedWeapon)
 	{
-//		EquippedWeapon->WeaponAttack();
+		EquippedWeapon->WeaponAttack();
 	}
 	//Reference to the main character anim instance
 	UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
