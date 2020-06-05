@@ -75,6 +75,9 @@ public:
 	//Type of Damage
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	TSubclassOf<UDamageType> EnemyDamageTypeClass;
+	//bool that check when the enemy his hitten
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool bIsGettingDameged;
 	/**/
 	/*Combat Animations Variables
 	/**/
