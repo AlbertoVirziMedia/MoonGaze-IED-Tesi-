@@ -39,7 +39,7 @@ public:
 	/**/
 
 	/**/
-	/*IA Sight Functions
+	/*Combat Functions
 	/**/
 	// Function Called when enemy sight spot the Main Character
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser) override;

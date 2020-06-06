@@ -36,11 +36,6 @@ public:
 	UPROPERTY(transient)
 	class UBehaviorTreeComponent* EMBehaviorTreeComp;
 
-	//Reference To The Esploratori Melee Blackboard key
-	//Reference to the MainCharacter ID 
-	uint8 EnemyKeyID;
-	//Reference to the EnemyState ID
-	uint8 EnemyState;
 
 public:
 

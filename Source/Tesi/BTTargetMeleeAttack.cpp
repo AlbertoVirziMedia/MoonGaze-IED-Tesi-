@@ -16,11 +16,7 @@ EBTNodeResult::Type UBTTargetMeleeAttack::ExecuteTask(UBehaviorTreeComponent& Ow
 
 	AEsploratoriMeleeCharacter* EMCharacter = Cast<AEsploratoriMeleeCharacter>(OwnerComp.GetOwner());
 
-	AMainCharacter* MainCharacter = Cast<AMainCharacter>(OwnerComp.GetBlackboardComponent()->GetValue<UBlackboardKeyType_Object>(EMAIController->EnemyKeyID));
-
 	UE_LOG(LogTemp, Warning, TEXT("Attack"));
-
-
 
 	return EBTNodeResult::Succeeded;
 }
