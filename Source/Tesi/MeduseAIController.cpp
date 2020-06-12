@@ -26,9 +26,11 @@ void AMeduseAIController::OnPossess(APawn* InPawn)
 	//If ER is Enemy Character and he have the BehaviorTree
 	if (MCharacter && MCharacter->CharacterBehaviorTree)
 	{
+		GLog->Log("Medusa Character Ref");
 		//Initialize the Blackboard
 		MBlackboardComp->InitializeBlackboard(*(MCharacter->CharacterBehaviorTree->BlackboardAsset));
 
 		MBehaviorTreeComp->StartTree(*MCharacter->CharacterBehaviorTree);
 	}
+
 }

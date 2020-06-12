@@ -2,10 +2,18 @@
 
 
 #include "MedusaCharacter.h"
+#include "BehaviorTree/BehaviorTreeComponent.h"
 #include "MeduseAIController.h"
 
 AMedusaCharacter::AMedusaCharacter()
 {
+	
+}
+
+void AMedusaCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
 	/**/
 	/*IA Setting
 	/**/
@@ -13,17 +21,12 @@ AMedusaCharacter::AMedusaCharacter()
 	AIController = Cast<AMeduseAIController>(GetController());
 	if (!AIController)
 	{
-		GLog->Log("Ai Controller non creato");
+		GLog->Log("medusa Ai Controller non creato");
 	}
 	else
 	{
 		GLog->Log("AI");
 	}
-}
-
-void AMedusaCharacter::BeginPlay()
-{
-	Super::BeginPlay();
 }
 
 float AMedusaCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
