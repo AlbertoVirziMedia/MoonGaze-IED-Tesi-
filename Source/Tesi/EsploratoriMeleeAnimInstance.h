@@ -30,6 +30,13 @@ public:
 	class AEsploratoriMeleeCharacter* EMCharacter;
 
 	/**/
+	/*Character AnimInstance Attack Variables
+	/**/
+	//Reference to the AnimMontage
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	UAnimMontage* EMCombatMontage;
+
+	/**/
 	/*AnimInstance Functions
 	/**/
 	//Native Initialization Animation override
@@ -37,5 +44,8 @@ public:
 	//Update animation function override
 	UFUNCTION(BlueprintCallable, Category = AnimationProperties)
 	void UpdateAnimationProperties();
+	//
+	UFUNCTION(BlueprintCallable, Category = AnimationProperties)
+	void TakeDamageAnim();
 	
 };

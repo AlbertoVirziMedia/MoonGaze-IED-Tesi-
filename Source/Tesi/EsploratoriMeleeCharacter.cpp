@@ -12,6 +12,7 @@
 #include "Engine/SkeletalMesh.h"
 #include "Engine/SkeletalMeshSocket.h"
 #include "MainCharacter.h"
+#include "EsploratoriMeleeAnimInstance.h"
 
 AEsploratoriMeleeCharacter::AEsploratoriMeleeCharacter()
 {
@@ -70,6 +71,19 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 		DamageCollider->OnComponentEndOverlap.AddDynamic(this, &AEsploratoriMeleeCharacter::DamageColliderEndOverlap);
 	}
 
+	/**/
+	/*AnimInstance Setting
+	/**/
+	EMAnimInstance = Cast<UEsploratoriMeleeAnimInstance>(GetMesh()->GetAnimInstance());
+	if (!EMAnimInstance)
+	{
+		GLog->Log("not Anim");
+	}
+	else
+	{
+		GLog->Log("Anim");
+	}
+
 }
 
 void AEsploratoriMeleeCharacter::OnZoneOfCombatBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
@@ -104,6 +118,10 @@ void AEsploratoriMeleeCharacter::MeleeAttackEnd()
 
 float AEsploratoriMeleeCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
+	if (EMAnimInstance)
+	{
+		EMAnimInstance->TakeDamageAnim();
+	}
 	bIsGettingDameged = true;
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }

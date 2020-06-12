@@ -27,6 +27,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bIsGettingDameged;
 
+	//AnimInstance Ref
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Animation")
+	class UEsploratoriMeleeAnimInstance* EMAnimInstance;
+	//Reference to the Combat Montage
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	class UAnimMontage* EMCombatMontage;
+
 
 protected:
 	// Called when the game starts or when spawned
