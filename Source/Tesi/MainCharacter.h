@@ -39,6 +39,9 @@ public:
 	/**/
 	/*Character Movement
 	/**/
+	//Ref To MovementComp
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement")
+	class UCharacterMovementComponent* RefToCharacterMovementComp;
 	//Character Rotation Rate
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Movement")
 	float CharacterRotationRate;
@@ -129,6 +132,8 @@ public:
 	/**/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bIsAttacking;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool bIsFinalSmash;
 
 	/**/
 	/*Player Combat Blocking
@@ -245,6 +250,11 @@ public:
 	//Attack End Function
 	UFUNCTION(BlueprintCallable)
 	void AttackEnd();
+	/**/
+	/*CombatCollider Functions (BP Implementation)
+	/**/
+	UFUNCTION(BlueprintImplementableEvent)
+	void FinalSmashAttack();
 
 	/**/
 	/*BLocking Functions

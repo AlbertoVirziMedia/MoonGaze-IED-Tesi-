@@ -52,6 +52,8 @@ AMainCharacter::AMainCharacter()
 	/**/
 	/*Character Movement Settings
 	/**/
+	//Character Mov Ref To Component
+	RefToCharacterMovementComp = GetCharacterMovement();
 	//Setting the Character Rotation variables
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
@@ -333,6 +335,7 @@ void AMainCharacter::Attack()
 	{
 		//Call the Main Character Anim Instance Attack Function
 		MainCharacterAnimInstanceRef->Attack();
+		RefToCharacterMovementComp->MaxWalkSpeed = 15.f;
 	}
 }
 
@@ -340,6 +343,8 @@ void AMainCharacter::Attack()
 void AMainCharacter::AttackEnd()
 {
 	bAttackButtonDown = false;
+	RefToCharacterMovementComp->SetMovementMode(MOVE_Walking);
+//	RefToCharacterMovementComp->MaxWalkSpeed = 600.f;
 }
 
 void AMainCharacter::Blocking()

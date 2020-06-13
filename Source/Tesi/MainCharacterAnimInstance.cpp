@@ -76,7 +76,8 @@ void UMainCharacterAnimInstance::Attack()
 		else if (CurrentSection.IsEqual("FirstAttack") && bAcceptSecondAttack)
 		{
 			Montage_JumpToSection(FName("SecondAttack"), CombatMontage);
-			bAcceptSecondAttack = false;		
+			bAcceptSecondAttack = false;
+			MainCharacter->FinalSmashAttack();
 		}
 /*		else if (CurrentSection.IsEqual("SecondAttack") && bAcceptThirdAttack)
 		{
