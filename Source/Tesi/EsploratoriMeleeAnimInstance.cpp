@@ -45,3 +45,4 @@ void UEsploratoriMeleeAnimInstance::TakeDamageAnim()
 		Montage_JumpToSection(FName("Reaction"), EMCombatMontage);
 	}
 }
+

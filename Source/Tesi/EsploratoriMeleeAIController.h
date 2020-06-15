@@ -36,6 +36,16 @@ public:
 	UPROPERTY(transient)
 	class UBehaviorTreeComponent* EMBehaviorTreeComp;
 
+	//Anim Montage Variables
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "PlayerAbility")
+	bool bCanTakeDamage;
+	//Time to give to the TakeDamageTimer
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerAbility")
+	float DashStop;
+	//TakeDamageTimer
+	UPROPERTY()
+	FTimerHandle DashHandle;
+
 
 public:
 

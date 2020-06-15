@@ -13,10 +13,13 @@
 #include "Engine/SkeletalMeshSocket.h"
 #include "MainCharacter.h"
 #include "EsploratoriMeleeAnimInstance.h"
+#include "Public/TimerManager.h"
+#include "Engine/World.h"
 
 AEsploratoriMeleeCharacter::AEsploratoriMeleeCharacter()
 {
-	
+	bCanTakeDamage = true;
+	TakeDamageStop = 3.f;
 }
 
 void AEsploratoriMeleeCharacter::BeginPlay()
@@ -120,10 +123,22 @@ float AEsploratoriMeleeCharacter::TakeDamage(float DamageAmount, struct FDamageE
 {
 	if (EMAnimInstance)
 	{
-		EMAnimInstance->TakeDamageAnim();
+		if (bCanTakeDamage)
+		{
+			EMAnimInstance->TakeDamageAnim();
+			bCanTakeDamage = false;
+			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AEsploratoriMeleeCharacter::ResetTakeDamage, TakeDamageStop, false);
+			UE_LOG(LogTemp, Warning, TEXT("StartTimer"));
+		}
 	}
 	bIsGettingDameged = true;
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+}
+
+void AEsploratoriMeleeCharacter::ResetTakeDamage()
+{
+	bCanTakeDamage = true;
+	UE_LOG(LogTemp, Warning, TEXT("EndTimer"));
 }
 
 void AEsploratoriMeleeCharacter::Die()
