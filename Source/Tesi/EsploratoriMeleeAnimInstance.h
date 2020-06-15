@@ -36,6 +36,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
 	UAnimMontage* EMCombatMontage;
 
+
+
 	/**/
 	/*AnimInstance Functions
 	/**/
@@ -47,5 +49,6 @@ public:
 	//
 	UFUNCTION(BlueprintCallable, Category = AnimationProperties)
 	void TakeDamageAnim();
+	
 	
 };
