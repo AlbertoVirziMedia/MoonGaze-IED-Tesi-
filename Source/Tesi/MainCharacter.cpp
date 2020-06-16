@@ -110,11 +110,10 @@ AMainCharacter::AMainCharacter()
 	/**/
 	//Set attack button down bool
 	bAttackButtonDown = false;
-
-	/**/
-	/*Attack Settings
-	/**/
+	//Bool is during an attack
 	bIsAttacking = false;
+	//Max Walk Speed during a montage
+	MontageWalkSpeed = 15.f;
 
 	/**/
 	/*Attack Settings Blocking
@@ -335,7 +334,8 @@ void AMainCharacter::Attack()
 	{
 		//Call the Main Character Anim Instance Attack Function
 		MainCharacterAnimInstanceRef->Attack();
-		RefToCharacterMovementComp->MaxWalkSpeed = 15.f;
+//		MainCharacterPlayerController->PlayerCameraManager->PlayCameraShake(CameraAttackShake, 1.f);
+		RefToCharacterMovementComp->MaxWalkSpeed = MontageWalkSpeed;
 	}
 }
 
@@ -344,7 +344,6 @@ void AMainCharacter::AttackEnd()
 {
 	bAttackButtonDown = false;
 	RefToCharacterMovementComp->SetMovementMode(MOVE_Walking);
-//	RefToCharacterMovementComp->MaxWalkSpeed = 600.f;
 }
 
 void AMainCharacter::Blocking()
@@ -378,18 +377,26 @@ float AMainCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const &
 		{
 			Health -= DamageAmount;
 			Die();
-			if (DamageCauser)
-			{
-				AEnemyCharacter* Enemy = Cast<AEnemyCharacter>(DamageCauser);
-				if (Enemy)
-				{
-					Enemy->bHasValidTarget = false;
-				}
-			}
 		}
 		else
 		{
 			Health -= DamageAmount;
+			//Reference to the main character anim instance
+			UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+			if (MainCharacterAnimInstanceRef)
+			{
+				MainCharacterAnimInstanceRef->Damage();
+				RefToCharacterMovementComp->MaxWalkSpeed = MontageWalkSpeed;
+
+				if (DamageCauser)
+				{
+					AEnemyCharacter* Enemy = Cast<AEnemyCharacter>(DamageCauser);
+					if (Enemy)
+					{
+						Enemy->bHasValidTarget = false;
+					}
+				}
+			}
 		}
 	}
 

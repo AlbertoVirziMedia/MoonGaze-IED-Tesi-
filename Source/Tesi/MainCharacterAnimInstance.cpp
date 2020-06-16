@@ -93,6 +93,15 @@ void UMainCharacterAnimInstance::Attack()
 	}
 }
 
+void UMainCharacterAnimInstance::Damage()
+{
+	if (CombatMontage)
+	{
+		Montage_Play(CombatMontage, 1.f);
+		Montage_JumpToSection(FName("Damage"), CombatMontage);
+	}
+}
+
 void UMainCharacterAnimInstance::Blocking()
 {
 	BlockingAnimRate = 0.f;

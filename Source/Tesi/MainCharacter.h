@@ -126,6 +126,9 @@ public:
 	//bool that check if attack button is pressed
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bAttackButtonDown;
+	//WalkSpeed during Attack and Damage
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	float MontageWalkSpeed;
 
 	/**/
 	/*Player Combat 
@@ -151,9 +154,13 @@ public:
 	/**/
 	/*Camera Shake
 	/**/
-	//Set the SubClass
+	//Set the SubClass 
+	//Camera Shake on landing
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera | Shake")
 	TSubclassOf<UCameraShake> CameraJumpShake;
+	//Camera shake during an attack
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera | Shake")
+	TSubclassOf<UCameraShake> CameraAttackShake;
 
 	//
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Enemy Distance")

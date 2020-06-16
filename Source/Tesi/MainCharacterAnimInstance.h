@@ -1,3 +1,4 @@
+
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -85,6 +86,7 @@ public:
 	/**/
 	//Determines which attack animation will be played
 	void Attack();
+	void Damage();
 
 	/**/
 	/*Character AnimInstance Blocking Variables

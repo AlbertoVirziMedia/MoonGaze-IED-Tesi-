@@ -49,6 +49,9 @@ public:
 	//
 	UFUNCTION(BlueprintCallable, Category = AnimationProperties)
 	void TakeDamageAnim();
+	//
+	UFUNCTION()
+	void DeathAnim();
 	
 	
 };

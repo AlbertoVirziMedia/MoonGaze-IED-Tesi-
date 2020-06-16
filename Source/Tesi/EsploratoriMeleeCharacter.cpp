@@ -132,6 +132,11 @@ float AEsploratoriMeleeCharacter::TakeDamage(float DamageAmount, struct FDamageE
 		}
 	}
 	bIsGettingDameged = true;
+	if (Health - DamageAmount <= 0.f)
+	{
+		EMAnimInstance->DeathAnim();
+		bEnemyIsAlive = false;
+	}
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
 

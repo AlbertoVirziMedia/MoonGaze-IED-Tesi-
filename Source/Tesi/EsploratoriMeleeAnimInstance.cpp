@@ -46,3 +46,13 @@ void UEsploratoriMeleeAnimInstance::TakeDamageAnim()
 	}
 }
 
+void UEsploratoriMeleeAnimInstance::DeathAnim()
+{
+	if (EMCombatMontage)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Death"));
+		Montage_Play(EMCombatMontage, 1.0f);
+		Montage_JumpToSection(FName("Death"), EMCombatMontage);
+	}
+}
+
