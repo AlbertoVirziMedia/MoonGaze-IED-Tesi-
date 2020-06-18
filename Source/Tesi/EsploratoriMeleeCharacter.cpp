@@ -15,6 +15,8 @@
 #include "EsploratoriMeleeAnimInstance.h"
 #include "Public/TimerManager.h"
 #include "Engine/World.h"
+#include "Particles/ParticleSystemComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 AEsploratoriMeleeCharacter::AEsploratoriMeleeCharacter()
 {
@@ -47,20 +49,6 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 	}
 
 	/**/
-	/*Bind Action On Overlap of ZoneOfCombat Component
-	/**/
-	if (!ZoneOfCombat)
-	{
-		GLog->Log("Zone of Combat Non Creato");
-	}
-	else
-	{
-		GLog->Log("Zone of Combat Creato");
-		//ZoneOfCombat Binding
-		ZoneOfCombat->OnComponentBeginOverlap.AddDynamic(this, &AEsploratoriMeleeCharacter::OnZoneOfCombatBeginOverlap);
-		ZoneOfCombat->OnComponentEndOverlap.AddDynamic(this, &AEsploratoriMeleeCharacter::OnZoneOfCombatEndOverlap);
-	}
-	/**/
 	/*Bind Action On Overlap of DamageCollider Component
 	/**/
 	if (!DamageCollider)
@@ -86,16 +74,6 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 	{
 		GLog->Log("Anim");
 	}
-
-}
-
-void AEsploratoriMeleeCharacter::OnZoneOfCombatBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
-{
-	
-}
-
-void AEsploratoriMeleeCharacter::OnZoneOfCombatEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
 
 }
 

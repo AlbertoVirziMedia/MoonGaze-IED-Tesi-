@@ -9,6 +9,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/SkeletalMesh.h"
 #include "Engine/SkeletalMeshSocket.h"
+#include "Particles/ParticleSystemComponent.h"
 
 // Sets default values
 AGenericEnemyCharacter::AGenericEnemyCharacter()
@@ -19,10 +20,6 @@ AGenericEnemyCharacter::AGenericEnemyCharacter()
 	/**/
 	/*Create Component
 	/**/
-	//Zone of Combat (Position when he need to attach Player)
-	ZoneOfCombat = CreateDefaultSubobject<UBoxComponent>(TEXT("ZoneOfCombat"));
-	ZoneOfCombat->SetupAttachment(GetRootComponent());
-	bIsInZoneOfCombat = false;
 	//Damage Collider (Collider that damage Main Character)
 	DamageCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageCollider"));
 	DamageCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("EnemySocket"));
@@ -58,6 +55,12 @@ AGenericEnemyCharacter::AGenericEnemyCharacter()
 	AttackMaxTime = 3.f;
 	//Set Attack Delay (Min)
 	AttackMinTime = 0.5f;
+
+	/**/
+	/*Combat Paticle Variables
+	/**/
+	DamagedParticle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("DamagedParticle"));
+	DamagedParticle->SetupAttachment(GetMesh());
 
 	/**/
 	/*Death Variables

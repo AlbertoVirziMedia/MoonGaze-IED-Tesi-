@@ -26,11 +26,7 @@ public:
 	//BehaviourTree Reference
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
 	class UBehaviorTree* CharacterBehaviorTree;
-	//Reference to the CombatSphere
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "AI")
-	class UBoxComponent* ZoneOfCombat;
-	//Bool That check if the MainCharacter is in Zone of Combat
-	bool bIsInZoneOfCombat;
+
 
 	/**/
 	/*IA Sight/Hearing Variables
@@ -75,6 +71,12 @@ public:
 	//Type of Damage
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	TSubclassOf<UDamageType> EnemyDamageTypeClass;
+
+	/**/
+	/*Combat AParticle Variables
+	/**/
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat | Particle")
+	class UParticleSystemComponent* DamagedParticle;
 
 	/**/
 	/*Combat Animations Variables
