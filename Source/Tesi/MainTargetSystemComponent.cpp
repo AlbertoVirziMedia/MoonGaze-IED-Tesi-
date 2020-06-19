@@ -40,7 +40,7 @@ UMainTargetSystemComponent::UMainTargetSystemComponent()
 	/*Target System Camera Variables
 	/**/
 	StartingCameraRotation = FRotator(0.f, 0.f, 0.f);
-	ChangeZCameraPosition = 300;
+	ChangeZCameraPosition = 1200;
 	ChangeRollCameraRotation = 350;
 
 	/**/
@@ -125,15 +125,13 @@ void UMainTargetSystemComponent::TickComponent(float DeltaTime, ELevelTick TickT
 		UCameraComponent* CameraComponent = MainCharacter->FindComponentByClass<UCameraComponent>();
 		if (!CameraComponent)
 		{
-			
+
 		}
 		if (CameraComponent)
 		{
-			FVector Dist = OnTargetCameraPosition - StartingCameraPosition;
-			float FloatDist = Dist.Size();
-			float DeltaMove = FloatDist* FMath::Clamp<float>(DeltaTime * 0.1f, 0.f, 1.f);
-			CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(StartingCameraPosition), FVector(StartingCameraPosition.X, StartingCameraPosition.Y, ChangeZCameraPosition), DeltaTime, DeltaMove));
-			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(StartingCameraRotation), FRotator(ChangeRollCameraRotation, StartingCameraRotation.Pitch, StartingCameraRotation.Yaw), DeltaTime, DeltaMove));
+			UE_LOG(LogTemp, Warning, TEXT("Some warning message"));
+			CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(StartingCameraPosition), FVector(StartingCameraPosition.X, StartingCameraPosition.Y, ChangeZCameraPosition), 5.f, 0.1f));
+			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(StartingCameraRotation), FRotator(ChangeRollCameraRotation, StartingCameraRotation.Pitch, StartingCameraRotation.Yaw), 5.f, 0.5f));
 		}
 	}
 
@@ -146,9 +144,8 @@ void UMainTargetSystemComponent::TickComponent(float DeltaTime, ELevelTick TickT
 		}
 		if (CameraComponent)
 		{
-			CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(OnTargetCameraPosition), FVector(StartingCameraPosition), 5.f, 0.01f));
-			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(OnTargetCameraRotation), FRotator(StartingCameraRotation), 5.f, 0.01f));
-
+			CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(OnTargetCameraPosition), FVector(StartingCameraPosition), 5.f, 0.1f));
+			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(OnTargetCameraRotation), FRotator(StartingCameraRotation), 5.f, 0.1f));
 		}
 	}
 }
