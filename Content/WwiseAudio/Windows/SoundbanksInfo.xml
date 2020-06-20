@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\.cache\Windows\</SourceFilesRoot>
+		<ProjectRoot>C:\Users\alber\Downloads\Prototipo Tesi 5.1\Prototipo Tesi\Prototipo Tesi\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\alber\Downloads\Prototipo Tesi 5.1\Prototipo Tesi\Prototipo Tesi\.cache\Windows\</SourceFilesRoot>
 		<SoundBanksRoot>C:\Users\alber\Documents\Unreal Projects\Tesi 4.24\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\alber\Downloads\Prototipo Tesi 2\Prototipo Tesi\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\alber\Downloads\Prototipo Tesi 5.1\Prototipo Tesi\Prototipo Tesi\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -20,26 +20,28 @@
 					<IncludedMemoryFiles>
 						<File Id="56689358" Language="SFX">
 							<ShortName>Ambience_Sea_far_002wav.wav</ShortName>
-							<Path>SFX\Ambience_Sea_far_002wav_0A253772.wem</Path>
+							<Path>SFX\Ambience_Sea_far_002wav_9219C786.wem</Path>
 						</File>
 						<File Id="83092420" Language="SFX">
 							<ShortName>Ambience_Wind_001.wav</ShortName>
-							<Path>SFX\Ambience_Wind_001_AB500627.wem</Path>
+							<Path>SFX\Ambience_Wind_001_DC137FAB.wem</Path>
 						</File>
 						<File Id="793516244" Language="SFX">
 							<ShortName>Ambience_Wind_002.wav</ShortName>
-							<Path>SFX\Ambience_Wind_002_E8A134FD.wem</Path>
+							<Path>SFX\Ambience_Wind_002_888D4859.wem</Path>
 						</File>
 						<File Id="899945534" Language="SFX">
 							<ShortName>ambience_sea_close_001.wav</ShortName>
-							<Path>SFX\ambience_sea_close_001_AD55C43C.wem</Path>
+							<Path>SFX\ambience_sea_close_001_BF48EE80.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<IncludedAuxBusses>
+				<AuxBus Id="1530676313" Name="Exterior_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Exterior_Rev"/>
+			</IncludedAuxBusses>
 			<GameParameters>
 				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
-				<GameParameter Id="2311456796" Name="Kria_Elevation" ObjectPath="\Game Parameters\Default Work Unit\Kria_Elevation"/>
 				<GameParameter Id="3355108795" Name="Kria_Ocean" ObjectPath="\Game Parameters\Default Work Unit\Kria_Ocean"/>
 			</GameParameters>
 		</SoundBank>
@@ -47,6 +49,10 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="148343756" Name="Health_Effects" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Health_Effects"/>
+				<AuxBus Id="1530676313" Name="Exterior_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Exterior_Rev"/>
+			</IncludedAuxBusses>
 			<GameParameters>
 				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
 			</GameParameters>
@@ -60,87 +66,111 @@
 					<IncludedMemoryFiles>
 						<File Id="224765308" Language="SFX">
 							<ShortName>Kria Voice Attack Short\Kria Voice Attack Short 6.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 6_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 6_84875D65.wem</Path>
 						</File>
 						<File Id="265810509" Language="SFX">
 							<ShortName>Kria Attack Swish\Kria Swish Attack 6.wav</ShortName>
-							<Path>SFX\Kria Attack Swish\Kria Swish Attack 6_10C4C929.wem</Path>
+							<Path>SFX\Kria Attack Swish\Kria Swish Attack 6_84875D65.wem</Path>
 						</File>
 						<File Id="322972428" Language="SFX">
 							<ShortName>Kria Voice Attack Short\Kria Voice Attack Short 3.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 3_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 3_84875D65.wem</Path>
 						</File>
 						<File Id="340268230" Language="SFX">
 							<ShortName>Kria Voice Attack Short\Kria Voice Attack Short 2.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 2_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 2_84875D65.wem</Path>
+						</File>
+						<File Id="388560509" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_002.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_002_3F895BFE.wem</Path>
 						</File>
 						<File Id="429387180" Language="SFX">
 							<ShortName>Kria Attack Swish\Kria Swish Attack 5.wav</ShortName>
-							<Path>SFX\Kria Attack Swish\Kria Swish Attack 5_10C4C929.wem</Path>
+							<Path>SFX\Kria Attack Swish\Kria Swish Attack 5_84875D65.wem</Path>
 						</File>
 						<File Id="437868091" Language="SFX">
 							<ShortName>Kria Voice Attack Short\Kria Voice Attack Short 4.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 4_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 4_84875D65.wem</Path>
 						</File>
 						<File Id="453963148" Language="SFX">
 							<ShortName>Kria Attack Swish\Kria Swish Attack 1.wav</ShortName>
-							<Path>SFX\Kria Attack Swish\Kria Swish Attack 1_10C4C929.wem</Path>
+							<Path>SFX\Kria Attack Swish\Kria Swish Attack 1_84875D65.wem</Path>
+						</File>
+						<File Id="519840405" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_005.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_005_3722C374.wem</Path>
 						</File>
 						<File Id="600916378" Language="SFX">
 							<ShortName>Kria Voice Attack Short\Kria Voice Attack Short 5.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 5_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 5_84875D65.wem</Path>
 						</File>
 						<File Id="801109135" Language="SFX">
 							<ShortName>Kria Attack Swish\Kria Swish Attack 4.wav</ShortName>
-							<Path>SFX\Kria Attack Swish\Kria Swish Attack 4_10C4C929.wem</Path>
+							<Path>SFX\Kria Attack Swish\Kria Swish Attack 4_84875D65.wem</Path>
 						</File>
 						<File Id="868961140" Language="SFX">
 							<ShortName>Kria Attack Swish\Kria Swish Attack 2.wav</ShortName>
-							<Path>SFX\Kria Attack Swish\Kria Swish Attack 2_10C4C929.wem</Path>
+							<Path>SFX\Kria Attack Swish\Kria Swish Attack 2_84875D65.wem</Path>
+						</File>
+						<File Id="939860250" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_001.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_001_459377C3.wem</Path>
 						</File>
 						<File Id="1019525211" Language="SFX">
 							<ShortName>Kria Voice Attack Short\Kria Voice Attack Short 1.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 1_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Attack Short\Kria Voice Attack Short 1_84875D65.wem</Path>
 						</File>
 						<File Id="1042560461" Language="SFX">
 							<ShortName>Kria Attack Swish\Kria Swish Attack 3.wav</ShortName>
-							<Path>SFX\Kria Attack Swish\Kria Swish Attack 3_10C4C929.wem</Path>
+							<Path>SFX\Kria Attack Swish\Kria Swish Attack 3_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4231639840" Name="Kria_Attack_Long" ObjectPath="\Events\Default Work Unit\Kria\Kria_Attack_Long">
 					<IncludedMemoryFiles>
+						<File Id="59344045" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_005.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_005_D17D8776.wem</Path>
+						</File>
 						<File Id="172914826" Language="SFX">
 							<ShortName>Kria Contrattacco Swish\Kria Contrattacco Swish 3.wav</ShortName>
-							<Path>SFX\Kria Contrattacco Swish\Kria Contrattacco Swish 3_F0A9930B.wem</Path>
+							<Path>SFX\Kria Contrattacco Swish\Kria Contrattacco Swish 3_19736F27.wem</Path>
 						</File>
 						<File Id="307115103" Language="SFX">
 							<ShortName>Kria Voice Attack Long 2.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Long 2_49C1CE1A.wem</Path>
+							<Path>SFX\Kria Voice Attack Long 2_F2C876E6.wem</Path>
 						</File>
 						<File Id="359368301" Language="SFX">
 							<ShortName>Kria Voice Attack Long 4.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Long 4_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Attack Long 4_84875D65.wem</Path>
 						</File>
 						<File Id="369993958" Language="SFX">
 							<ShortName>Kria Voice Attack Long 3.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Long 3_E57C38D1.wem</Path>
+							<Path>SFX\Kria Voice Attack Long 3_ACAA8EED.wem</Path>
+						</File>
+						<File Id="392108505" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_001.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_001_81DCCB5A.wem</Path>
 						</File>
 						<File Id="451164858" Language="SFX">
 							<ShortName>Kria Contrattacco Swish\Kria Contrattacco Swish 1.wav</ShortName>
-							<Path>SFX\Kria Contrattacco Swish\Kria Contrattacco Swish 1_689B3593.wem</Path>
+							<Path>SFX\Kria Contrattacco Swish\Kria Contrattacco Swish 1_EAD2CDE7.wem</Path>
 						</File>
 						<File Id="454782822" Language="SFX">
 							<ShortName>Kria Voice Attack Long 6.wav</ShortName>
-							<Path>SFX\Kria Voice Attack Long 6_C0FFBC75.wem</Path>
+							<Path>SFX\Kria Voice Attack Long 6_E781D431.wem</Path>
+						</File>
+						<File Id="566234743" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_002.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_002_84875D65.wem</Path>
 						</File>
 						<File Id="824725234" Language="SFX">
 							<ShortName>Kria Contrattacco Swish\Kria Contrattacco Swish 4.wav</ShortName>
-							<Path>SFX\Kria Contrattacco Swish\Kria Contrattacco Swish 4_10C4C929.wem</Path>
+							<Path>SFX\Kria Contrattacco Swish\Kria Contrattacco Swish 4_84875D65.wem</Path>
 						</File>
 						<File Id="871340194" Language="SFX">
 							<ShortName>Kria Contrattacco Swish\Kria Contrattacco Swish 2.wav</ShortName>
-							<Path>SFX\Kria Contrattacco Swish\Kria Contrattacco Swish 2_AF6F2041.wem</Path>
+							<Path>SFX\Kria Contrattacco Swish\Kria Contrattacco Swish 2_E6FF1E55.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -148,19 +178,39 @@
 					<IncludedMemoryFiles>
 						<File Id="12178361" Language="SFX">
 							<ShortName>kria_dash_swoosh_002.wav</ShortName>
-							<Path>SFX\kria_dash_swoosh_002_10C4C929.wem</Path>
+							<Path>SFX\kria_dash_swoosh_002_84875D65.wem</Path>
+						</File>
+						<File Id="23070145" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_004.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_004_84875D65.wem</Path>
 						</File>
 						<File Id="85630113" Language="SFX">
 							<ShortName>WHOOSH-SOFT_Bottom_Rocker.wav</ShortName>
-							<Path>SFX\WHOOSH-SOFT_Bottom_Rocker_B1B8AD2C.wem</Path>
+							<Path>SFX\WHOOSH-SOFT_Bottom_Rocker_EC84DB18.wem</Path>
+						</File>
+						<File Id="307463050" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_001.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_001_84875D65.wem</Path>
 						</File>
 						<File Id="434761913" Language="SFX">
 							<ShortName>kria_dash_swoosh_001.wav</ShortName>
-							<Path>SFX\kria_dash_swoosh_001_10C4C929.wem</Path>
+							<Path>SFX\kria_dash_swoosh_001_84875D65.wem</Path>
+						</File>
+						<File Id="566234743" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_002.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_002_84875D65.wem</Path>
 						</File>
 						<File Id="579163940" Language="SFX">
 							<ShortName>kria_dash_swoosh_003.wav</ShortName>
-							<Path>SFX\kria_dash_swoosh_003_10C4C929.wem</Path>
+							<Path>SFX\kria_dash_swoosh_003_84875D65.wem</Path>
+						</File>
+						<File Id="790628927" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_003.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_003_E015A4A7.wem</Path>
+						</File>
+						<File Id="799842317" Language="SFX">
+							<ShortName>kria_swoosh_magic\kria_swoosh_magic_005.wav</ShortName>
+							<Path>SFX\kria_swoosh_magic\kria_swoosh_magic_005_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -168,27 +218,27 @@
 					<IncludedMemoryFiles>
 						<File Id="252965665" Language="SFX">
 							<ShortName>kria_death_body_fall\kria_death_body_fall_001.wav</ShortName>
-							<Path>SFX\kria_death_body_fall\kria_death_body_fall_001_10C4C929.wem</Path>
+							<Path>SFX\kria_death_body_fall\kria_death_body_fall_001_84875D65.wem</Path>
 						</File>
 						<File Id="302464677" Language="SFX">
 							<ShortName>kria_death_body_fall\kria_death_body_fall_002.wav</ShortName>
-							<Path>SFX\kria_death_body_fall\kria_death_body_fall_002_10C4C929.wem</Path>
+							<Path>SFX\kria_death_body_fall\kria_death_body_fall_002_84875D65.wem</Path>
 						</File>
 						<File Id="408101386" Language="SFX">
 							<ShortName>kria_death_body_fall\kria_death_body_fall_003.wav</ShortName>
-							<Path>SFX\kria_death_body_fall\kria_death_body_fall_003_10C4C929.wem</Path>
+							<Path>SFX\kria_death_body_fall\kria_death_body_fall_003_84875D65.wem</Path>
 						</File>
 						<File Id="717447267" Language="SFX">
 							<ShortName>Kria Death 1.wav</ShortName>
-							<Path>SFX\Kria Death 1_65E505BC.wem</Path>
+							<Path>SFX\Kria Death 1_2A9CA260.wem</Path>
 						</File>
 						<File Id="761217789" Language="SFX">
 							<ShortName>Kria Death 3.wav</ShortName>
-							<Path>SFX\Kria Death 3_BE89EF14.wem</Path>
+							<Path>SFX\Kria Death 3_0A36C178.wem</Path>
 						</File>
 						<File Id="839484479" Language="SFX">
 							<ShortName>Kria Death 2.wav</ShortName>
-							<Path>SFX\Kria Death 2_10C4C929.wem</Path>
+							<Path>SFX\Kria Death 2_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -196,7 +246,11 @@
 					<IncludedMemoryFiles>
 						<File Id="587859985" Language="SFX">
 							<ShortName>XyloKriaHP.wav</ShortName>
-							<Path>SFX\XyloKriaHP_5F86597C.wem</Path>
+							<Path>SFX\XyloKriaHP_E1236198.wem</Path>
+						</File>
+						<File Id="745745718" Language="SFX">
+							<ShortName>kria_voice_breath_death_001.wav</ShortName>
+							<Path>SFX\kria_voice_breath_death_001_D898B6C9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -204,71 +258,71 @@
 					<IncludedMemoryFiles>
 						<File Id="62146140" Language="SFX">
 							<ShortName>esploratori_knife_impact_kria\esploratori_knife_impact_kria_001.wav</ShortName>
-							<Path>SFX\esploratori_knife_impact_kria\esploratori_knife_impact_kria_001_10C4C929.wem</Path>
+							<Path>SFX\esploratori_knife_impact_kria\esploratori_knife_impact_kria_001_84875D65.wem</Path>
 						</File>
 						<File Id="182312937" Language="SFX">
 							<ShortName>granchio_attack_weapon_impact_kria\granchio_attack_weapon_impact_kria_001.wav</ShortName>
-							<Path>SFX\granchio_attack_weapon_impact_kria\granchio_attack_weapon_impact_kria_001_10C4C929.wem</Path>
+							<Path>SFX\granchio_attack_weapon_impact_kria\granchio_attack_weapon_impact_kria_001_84875D65.wem</Path>
 						</File>
 						<File Id="284868072" Language="SFX">
 							<ShortName>esploratori_weapon_impact_kria\esploratori_weapon_impact_kria_001.wav</ShortName>
-							<Path>SFX\esploratori_weapon_impact_kria\esploratori_weapon_impact_kria_001_10C4C929.wem</Path>
+							<Path>SFX\esploratori_weapon_impact_kria\esploratori_weapon_impact_kria_001_84875D65.wem</Path>
 						</File>
 						<File Id="330896460" Language="SFX">
 							<ShortName>esploratori_weapon_impact_kria\esploratori_weapon_impact_kria_003.wav</ShortName>
-							<Path>SFX\esploratori_weapon_impact_kria\esploratori_weapon_impact_kria_003_10C4C929.wem</Path>
+							<Path>SFX\esploratori_weapon_impact_kria\esploratori_weapon_impact_kria_003_84875D65.wem</Path>
 						</File>
 						<File Id="382762842" Language="SFX">
 							<ShortName>granchio_attack_weapon_impact_kria\granchio_attack_weapon_impact_kria_002.wav</ShortName>
-							<Path>SFX\granchio_attack_weapon_impact_kria\granchio_attack_weapon_impact_kria_002_10C4C929.wem</Path>
+							<Path>SFX\granchio_attack_weapon_impact_kria\granchio_attack_weapon_impact_kria_002_84875D65.wem</Path>
 						</File>
 						<File Id="406817851" Language="SFX">
 							<ShortName>esploratori_weapon_impact_kria\esploratori_weapon_impact_kria_002.wav</ShortName>
-							<Path>SFX\esploratori_weapon_impact_kria\esploratori_weapon_impact_kria_002_10C4C929.wem</Path>
+							<Path>SFX\esploratori_weapon_impact_kria\esploratori_weapon_impact_kria_002_84875D65.wem</Path>
 						</File>
 						<File Id="454535165" Language="SFX">
 							<ShortName>Kria Voice Pain\Kria Voice Pain Hard 3.wav</ShortName>
-							<Path>SFX\Kria Voice Pain\Kria Voice Pain Hard 3_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Pain\Kria Voice Pain Hard 3_84875D65.wem</Path>
 						</File>
 						<File Id="468590794" Language="SFX">
 							<ShortName>Kria Voice Pain\Kria Voice Pain Hard 1.wav</ShortName>
-							<Path>SFX\Kria Voice Pain\Kria Voice Pain Hard 1_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Pain\Kria Voice Pain Hard 1_84875D65.wem</Path>
 						</File>
 						<File Id="586600667" Language="SFX">
 							<ShortName>granchio_attack_weapon_impact_kria\granchio_attack_weapon_impact_kria_003.wav</ShortName>
-							<Path>SFX\granchio_attack_weapon_impact_kria\granchio_attack_weapon_impact_kria_003_10C4C929.wem</Path>
+							<Path>SFX\granchio_attack_weapon_impact_kria\granchio_attack_weapon_impact_kria_003_84875D65.wem</Path>
 						</File>
 						<File Id="609454464" Language="SFX">
 							<ShortName>Kria Voice Pain\Kria Voice Pain Hard 2.wav</ShortName>
-							<Path>SFX\Kria Voice Pain\Kria Voice Pain Hard 2_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Pain\Kria Voice Pain Hard 2_84875D65.wem</Path>
 						</File>
 						<File Id="632273427" Language="SFX">
 							<ShortName>Kria Voice Pain\Kria Voice Pain Hard 4.wav</ShortName>
-							<Path>SFX\Kria Voice Pain\Kria Voice Pain Hard 4_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Pain\Kria Voice Pain Hard 4_84875D65.wem</Path>
 						</File>
 						<File Id="680364455" Language="SFX">
 							<ShortName>Kria Voice Pain\Kria Voice Pain Medium 2.wav</ShortName>
-							<Path>SFX\Kria Voice Pain\Kria Voice Pain Medium 2_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Pain\Kria Voice Pain Medium 2_84875D65.wem</Path>
 						</File>
 						<File Id="887987076" Language="SFX">
 							<ShortName>esploratori_knife_impact_kria\esploratori_knife_impact_kria_002.wav</ShortName>
-							<Path>SFX\esploratori_knife_impact_kria\esploratori_knife_impact_kria_002_10C4C929.wem</Path>
+							<Path>SFX\esploratori_knife_impact_kria\esploratori_knife_impact_kria_002_84875D65.wem</Path>
 						</File>
 						<File Id="920240407" Language="SFX">
 							<ShortName>esploratori_knife_impact_kria\esploratori_knife_impact_kria_003.wav</ShortName>
-							<Path>SFX\esploratori_knife_impact_kria\esploratori_knife_impact_kria_003_10C4C929.wem</Path>
+							<Path>SFX\esploratori_knife_impact_kria\esploratori_knife_impact_kria_003_84875D65.wem</Path>
 						</File>
 						<File Id="980897346" Language="SFX">
 							<ShortName>Kria Voice Pain\Kria Voice Pain Medium 3.wav</ShortName>
-							<Path>SFX\Kria Voice Pain\Kria Voice Pain Medium 3_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Pain\Kria Voice Pain Medium 3_84875D65.wem</Path>
 						</File>
 						<File Id="1001414928" Language="SFX">
 							<ShortName>Kria Voice Pain\Kria Voice Pain Medium 4.wav</ShortName>
-							<Path>SFX\Kria Voice Pain\Kria Voice Pain Medium 4_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Pain\Kria Voice Pain Medium 4_84875D65.wem</Path>
 						</File>
 						<File Id="1009755735" Language="SFX">
 							<ShortName>Kria Voice Pain\Kria Voice Pain Medium 1.wav</ShortName>
-							<Path>SFX\Kria Voice Pain\Kria Voice Pain Medium 1_10C4C929.wem</Path>
+							<Path>SFX\Kria Voice Pain\Kria Voice Pain Medium 1_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -299,15 +353,15 @@
 					<IncludedMemoryFiles>
 						<File Id="638623626" Language="SFX">
 							<ShortName>Kria Voice Breath ALL.wav</ShortName>
-							<Path>SFX\Kria Voice Breath ALL_4469839D.wem</Path>
+							<Path>SFX\Kria Voice Breath ALL_49F80A21.wem</Path>
 						</File>
 						<File Id="850636934" Language="SFX">
 							<ShortName>Kria Voice Breath ALL.wav</ShortName>
-							<Path>SFX\Kria Voice Breath ALL_363C5A04.wem</Path>
+							<Path>SFX\Kria Voice Breath ALL_BBAFCCA8.wem</Path>
 						</File>
 						<File Id="986400023" Language="SFX">
 							<ShortName>Kria Voice Breath ALL.wav</ShortName>
-							<Path>SFX\Kria Voice Breath ALL_1374CE96.wem</Path>
+							<Path>SFX\Kria Voice Breath ALL_36C59E5A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -315,23 +369,23 @@
 					<IncludedMemoryFiles>
 						<File Id="73504785" Language="SFX">
 							<ShortName>kria jump foley\Kria Jump Foley 2.wav</ShortName>
-							<Path>SFX\kria jump foley\Kria Jump Foley 2_13174AEA.wem</Path>
+							<Path>SFX\kria jump foley\Kria Jump Foley 2_0A82DA46.wem</Path>
 						</File>
 						<File Id="258720405" Language="SFX">
 							<ShortName>kria jump foley\Kria Jump Foley 1.wav</ShortName>
-							<Path>SFX\kria jump foley\Kria Jump Foley 1_1D3891C4.wem</Path>
+							<Path>SFX\kria jump foley\Kria Jump Foley 1_5B732130.wem</Path>
 						</File>
 						<File Id="412960502" Language="SFX">
 							<ShortName>kria_double_jump_swoosh_003.wav</ShortName>
-							<Path>SFX\kria_double_jump_swoosh_003_10C4C929.wem</Path>
+							<Path>SFX\kria_double_jump_swoosh_003_84875D65.wem</Path>
 						</File>
 						<File Id="632728624" Language="SFX">
 							<ShortName>kria_double_jump_swoosh_001.wav</ShortName>
-							<Path>SFX\kria_double_jump_swoosh_001_10C4C929.wem</Path>
+							<Path>SFX\kria_double_jump_swoosh_001_84875D65.wem</Path>
 						</File>
 						<File Id="719371656" Language="SFX">
 							<ShortName>kria_double_jump_swoosh_002.wav</ShortName>
-							<Path>SFX\kria_double_jump_swoosh_002_10C4C929.wem</Path>
+							<Path>SFX\kria_double_jump_swoosh_002_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -339,43 +393,43 @@
 					<IncludedMemoryFiles>
 						<File Id="155016145" Language="SFX">
 							<ShortName>kria_footsteps_jump_atterraggio_pietra_002.wav</ShortName>
-							<Path>SFX\kria_footsteps_jump_atterraggio_pietra_002_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_jump_atterraggio_pietra_002_84875D65.wem</Path>
 						</File>
 						<File Id="168425737" Language="SFX">
 							<ShortName>atterraggio foley\Kria Jump Atterraggio Foley 2.wav</ShortName>
-							<Path>SFX\atterraggio foley\Kria Jump Atterraggio Foley 2_90258F6D.wem</Path>
+							<Path>SFX\atterraggio foley\Kria Jump Atterraggio Foley 2_55DA7D19.wem</Path>
 						</File>
 						<File Id="175409675" Language="SFX">
 							<ShortName>kria_footsteps_jump_atterraggio_pietra_003.wav</ShortName>
-							<Path>SFX\kria_footsteps_jump_atterraggio_pietra_003_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_jump_atterraggio_pietra_003_84875D65.wem</Path>
 						</File>
 						<File Id="177754913" Language="SFX">
 							<ShortName>kria_footsteps_jump_atterraggio_acqua_001.wav</ShortName>
-							<Path>SFX\kria_footsteps_jump_atterraggio_acqua_001_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_jump_atterraggio_acqua_001_84875D65.wem</Path>
 						</File>
 						<File Id="185876416" Language="SFX">
 							<ShortName>kria_footsteps_jump_atterraggio_acqua_002.wav</ShortName>
-							<Path>SFX\kria_footsteps_jump_atterraggio_acqua_002_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_jump_atterraggio_acqua_002_84875D65.wem</Path>
 						</File>
 						<File Id="495856814" Language="SFX">
 							<ShortName>kria_footsteps_jump_atterraggio_pietra_001.wav</ShortName>
-							<Path>SFX\kria_footsteps_jump_atterraggio_pietra_001_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_jump_atterraggio_pietra_001_84875D65.wem</Path>
 						</File>
 						<File Id="505312690" Language="SFX">
 							<ShortName>kria_footsteps_jump_atterraggio_acqua_003.wav</ShortName>
-							<Path>SFX\kria_footsteps_jump_atterraggio_acqua_003_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_jump_atterraggio_acqua_003_84875D65.wem</Path>
 						</File>
 						<File Id="887573257" Language="SFX">
 							<ShortName>atterraggio foley\Kria Jump Atterraggio Foley 1.wav</ShortName>
-							<Path>SFX\atterraggio foley\Kria Jump Atterraggio Foley 1_147E29B2.wem</Path>
+							<Path>SFX\atterraggio foley\Kria Jump Atterraggio Foley 1_E4A9DAD6.wem</Path>
 						</File>
 						<File Id="904107664" Language="SFX">
 							<ShortName>atterraggio foley\Kria Jump Atterraggio Foley 1.wav</ShortName>
-							<Path>SFX\atterraggio foley\Kria Jump Atterraggio Foley 1_10C4C929.wem</Path>
+							<Path>SFX\atterraggio foley\Kria Jump Atterraggio Foley 1_84875D65.wem</Path>
 						</File>
 						<File Id="1004299447" Language="SFX">
 							<ShortName>atterraggio foley\Kria Jump Atterraggio Foley 2.wav</ShortName>
-							<Path>SFX\atterraggio foley\Kria Jump Atterraggio Foley 2_10C4C929.wem</Path>
+							<Path>SFX\atterraggio foley\Kria Jump Atterraggio Foley 2_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -403,67 +457,67 @@
 					<IncludedMemoryFiles>
 						<File Id="88089120" Language="SFX">
 							<ShortName>kria_footsteps_walk_acqua_003.wav</ShortName>
-							<Path>SFX\kria_footsteps_walk_acqua_003_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_walk_acqua_003_84875D65.wem</Path>
 						</File>
 						<File Id="88682764" Language="SFX">
 							<ShortName>kria_footsteps_run_pietra_004.wav</ShortName>
-							<Path>SFX\kria_footsteps_run_pietra_004_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_run_pietra_004_84875D65.wem</Path>
 						</File>
 						<File Id="104623873" Language="SFX">
 							<ShortName>kria_footsteps_walk_pietra_004.wav</ShortName>
-							<Path>SFX\kria_footsteps_walk_pietra_004_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_walk_pietra_004_84875D65.wem</Path>
 						</File>
 						<File Id="116967474" Language="SFX">
 							<ShortName>kria_footsteps_walk_pietra_001.wav</ShortName>
-							<Path>SFX\kria_footsteps_walk_pietra_001_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_walk_pietra_001_84875D65.wem</Path>
 						</File>
 						<File Id="165678167" Language="SFX">
 							<ShortName>kria_footsteps_run_acqua_002.wav</ShortName>
-							<Path>SFX\kria_footsteps_run_acqua_002_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_run_acqua_002_84875D65.wem</Path>
 						</File>
 						<File Id="174626729" Language="SFX">
 							<ShortName>kria_footsteps_run_pietra_003.wav</ShortName>
-							<Path>SFX\kria_footsteps_run_pietra_003_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_run_pietra_003_84875D65.wem</Path>
 						</File>
 						<File Id="189794368" Language="SFX">
 							<ShortName>kria_footsteps_walk_acqua_001.wav</ShortName>
-							<Path>SFX\kria_footsteps_walk_acqua_001_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_walk_acqua_001_84875D65.wem</Path>
 						</File>
 						<File Id="190978072" Language="SFX">
 							<ShortName>kria_footsteps_run_acqua_001.wav</ShortName>
-							<Path>SFX\kria_footsteps_run_acqua_001_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_run_acqua_001_84875D65.wem</Path>
 						</File>
 						<File Id="354511679" Language="SFX">
 							<ShortName>kria_footsteps_walk_pietra_003.wav</ShortName>
-							<Path>SFX\kria_footsteps_walk_pietra_003_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_walk_pietra_003_84875D65.wem</Path>
 						</File>
 						<File Id="394112676" Language="SFX">
 							<ShortName>kria_footsteps_run_pietra_002.wav</ShortName>
-							<Path>SFX\kria_footsteps_run_pietra_002_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_run_pietra_002_84875D65.wem</Path>
 						</File>
 						<File Id="548637284" Language="SFX">
 							<ShortName>kria_footsteps_run_acqua_004.wav</ShortName>
-							<Path>SFX\kria_footsteps_run_acqua_004_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_run_acqua_004_84875D65.wem</Path>
 						</File>
 						<File Id="658663737" Language="SFX">
 							<ShortName>kria_footsteps_walk_acqua_002.wav</ShortName>
-							<Path>SFX\kria_footsteps_walk_acqua_002_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_walk_acqua_002_84875D65.wem</Path>
 						</File>
 						<File Id="672933753" Language="SFX">
 							<ShortName>kria_footsteps_walk_acqua_004.wav</ShortName>
-							<Path>SFX\kria_footsteps_walk_acqua_004_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_walk_acqua_004_84875D65.wem</Path>
 						</File>
 						<File Id="751187732" Language="SFX">
 							<ShortName>kria_footsteps_run_pietra_001.wav</ShortName>
-							<Path>SFX\kria_footsteps_run_pietra_001_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_run_pietra_001_84875D65.wem</Path>
 						</File>
 						<File Id="809378459" Language="SFX">
 							<ShortName>kria_footsteps_walk_pietra_002.wav</ShortName>
-							<Path>SFX\kria_footsteps_walk_pietra_002_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_walk_pietra_002_84875D65.wem</Path>
 						</File>
 						<File Id="941966426" Language="SFX">
 							<ShortName>kria_footsteps_run_acqua_003.wav</ShortName>
-							<Path>SFX\kria_footsteps_run_acqua_003_10C4C929.wem</Path>
+							<Path>SFX\kria_footsteps_run_acqua_003_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -513,43 +567,43 @@
 					<IncludedMemoryFiles>
 						<File Id="52198116" Language="SFX">
 							<ShortName>Kria_Parata_Medium_001.wav</ShortName>
-							<Path>SFX\Kria_Parata_Medium_001_10C4C929.wem</Path>
+							<Path>SFX\Kria_Parata_Medium_001_84875D65.wem</Path>
 						</File>
 						<File Id="258188559" Language="SFX">
 							<ShortName>Kria_Voice_Parata\Kria Voice Pain Soft 3.wav</ShortName>
-							<Path>SFX\Kria_Voice_Parata\Kria Voice Pain Soft 3_10C4C929.wem</Path>
+							<Path>SFX\Kria_Voice_Parata\Kria Voice Pain Soft 3_84875D65.wem</Path>
 						</File>
 						<File Id="341287333" Language="SFX">
 							<ShortName>Kria_Parata_Light_001.wav</ShortName>
-							<Path>SFX\Kria_Parata_Light_001_10C4C929.wem</Path>
+							<Path>SFX\Kria_Parata_Light_001_84875D65.wem</Path>
 						</File>
 						<File Id="376146744" Language="SFX">
 							<ShortName>Kria_Parata_Medium_002.wav</ShortName>
-							<Path>SFX\Kria_Parata_Medium_002_10C4C929.wem</Path>
+							<Path>SFX\Kria_Parata_Medium_002_84875D65.wem</Path>
 						</File>
 						<File Id="500900643" Language="SFX">
 							<ShortName>Kria_Parata_Heavy_001.wav</ShortName>
-							<Path>SFX\Kria_Parata_Heavy_001_10C4C929.wem</Path>
+							<Path>SFX\Kria_Parata_Heavy_001_84875D65.wem</Path>
 						</File>
 						<File Id="575315880" Language="SFX">
 							<ShortName>Kria_Parata_Medium_003.wav</ShortName>
-							<Path>SFX\Kria_Parata_Medium_003_10C4C929.wem</Path>
+							<Path>SFX\Kria_Parata_Medium_003_84875D65.wem</Path>
 						</File>
 						<File Id="688529125" Language="SFX">
 							<ShortName>Kria_Voice_Parata\Kria Voice Pain Soft 6.wav</ShortName>
-							<Path>SFX\Kria_Voice_Parata\Kria Voice Pain Soft 6_10C4C929.wem</Path>
+							<Path>SFX\Kria_Voice_Parata\Kria Voice Pain Soft 6_84875D65.wem</Path>
 						</File>
 						<File Id="688587620" Language="SFX">
 							<ShortName>Kria_Voice_Parata\Kria Voice Pain Soft 5.wav</ShortName>
-							<Path>SFX\Kria_Voice_Parata\Kria Voice Pain Soft 5_10C4C929.wem</Path>
+							<Path>SFX\Kria_Voice_Parata\Kria Voice Pain Soft 5_84875D65.wem</Path>
 						</File>
 						<File Id="813198475" Language="SFX">
 							<ShortName>Kria_Voice_Parata\Kria Voice Pain Soft 2.wav</ShortName>
-							<Path>SFX\Kria_Voice_Parata\Kria Voice Pain Soft 2_10C4C929.wem</Path>
+							<Path>SFX\Kria_Voice_Parata\Kria Voice Pain Soft 2_84875D65.wem</Path>
 						</File>
 						<File Id="1009255095" Language="SFX">
 							<ShortName>Kria_Parata_Heavy_002.wav</ShortName>
-							<Path>SFX\Kria_Parata_Heavy_002_10C4C929.wem</Path>
+							<Path>SFX\Kria_Parata_Heavy_002_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -557,87 +611,87 @@
 					<IncludedMemoryFiles>
 						<File Id="18540156" Language="SFX">
 							<ShortName>Kria_Attack_Impact_Weapon_Coral_001.wav</ShortName>
-							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_001_10C4C929.wem</Path>
+							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_001_84875D65.wem</Path>
 						</File>
 						<File Id="22536588" Language="SFX">
 							<ShortName>Kria_Attack_Impact_Weapon_Coral_003.wav</ShortName>
-							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_003_10C4C929.wem</Path>
+							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_003_84875D65.wem</Path>
 						</File>
 						<File Id="189098143" Language="SFX">
 							<ShortName>kria_weapon_impact_medusa\kria_weapon_impact_medusa_light_003.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_light_003_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_light_003_84875D65.wem</Path>
 						</File>
 						<File Id="284584703" Language="SFX">
 							<ShortName>kria_impact_weapon_granchio_light_002.wav</ShortName>
-							<Path>SFX\kria_impact_weapon_granchio_light_002_10C4C929.wem</Path>
+							<Path>SFX\kria_impact_weapon_granchio_light_002_84875D65.wem</Path>
 						</File>
 						<File Id="296465787" Language="SFX">
 							<ShortName>kria_impact_weapon_granchio_light_001.wav</ShortName>
-							<Path>SFX\kria_impact_weapon_granchio_light_001_10C4C929.wem</Path>
+							<Path>SFX\kria_impact_weapon_granchio_light_001_84875D65.wem</Path>
 						</File>
 						<File Id="314338101" Language="SFX">
 							<ShortName>kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_heavy_001.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_heavy_001_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_heavy_001_84875D65.wem</Path>
 						</File>
 						<File Id="375024379" Language="SFX">
 							<ShortName>kria_impact_weapon_granchio_light_003.wav</ShortName>
-							<Path>SFX\kria_impact_weapon_granchio_light_003_10C4C929.wem</Path>
+							<Path>SFX\kria_impact_weapon_granchio_light_003_84875D65.wem</Path>
 						</File>
 						<File Id="436780446" Language="SFX">
 							<ShortName>kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_light_003.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_light_003_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_light_003_84875D65.wem</Path>
 						</File>
 						<File Id="456831944" Language="SFX">
 							<ShortName>kria_weapon_impact_medusa\kria_weapon_impact_medusa_light_001.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_light_001_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_light_001_84875D65.wem</Path>
 						</File>
 						<File Id="477948694" Language="SFX">
 							<ShortName>kria_impact_weapon_granchio_heavy_002.wav</ShortName>
-							<Path>SFX\kria_impact_weapon_granchio_heavy_002_10C4C929.wem</Path>
+							<Path>SFX\kria_impact_weapon_granchio_heavy_002_84875D65.wem</Path>
 						</File>
 						<File Id="495918452" Language="SFX">
 							<ShortName>kria_weapon_impact_medusa\kria_weapon_impact_medusa_heavy_001.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_heavy_001_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_heavy_001_84875D65.wem</Path>
 						</File>
 						<File Id="588026044" Language="SFX">
 							<ShortName>kria_weapon_impact_medusa\kria_weapon_impact_medusa_light_002.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_light_002_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_light_002_84875D65.wem</Path>
 						</File>
 						<File Id="630270714" Language="SFX">
 							<ShortName>Weapon_Hit_Ice\Kria Hit Pietra 2.wav</ShortName>
-							<Path>SFX\Weapon_Hit_Ice\Kria Hit Pietra 2_10C4C929.wem</Path>
+							<Path>SFX\Weapon_Hit_Ice\Kria Hit Pietra 2_84875D65.wem</Path>
 						</File>
 						<File Id="660582485" Language="SFX">
 							<ShortName>kria_weapon_impact_medusa\kria_weapon_impact_medusa_heavy_002.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_heavy_002_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_medusa\kria_weapon_impact_medusa_heavy_002_84875D65.wem</Path>
 						</File>
 						<File Id="666423206" Language="SFX">
 							<ShortName>Kria_Attack_Impact_Weapon_Coral_002.wav</ShortName>
-							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_002_10C4C929.wem</Path>
+							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_002_84875D65.wem</Path>
 						</File>
 						<File Id="775401167" Language="SFX">
 							<ShortName>kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_heavy_003.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_heavy_003_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_heavy_003_84875D65.wem</Path>
 						</File>
 						<File Id="794423929" Language="SFX">
 							<ShortName>Weapon_Hit_Ice\Kria Hit Pietra 1.wav</ShortName>
-							<Path>SFX\Weapon_Hit_Ice\Kria Hit Pietra 1_10C4C929.wem</Path>
+							<Path>SFX\Weapon_Hit_Ice\Kria Hit Pietra 1_84875D65.wem</Path>
 						</File>
 						<File Id="808014093" Language="SFX">
 							<ShortName>kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_heavy_002.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_heavy_002_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_heavy_002_84875D65.wem</Path>
 						</File>
 						<File Id="831665452" Language="SFX">
 							<ShortName>kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_light_001.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_light_001_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_light_001_84875D65.wem</Path>
 						</File>
 						<File Id="860863110" Language="SFX">
 							<ShortName>kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_light_002.wav</ShortName>
-							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_light_002_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_impact_esploratore\kria_weapon_impact_esploratore_light_002_84875D65.wem</Path>
 						</File>
 						<File Id="866349486" Language="SFX">
 							<ShortName>kria_impact_weapon_granchio_heavy_001.wav</ShortName>
-							<Path>SFX\kria_impact_weapon_granchio_heavy_001_10C4C929.wem</Path>
+							<Path>SFX\kria_impact_weapon_granchio_heavy_001_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -688,27 +742,27 @@
 					<IncludedMemoryFiles>
 						<File Id="565304242" Language="SFX">
 							<ShortName>kria_weapon_unsheathe\kria_weapon_unsheathe_003.wav</ShortName>
-							<Path>SFX\kria_weapon_unsheathe\kria_weapon_unsheathe_003_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_unsheathe\kria_weapon_unsheathe_003_84875D65.wem</Path>
 						</File>
 						<File Id="593335480" Language="SFX">
 							<ShortName>kria_weapon_sheathe\kria_weapon_sheathe_003.wav</ShortName>
-							<Path>SFX\kria_weapon_sheathe\kria_weapon_sheathe_003_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_sheathe\kria_weapon_sheathe_003_84875D65.wem</Path>
 						</File>
 						<File Id="667131239" Language="SFX">
 							<ShortName>kria_weapon_unsheathe\kria_weapon_unsheathe_001.wav</ShortName>
-							<Path>SFX\kria_weapon_unsheathe\kria_weapon_unsheathe_001_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_unsheathe\kria_weapon_unsheathe_001_84875D65.wem</Path>
 						</File>
 						<File Id="851556554" Language="SFX">
 							<ShortName>kria_weapon_unsheathe\kria_weapon_unsheathe_002.wav</ShortName>
-							<Path>SFX\kria_weapon_unsheathe\kria_weapon_unsheathe_002_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_unsheathe\kria_weapon_unsheathe_002_84875D65.wem</Path>
 						</File>
 						<File Id="967242380" Language="SFX">
 							<ShortName>kria_weapon_sheathe\kria_weapon_sheathe_002.wav</ShortName>
-							<Path>SFX\kria_weapon_sheathe\kria_weapon_sheathe_002_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_sheathe\kria_weapon_sheathe_002_84875D65.wem</Path>
 						</File>
 						<File Id="1019234706" Language="SFX">
 							<ShortName>kria_weapon_sheathe\kria_weapon_sheathe_001.wav</ShortName>
-							<Path>SFX\kria_weapon_sheathe\kria_weapon_sheathe_001_10C4C929.wem</Path>
+							<Path>SFX\kria_weapon_sheathe\kria_weapon_sheathe_001_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -753,27 +807,27 @@
 					<IncludedMemoryFiles>
 						<File Id="212915906" Language="SFX">
 							<ShortName>esploratore_voice_attack\esploratore_voice_attack_003.wav</ShortName>
-							<Path>SFX\esploratore_voice_attack\esploratore_voice_attack_003_10C4C929.wem</Path>
+							<Path>SFX\esploratore_voice_attack\esploratore_voice_attack_003_84875D65.wem</Path>
 						</File>
 						<File Id="442627648" Language="SFX">
 							<ShortName>esploratore_voice_attack\esploratore_voice_attack_001.wav</ShortName>
-							<Path>SFX\esploratore_voice_attack\esploratore_voice_attack_001_10C4C929.wem</Path>
+							<Path>SFX\esploratore_voice_attack\esploratore_voice_attack_001_84875D65.wem</Path>
 						</File>
 						<File Id="645055123" Language="SFX">
 							<ShortName>esploratori_attack_swoosh\esploratori_attack_swoosh_001.wav</ShortName>
-							<Path>SFX\esploratori_attack_swoosh\esploratori_attack_swoosh_001_10C4C929.wem</Path>
+							<Path>SFX\esploratori_attack_swoosh\esploratori_attack_swoosh_001_84875D65.wem</Path>
 						</File>
 						<File Id="786483191" Language="SFX">
 							<ShortName>esploratore_voice_attack\esploratore_voice_attack_002.wav</ShortName>
-							<Path>SFX\esploratore_voice_attack\esploratore_voice_attack_002_10C4C929.wem</Path>
+							<Path>SFX\esploratore_voice_attack\esploratore_voice_attack_002_84875D65.wem</Path>
 						</File>
 						<File Id="994241173" Language="SFX">
 							<ShortName>esploratori_attack_swoosh\esploratori_attack_swoosh_003.wav</ShortName>
-							<Path>SFX\esploratori_attack_swoosh\esploratori_attack_swoosh_003_10C4C929.wem</Path>
+							<Path>SFX\esploratori_attack_swoosh\esploratori_attack_swoosh_003_84875D65.wem</Path>
 						</File>
 						<File Id="1002887201" Language="SFX">
 							<ShortName>esploratori_attack_swoosh\esploratori_attack_swoosh_002.wav</ShortName>
-							<Path>SFX\esploratori_attack_swoosh\esploratori_attack_swoosh_002_10C4C929.wem</Path>
+							<Path>SFX\esploratori_attack_swoosh\esploratori_attack_swoosh_002_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -781,15 +835,15 @@
 					<IncludedMemoryFiles>
 						<File Id="35047141" Language="SFX">
 							<ShortName>Esploratore_Voice Damage\Esploratore_voice_damage_001.wav</ShortName>
-							<Path>SFX\Esploratore_Voice Damage\Esploratore_voice_damage_001_0B4606A1.wem</Path>
+							<Path>SFX\Esploratore_Voice Damage\Esploratore_voice_damage_001_726563BD.wem</Path>
 						</File>
 						<File Id="543413473" Language="SFX">
 							<ShortName>Esploratore_Voice Damage\Esploratore_voice_damage_002.wav</ShortName>
-							<Path>SFX\Esploratore_Voice Damage\Esploratore_voice_damage_002_3F522B30.wem</Path>
+							<Path>SFX\Esploratore_Voice Damage\Esploratore_voice_damage_002_672A3374.wem</Path>
 						</File>
 						<File Id="997040885" Language="SFX">
 							<ShortName>Esploratore_Voice Damage\Esploratore_voice_damage_003.wav</ShortName>
-							<Path>SFX\Esploratore_Voice Damage\Esploratore_voice_damage_003_53D3179F.wem</Path>
+							<Path>SFX\Esploratore_Voice Damage\Esploratore_voice_damage_003_A8A1CB83.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -797,15 +851,15 @@
 					<IncludedMemoryFiles>
 						<File Id="359531019" Language="SFX">
 							<ShortName>Esploratore_Voice_Death\Esploratore_Death_002.wav</ShortName>
-							<Path>SFX\Esploratore_Voice_Death\Esploratore_Death_002_10C4C929.wem</Path>
+							<Path>SFX\Esploratore_Voice_Death\Esploratore_Death_002_84875D65.wem</Path>
 						</File>
 						<File Id="568249151" Language="SFX">
 							<ShortName>Esploratore_Voice_Death\Esploratore_Death_003.wav</ShortName>
-							<Path>SFX\Esploratore_Voice_Death\Esploratore_Death_003_10C4C929.wem</Path>
+							<Path>SFX\Esploratore_Voice_Death\Esploratore_Death_003_84875D65.wem</Path>
 						</File>
 						<File Id="965948847" Language="SFX">
 							<ShortName>Esploratore_Voice_Death\Esploratore_Death_001.wav</ShortName>
-							<Path>SFX\Esploratore_Voice_Death\Esploratore_Death_001_10C4C929.wem</Path>
+							<Path>SFX\Esploratore_Voice_Death\Esploratore_Death_001_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -813,15 +867,15 @@
 					<IncludedMemoryFiles>
 						<File Id="900975413" Language="SFX">
 							<ShortName>esploratori_weapon_impact_ground\esploratori_weapon_impact_ground_002.wav</ShortName>
-							<Path>SFX\esploratori_weapon_impact_ground\esploratori_weapon_impact_ground_002_10C4C929.wem</Path>
+							<Path>SFX\esploratori_weapon_impact_ground\esploratori_weapon_impact_ground_002_84875D65.wem</Path>
 						</File>
 						<File Id="970176950" Language="SFX">
 							<ShortName>esploratori_weapon_impact_ground\esploratori_weapon_impact_ground_001.wav</ShortName>
-							<Path>SFX\esploratori_weapon_impact_ground\esploratori_weapon_impact_ground_001_10C4C929.wem</Path>
+							<Path>SFX\esploratori_weapon_impact_ground\esploratori_weapon_impact_ground_001_84875D65.wem</Path>
 						</File>
 						<File Id="1010879897" Language="SFX">
 							<ShortName>esploratori_weapon_impact_ground\esploratori_weapon_impact_ground_003.wav</ShortName>
-							<Path>SFX\esploratori_weapon_impact_ground\esploratori_weapon_impact_ground_003_10C4C929.wem</Path>
+							<Path>SFX\esploratori_weapon_impact_ground\esploratori_weapon_impact_ground_003_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -829,47 +883,47 @@
 					<IncludedMemoryFiles>
 						<File Id="303781483" Language="SFX">
 							<ShortName>Esploratori_Voice_Idle_003.wav</ShortName>
-							<Path>SFX\Esploratori_Voice_Idle_003_10C4C929.wem</Path>
+							<Path>SFX\Esploratori_Voice_Idle_003_84875D65.wem</Path>
 						</File>
 						<File Id="454347386" Language="SFX">
 							<ShortName>esploratori_footsteps_pietra\esploratori_footsteps_pietra_004.wav</ShortName>
-							<Path>SFX\esploratori_footsteps_pietra\esploratori_footsteps_pietra_004_10C4C929.wem</Path>
+							<Path>SFX\esploratori_footsteps_pietra\esploratori_footsteps_pietra_004_84875D65.wem</Path>
 						</File>
 						<File Id="465308415" Language="SFX">
 							<ShortName>esploratori_footsteps_acqua\esploratori_footsteps_acqua_004.wav</ShortName>
-							<Path>SFX\esploratori_footsteps_acqua\esploratori_footsteps_acqua_004_10C4C929.wem</Path>
+							<Path>SFX\esploratori_footsteps_acqua\esploratori_footsteps_acqua_004_84875D65.wem</Path>
 						</File>
 						<File Id="499169354" Language="SFX">
 							<ShortName>Esploratori_Voice_Idle_001.wav</ShortName>
-							<Path>SFX\Esploratori_Voice_Idle_001_10C4C929.wem</Path>
+							<Path>SFX\Esploratori_Voice_Idle_001_84875D65.wem</Path>
 						</File>
 						<File Id="564207664" Language="SFX">
 							<ShortName>esploratori_footsteps_pietra\esploratori_footsteps_pietra_002.wav</ShortName>
-							<Path>SFX\esploratori_footsteps_pietra\esploratori_footsteps_pietra_002_10C4C929.wem</Path>
+							<Path>SFX\esploratori_footsteps_pietra\esploratori_footsteps_pietra_002_84875D65.wem</Path>
 						</File>
 						<File Id="612091999" Language="SFX">
 							<ShortName>esploratori_footsteps_acqua\esploratori_footsteps_acqua_001.wav</ShortName>
-							<Path>SFX\esploratori_footsteps_acqua\esploratori_footsteps_acqua_001_10C4C929.wem</Path>
+							<Path>SFX\esploratori_footsteps_acqua\esploratori_footsteps_acqua_001_84875D65.wem</Path>
 						</File>
 						<File Id="627741011" Language="SFX">
 							<ShortName>esploratori_footsteps_pietra\esploratori_footsteps_pietra_001.wav</ShortName>
-							<Path>SFX\esploratori_footsteps_pietra\esploratori_footsteps_pietra_001_10C4C929.wem</Path>
+							<Path>SFX\esploratori_footsteps_pietra\esploratori_footsteps_pietra_001_84875D65.wem</Path>
 						</File>
 						<File Id="850740479" Language="SFX">
 							<ShortName>esploratori_footsteps_acqua\esploratori_footsteps_acqua_003.wav</ShortName>
-							<Path>SFX\esploratori_footsteps_acqua\esploratori_footsteps_acqua_003_10C4C929.wem</Path>
+							<Path>SFX\esploratori_footsteps_acqua\esploratori_footsteps_acqua_003_84875D65.wem</Path>
 						</File>
 						<File Id="865433883" Language="SFX">
 							<ShortName>esploratori_footsteps_acqua\esploratori_footsteps_acqua_002.wav</ShortName>
-							<Path>SFX\esploratori_footsteps_acqua\esploratori_footsteps_acqua_002_10C4C929.wem</Path>
+							<Path>SFX\esploratori_footsteps_acqua\esploratori_footsteps_acqua_002_84875D65.wem</Path>
 						</File>
 						<File Id="984237522" Language="SFX">
 							<ShortName>Esploratori_Voice_Idle_002.wav</ShortName>
-							<Path>SFX\Esploratori_Voice_Idle_002_10C4C929.wem</Path>
+							<Path>SFX\Esploratori_Voice_Idle_002_84875D65.wem</Path>
 						</File>
 						<File Id="1068306569" Language="SFX">
 							<ShortName>esploratori_footsteps_pietra\esploratori_footsteps_pietra_003.wav</ShortName>
-							<Path>SFX\esploratori_footsteps_pietra\esploratori_footsteps_pietra_003_10C4C929.wem</Path>
+							<Path>SFX\esploratori_footsteps_pietra\esploratori_footsteps_pietra_003_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -906,63 +960,59 @@
 					<IncludedMemoryFiles>
 						<File Id="12961074" Language="SFX">
 							<ShortName>granchio_attack_swoosh_002.wav</ShortName>
-							<Path>SFX\granchio_attack_swoosh_002_10C4C929.wem</Path>
+							<Path>SFX\granchio_attack_swoosh_002_84875D65.wem</Path>
 						</File>
-						<File Id="405979766" Language="SFX">
-							<ShortName>Granchio Noise\Granchio Noise 1.wav</ShortName>
-							<Path>SFX\Granchio Noise\Granchio Noise 1_26CF6064.wem</Path>
+						<File Id="130230092" Language="SFX">
+							<ShortName>granchio_voice_attack_002.wav</ShortName>
+							<Path>SFX\granchio_voice_attack_002_5A08955B.wem</Path>
+						</File>
+						<File Id="418510054" Language="SFX">
+							<ShortName>granchio_voice_attack_001.wav</ShortName>
+							<Path>SFX\granchio_voice_attack_001_2287065B.wem</Path>
 						</File>
 						<File Id="691002779" Language="SFX">
 							<ShortName>granchio_attack_swoosh_001.wav</ShortName>
-							<Path>SFX\granchio_attack_swoosh_001_10C4C929.wem</Path>
+							<Path>SFX\granchio_attack_swoosh_001_84875D65.wem</Path>
 						</File>
-						<File Id="749045370" Language="SFX">
-							<ShortName>Granchio Verso\Granchio Verso 2.wav</ShortName>
-							<Path>SFX\Granchio Verso\Granchio Verso 2_10C4C929.wem</Path>
-						</File>
-						<File Id="794758532" Language="SFX">
-							<ShortName>Granchio Verso\Granchio Verso 1.wav</ShortName>
-							<Path>SFX\Granchio Verso\Granchio Verso 1_10C4C929.wem</Path>
+						<File Id="861890406" Language="SFX">
+							<ShortName>granchio_voice_attack_003.wav</ShortName>
+							<Path>SFX\granchio_voice_attack_003_480DDDB6.wem</Path>
 						</File>
 						<File Id="895107934" Language="SFX">
 							<ShortName>granchio_attack_swoosh_003.wav</ShortName>
-							<Path>SFX\granchio_attack_swoosh_003_10C4C929.wem</Path>
-						</File>
-						<File Id="1031976942" Language="SFX">
-							<ShortName>Granchio Noise\Granchio Noise 2.wav</ShortName>
-							<Path>SFX\Granchio Noise\Granchio Noise 2_2400BC3E.wem</Path>
+							<Path>SFX\granchio_attack_swoosh_003_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4264334010" Name="Granchio_Damage" ObjectPath="\Events\Default Work Unit\Enemies\Granchio\Granchio_Damage">
 					<IncludedMemoryFiles>
-						<File Id="53596168" Language="SFX">
-							<ShortName>Granchio_Voice_Damage\granchio_voice_damage_002.wav</ShortName>
-							<Path>SFX\Granchio_Voice_Damage\granchio_voice_damage_002_10C4C929.wem</Path>
+						<File Id="6884329" Language="SFX">
+							<ShortName>granchio_voice_pain_001.wav</ShortName>
+							<Path>SFX\granchio_voice_pain_001_BE76A15A.wem</Path>
 						</File>
-						<File Id="204391435" Language="SFX">
-							<ShortName>Granchio_Voice_Damage\granchio_voice_damage_001.wav</ShortName>
-							<Path>SFX\Granchio_Voice_Damage\granchio_voice_damage_001_10C4C929.wem</Path>
+						<File Id="796462753" Language="SFX">
+							<ShortName>granchio_voice_pain_003.wav</ShortName>
+							<Path>SFX\granchio_voice_pain_003_F2D6ED8A.wem</Path>
 						</File>
-						<File Id="693338946" Language="SFX">
-							<ShortName>Granchio_Voice_Damage\granchio_voice_damage_003.wav</ShortName>
-							<Path>SFX\Granchio_Voice_Damage\granchio_voice_damage_003_10C4C929.wem</Path>
+						<File Id="819581255" Language="SFX">
+							<ShortName>granchio_voice_pain_002.wav</ShortName>
+							<Path>SFX\granchio_voice_pain_002_B53086C8.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="102964689" Name="Granchio_Death" ObjectPath="\Events\Default Work Unit\Enemies\Granchio\Granchio_Death">
 					<IncludedMemoryFiles>
-						<File Id="400655385" Language="SFX">
-							<ShortName>Granchio Death\Granchio Death 2.wav</ShortName>
-							<Path>SFX\Granchio Death\Granchio Death 2_10C4C929.wem</Path>
+						<File Id="863171013" Language="SFX">
+							<ShortName>granchio_voice_death_003.wav</ShortName>
+							<Path>SFX\granchio_voice_death_003_71344D17.wem</Path>
 						</File>
-						<File Id="765363308" Language="SFX">
-							<ShortName>Granchio Death\Granchio Death 1.wav</ShortName>
-							<Path>SFX\Granchio Death\Granchio Death 1_10C4C929.wem</Path>
+						<File Id="920468868" Language="SFX">
+							<ShortName>granchio_voice_death_001.wav</ShortName>
+							<Path>SFX\granchio_voice_death_001_9EE298F6.wem</Path>
 						</File>
-						<File Id="930341940" Language="SFX">
-							<ShortName>Granchio Death\Granchio Death 3.wav</ShortName>
-							<Path>SFX\Granchio Death\Granchio Death 3_10C4C929.wem</Path>
+						<File Id="1037463584" Language="SFX">
+							<ShortName>granchio_voice_death_002.wav</ShortName>
+							<Path>SFX\granchio_voice_death_002_19E57B30.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -970,15 +1020,15 @@
 					<IncludedMemoryFiles>
 						<File Id="129233506" Language="SFX">
 							<ShortName>granchio_attack_weapon_impact_ground\granchio_attack_weapon_impact_ground_002.wav</ShortName>
-							<Path>SFX\granchio_attack_weapon_impact_ground\granchio_attack_weapon_impact_ground_002_10C4C929.wem</Path>
+							<Path>SFX\granchio_attack_weapon_impact_ground\granchio_attack_weapon_impact_ground_002_84875D65.wem</Path>
 						</File>
 						<File Id="507450377" Language="SFX">
 							<ShortName>granchio_attack_weapon_impact_ground\granchio_attack_weapon_impact_ground_001.wav</ShortName>
-							<Path>SFX\granchio_attack_weapon_impact_ground\granchio_attack_weapon_impact_ground_001_10C4C929.wem</Path>
+							<Path>SFX\granchio_attack_weapon_impact_ground\granchio_attack_weapon_impact_ground_001_84875D65.wem</Path>
 						</File>
 						<File Id="821246239" Language="SFX">
 							<ShortName>granchio_attack_weapon_impact_ground\granchio_attack_weapon_impact_ground_003.wav</ShortName>
-							<Path>SFX\granchio_attack_weapon_impact_ground\granchio_attack_weapon_impact_ground_003_10C4C929.wem</Path>
+							<Path>SFX\granchio_attack_weapon_impact_ground\granchio_attack_weapon_impact_ground_003_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -986,50 +1036,55 @@
 					<IncludedMemoryFiles>
 						<File Id="1212766" Language="SFX">
 							<ShortName>granchio_footsteps_water\granchio_footsteps_water_003.wav</ShortName>
-							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_003_10C4C929.wem</Path>
+							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_003_84875D65.wem</Path>
 						</File>
 						<File Id="40850543" Language="SFX">
 							<ShortName>granchio_footsteps_stone_002.wav</ShortName>
-							<Path>SFX\granchio_footsteps_stone_002_10C4C929.wem</Path>
+							<Path>SFX\granchio_footsteps_stone_002_84875D65.wem</Path>
 						</File>
 						<File Id="82178294" Language="SFX">
 							<ShortName>granchio_footsteps_water\granchio_footsteps_water_004.wav</ShortName>
-							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_004_10C4C929.wem</Path>
+							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_004_84875D65.wem</Path>
 						</File>
 						<File Id="112821672" Language="SFX">
 							<ShortName>granchio_footsteps_water\granchio_footsteps_water_001.wav</ShortName>
-							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_001_10C4C929.wem</Path>
+							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_001_84875D65.wem</Path>
 						</File>
 						<File Id="194759813" Language="SFX">
 							<ShortName>granchio_footsteps_stone_004.wav</ShortName>
-							<Path>SFX\granchio_footsteps_stone_004_10C4C929.wem</Path>
+							<Path>SFX\granchio_footsteps_stone_004_84875D65.wem</Path>
 						</File>
 						<File Id="238332546" Language="SFX">
 							<ShortName>granchio_footsteps_stone_003.wav</ShortName>
-							<Path>SFX\granchio_footsteps_stone_003_10C4C929.wem</Path>
+							<Path>SFX\granchio_footsteps_stone_003_84875D65.wem</Path>
 						</File>
-						<File Id="405979766" Language="SFX">
-							<ShortName>Granchio Noise\Granchio Noise 1.wav</ShortName>
-							<Path>SFX\Granchio Noise\Granchio Noise 1_26CF6064.wem</Path>
+						<File Id="605593041" Language="SFX">
+							<ShortName>granchio_voice_idle_002.wav</ShortName>
+							<Path>SFX\granchio_voice_idle_002_437083AC.wem</Path>
 						</File>
 						<File Id="693520424" Language="SFX">
 							<ShortName>granchio_footsteps_stone_001.wav</ShortName>
-							<Path>SFX\granchio_footsteps_stone_001_10C4C929.wem</Path>
+							<Path>SFX\granchio_footsteps_stone_001_84875D65.wem</Path>
+						</File>
+						<File Id="768765073" Language="SFX">
+							<ShortName>granchio_voice_idle_001.wav</ShortName>
+							<Path>SFX\granchio_voice_idle_001_987F47CB.wem</Path>
+						</File>
+						<File Id="926815808" Language="SFX">
+							<ShortName>granchio_voice_idle_003.wav</ShortName>
+							<Path>SFX\granchio_voice_idle_003_A5C72374.wem</Path>
 						</File>
 						<File Id="948318373" Language="SFX">
 							<ShortName>granchio_footsteps_water\granchio_footsteps_water_002.wav</ShortName>
-							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_002_10C4C929.wem</Path>
-						</File>
-						<File Id="1031976942" Language="SFX">
-							<ShortName>Granchio Noise\Granchio Noise 2.wav</ShortName>
-							<Path>SFX\Granchio Noise\Granchio Noise 2_2400BC3E.wem</Path>
+							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_002_84875D65.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{D6908EB4-9815-4828-A7F8-5FD775171F52}">
 							<Media>
-								<File Id="405979766"/>
-								<File Id="1031976942"/>
+								<File Id="768765073"/>
+								<File Id="605593041"/>
+								<File Id="926815808"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{46F439FE-A26F-4819-BDED-0A0E239B0713}">
@@ -1058,15 +1113,19 @@
 					<IncludedMemoryFiles>
 						<File Id="137074154" Language="SFX">
 							<ShortName>medusa_death\medusa_death_001.wav</ShortName>
-							<Path>SFX\medusa_death\medusa_death_001_10C4C929.wem</Path>
+							<Path>SFX\medusa_death\medusa_death_001_21360756.wem</Path>
 						</File>
 						<File Id="390134407" Language="SFX">
 							<ShortName>medusa_death\medusa_death_002.wav</ShortName>
-							<Path>SFX\medusa_death\medusa_death_002_10C4C929.wem</Path>
+							<Path>SFX\medusa_death\medusa_death_002_9BC67A12.wem</Path>
 						</File>
 						<File Id="818276609" Language="SFX">
 							<ShortName>medusa_death\medusa_death_003.wav</ShortName>
-							<Path>SFX\medusa_death\medusa_death_003_10C4C929.wem</Path>
+							<Path>SFX\medusa_death\medusa_death_003_582C307E.wem</Path>
+						</File>
+						<File Id="926497556" Language="SFX">
+							<ShortName>medusa_idle_texture.wav</ShortName>
+							<Path>SFX\medusa_idle_texture_69E04A33.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1074,7 +1133,7 @@
 					<IncludedMemoryFiles>
 						<File Id="276901612" Language="SFX">
 							<ShortName>medusa_idle_texture.wav</ShortName>
-							<Path>SFX\medusa_idle_texture_5979654F.wem</Path>
+							<Path>SFX\medusa_idle_texture_B88C4B4E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1109,49 +1168,182 @@
 			<IncludedEvents>
 				<Event Id="1643114936" Name="Crab_Aggro" ObjectPath="\Events\Default Work Unit\Music\Crab_Aggro">
 					<IncludedMemoryFiles>
-						<File Id="178064013" Language="SFX">
-							<ShortName>MGBT_MASTER_06.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_06_D79FB2B7.wem</Path>
+						<File Id="31188997" Language="SFX">
+							<ShortName>A1_MGBT_MASTER_05.wav</ShortName>
+							<Path>SFX\A1_MGBT_MASTER_05_CB6A98EB.wem</Path>
 						</File>
-						<File Id="178669634" Language="SFX">
-							<ShortName>MGBT_MASTER_03.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_03_D79FB2B7.wem</Path>
+						<File Id="47300373" Language="SFX">
+							<ShortName>A2_MGBT_MASTER_19.wav</ShortName>
+							<Path>SFX\A2_MGBT_MASTER_19_CB6A98EB.wem</Path>
 						</File>
-						<File Id="254889037" Language="SFX">
-							<ShortName>MGBT_MASTER_05.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_05_D79FB2B7.wem</Path>
+						<File Id="60288330" Language="SFX">
+							<ShortName>C1_MGBT_MASTER_50.wav</ShortName>
+							<Path>SFX\C1_MGBT_MASTER_50_CB6A98EB.wem</Path>
 						</File>
-						<File Id="314241571" Language="SFX">
-							<ShortName>MGBT_MASTER_02.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_02_D79FB2B7.wem</Path>
+						<File Id="67344236" Language="SFX">
+							<ShortName>C1_MGBT_MASTER_55.wav</ShortName>
+							<Path>SFX\C1_MGBT_MASTER_55_CB6A98EB.wem</Path>
 						</File>
-						<File Id="351212500" Language="SFX">
-							<ShortName>MGBT_MASTER_01.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_01_D79FB2B7.wem</Path>
+						<File Id="67789531" Language="SFX">
+							<ShortName>A2_MGBT_MASTER_22.wav</ShortName>
+							<Path>SFX\A2_MGBT_MASTER_22_CB6A98EB.wem</Path>
 						</File>
-						<File Id="417929539" Language="SFX">
-							<ShortName>MGBT_MASTER_07.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_07_D79FB2B7.wem</Path>
+						<File Id="116099335" Language="SFX">
+							<ShortName>C1_MGBT_MASTER_54.wav</ShortName>
+							<Path>SFX\C1_MGBT_MASTER_54_CB6A98EB.wem</Path>
 						</File>
-						<File Id="526713644" Language="SFX">
-							<ShortName>MGBT_MASTER_04.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_04_D79FB2B7.wem</Path>
+						<File Id="216015220" Language="SFX">
+							<ShortName>A2_MGBT_MASTER_21.wav</ShortName>
+							<Path>SFX\A2_MGBT_MASTER_21_CB6A98EB.wem</Path>
+						</File>
+						<File Id="239475937" Language="SFX">
+							<ShortName>C1_MGBT_MASTER_53.wav</ShortName>
+							<Path>SFX\C1_MGBT_MASTER_53_CB6A98EB.wem</Path>
+						</File>
+						<File Id="253110057" Language="SFX">
+							<ShortName>A1_MGBT_MASTER_08.wav</ShortName>
+							<Path>SFX\A1_MGBT_MASTER_08_CB6A98EB.wem</Path>
+						</File>
+						<File Id="381369376" Language="SFX">
+							<ShortName>A2_MGBT_MASTER_20.wav</ShortName>
+							<Path>SFX\A2_MGBT_MASTER_20_CB6A98EB.wem</Path>
+						</File>
+						<File Id="389185223" Language="SFX">
+							<ShortName>A2_MGBT_MASTER_18.wav</ShortName>
+							<Path>SFX\A2_MGBT_MASTER_18_CB6A98EB.wem</Path>
+						</File>
+						<File Id="415218281" Language="SFX">
+							<ShortName>B1_MGBT_MASTER_36.wav</ShortName>
+							<Path>SFX\B1_MGBT_MASTER_36_CB6A98EB.wem</Path>
+						</File>
+						<File Id="424440834" Language="SFX">
+							<ShortName>A1_MGBT_MASTER_04.wav</ShortName>
+							<Path>SFX\A1_MGBT_MASTER_04_CB6A98EB.wem</Path>
+						</File>
+						<File Id="426264062" Language="SFX">
+							<ShortName>MGBT_MASTER_ENDING3.wav</ShortName>
+							<Path>SFX\MGBT_MASTER_ENDING3_CB6A98EB.wem</Path>
+						</File>
+						<File Id="462341851" Language="SFX">
+							<ShortName>C1_MGBT_MASTER_52.wav</ShortName>
+							<Path>SFX\C1_MGBT_MASTER_52_CB6A98EB.wem</Path>
+						</File>
+						<File Id="572067956" Language="SFX">
+							<ShortName>A2_MGBT_MASTER_23.wav</ShortName>
+							<Path>SFX\A2_MGBT_MASTER_23_CB6A98EB.wem</Path>
+						</File>
+						<File Id="649318971" Language="SFX">
+							<ShortName>A1_MGBT_MASTER_02.wav</ShortName>
+							<Path>SFX\A1_MGBT_MASTER_02_CB6A98EB.wem</Path>
+						</File>
+						<File Id="741828705" Language="SFX">
+							<ShortName>A1_MGBT_MASTER_03.wav</ShortName>
+							<Path>SFX\A1_MGBT_MASTER_03_CB6A98EB.wem</Path>
+						</File>
+						<File Id="802960479" Language="SFX">
+							<ShortName>B1_MGBT_MASTER_33.wav</ShortName>
+							<Path>SFX\B1_MGBT_MASTER_33_CB6A98EB.wem</Path>
+						</File>
+						<File Id="818642215" Language="SFX">
+							<ShortName>A1_MGBT_MASTER_01.wav</ShortName>
+							<Path>SFX\A1_MGBT_MASTER_01_CB6A98EB.wem</Path>
+						</File>
+						<File Id="831249777" Language="SFX">
+							<ShortName>A2_MGBT_MASTER_24.wav</ShortName>
+							<Path>SFX\A2_MGBT_MASTER_24_CB6A98EB.wem</Path>
 						</File>
 						<File Id="838040734" Language="SFX">
 							<ShortName>MGBT_MASTER_ENDING.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_ENDING_D79FB2B7.wem</Path>
+							<Path>SFX\MGBT_MASTER_ENDING_CB6A98EB.wem</Path>
+						</File>
+						<File Id="853218476" Language="SFX">
+							<ShortName>B1_MGBT_MASTER_38.wav</ShortName>
+							<Path>SFX\B1_MGBT_MASTER_38_CB6A98EB.wem</Path>
+						</File>
+						<File Id="854763918" Language="SFX">
+							<ShortName>B1_MGBT_MASTER_40.wav</ShortName>
+							<Path>SFX\B1_MGBT_MASTER_40_CB6A98EB.wem</Path>
+						</File>
+						<File Id="904735810" Language="SFX">
+							<ShortName>A1_MGBT_MASTER_07.wav</ShortName>
+							<Path>SFX\A1_MGBT_MASTER_07_CB6A98EB.wem</Path>
+						</File>
+						<File Id="905623581" Language="SFX">
+							<ShortName>B1_MGBT_MASTER_39.wav</ShortName>
+							<Path>SFX\B1_MGBT_MASTER_39_CB6A98EB.wem</Path>
+						</File>
+						<File Id="921892043" Language="SFX">
+							<ShortName>C1_MGBT_MASTER_51.wav</ShortName>
+							<Path>SFX\C1_MGBT_MASTER_51_CB6A98EB.wem</Path>
+						</File>
+						<File Id="930436441" Language="SFX">
+							<ShortName>A1_MGBT_MASTER_06.wav</ShortName>
+							<Path>SFX\A1_MGBT_MASTER_06_CB6A98EB.wem</Path>
+						</File>
+						<File Id="939351504" Language="SFX">
+							<ShortName>MGBT_MASTER_ENDING2.wav</ShortName>
+							<Path>SFX\MGBT_MASTER_ENDING2_CB6A98EB.wem</Path>
+						</File>
+						<File Id="948644579" Language="SFX">
+							<ShortName>C1_MGBT_MASTER_56.wav</ShortName>
+							<Path>SFX\C1_MGBT_MASTER_56_CB6A98EB.wem</Path>
+						</File>
+						<File Id="971314088" Language="SFX">
+							<ShortName>B1_MGBT_MASTER_34.wav</ShortName>
+							<Path>SFX\B1_MGBT_MASTER_34_CB6A98EB.wem</Path>
+						</File>
+						<File Id="1006938764" Language="SFX">
+							<ShortName>C1_MGBT_MASTER_49.wav</ShortName>
+							<Path>SFX\C1_MGBT_MASTER_49_CB6A98EB.wem</Path>
+						</File>
+						<File Id="1015904306" Language="SFX">
+							<ShortName>B1_MGBT_MASTER_35.wav</ShortName>
+							<Path>SFX\B1_MGBT_MASTER_35_CB6A98EB.wem</Path>
+						</File>
+						<File Id="1018285137" Language="SFX">
+							<ShortName>B1_MGBT_MASTER_37.wav</ShortName>
+							<Path>SFX\B1_MGBT_MASTER_37_CB6A98EB.wem</Path>
+						</File>
+						<File Id="1039111476" Language="SFX">
+							<ShortName>A2_MGBT_MASTER_17.wav</ShortName>
+							<Path>SFX\A2_MGBT_MASTER_17_CB6A98EB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{D7AE1FDD-BA2D-40EF-92D9-3002E67F45F7}">
 							<Media>
-								<File Id="351212500"/>
-								<File Id="314241571"/>
-								<File Id="178669634"/>
-								<File Id="526713644"/>
-								<File Id="254889037"/>
-								<File Id="178064013"/>
-								<File Id="417929539"/>
+								<File Id="818642215"/>
+								<File Id="649318971"/>
+								<File Id="741828705"/>
+								<File Id="424440834"/>
+								<File Id="31188997"/>
+								<File Id="930436441"/>
+								<File Id="904735810"/>
+								<File Id="253110057"/>
+								<File Id="1039111476"/>
+								<File Id="389185223"/>
+								<File Id="47300373"/>
+								<File Id="381369376"/>
+								<File Id="216015220"/>
+								<File Id="67789531"/>
+								<File Id="572067956"/>
+								<File Id="831249777"/>
+								<File Id="802960479"/>
+								<File Id="971314088"/>
+								<File Id="1015904306"/>
+								<File Id="415218281"/>
+								<File Id="1018285137"/>
+								<File Id="853218476"/>
+								<File Id="905623581"/>
+								<File Id="854763918"/>
+								<File Id="1006938764"/>
+								<File Id="60288330"/>
+								<File Id="921892043"/>
+								<File Id="462341851"/>
+								<File Id="239475937"/>
+								<File Id="116099335"/>
+								<File Id="67344236"/>
+								<File Id="948644579"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -1161,63 +1353,63 @@
 					<IncludedMemoryFiles>
 						<File Id="27450099" Language="SFX">
 							<ShortName>piano7.wav</ShortName>
-							<Path>SFX\piano7_D79FB2B7.wem</Path>
+							<Path>SFX\piano7_CB6A98EB.wem</Path>
 						</File>
 						<File Id="235571209" Language="SFX">
 							<ShortName>piano4.wav</ShortName>
-							<Path>SFX\piano4_D79FB2B7.wem</Path>
+							<Path>SFX\piano4_CB6A98EB.wem</Path>
 						</File>
 						<File Id="399711432" Language="SFX">
 							<ShortName>piano8.wav</ShortName>
-							<Path>SFX\piano8_D79FB2B7.wem</Path>
+							<Path>SFX\piano8_CB6A98EB.wem</Path>
 						</File>
 						<File Id="412320655" Language="SFX">
 							<ShortName>piano.wav</ShortName>
-							<Path>SFX\piano_D79FB2B7.wem</Path>
+							<Path>SFX\piano_CB6A98EB.wem</Path>
 						</File>
 						<File Id="478355079" Language="SFX">
 							<ShortName>violin5.wav</ShortName>
-							<Path>SFX\violin5_D79FB2B7.wem</Path>
+							<Path>SFX\violin5_CB6A98EB.wem</Path>
 						</File>
 						<File Id="589759264" Language="SFX">
 							<ShortName>violin2.wav</ShortName>
-							<Path>SFX\violin2_D79FB2B7.wem</Path>
+							<Path>SFX\violin2_CB6A98EB.wem</Path>
 						</File>
 						<File Id="644843942" Language="SFX">
 							<ShortName>TensionBrass.wav</ShortName>
-							<Path>SFX\TensionBrass_D79FB2B7.wem</Path>
+							<Path>SFX\TensionBrass_CB6A98EB.wem</Path>
 						</File>
 						<File Id="683698442" Language="SFX">
 							<ShortName>piano5.wav</ShortName>
-							<Path>SFX\piano5_D79FB2B7.wem</Path>
+							<Path>SFX\piano5_CB6A98EB.wem</Path>
 						</File>
 						<File Id="694833976" Language="SFX">
 							<ShortName>piano2.wav</ShortName>
-							<Path>SFX\piano2_D79FB2B7.wem</Path>
+							<Path>SFX\piano2_CB6A98EB.wem</Path>
 						</File>
 						<File Id="828975824" Language="SFX">
 							<ShortName>TensionNovo.wav</ShortName>
-							<Path>SFX\TensionNovo_D79FB2B7.wem</Path>
+							<Path>SFX\TensionNovo_CB6A98EB.wem</Path>
 						</File>
 						<File Id="834072984" Language="SFX">
 							<ShortName>piano6.wav</ShortName>
-							<Path>SFX\piano6_D79FB2B7.wem</Path>
+							<Path>SFX\piano6_CB6A98EB.wem</Path>
 						</File>
 						<File Id="883622085" Language="SFX">
 							<ShortName>piano3.wav</ShortName>
-							<Path>SFX\piano3_D79FB2B7.wem</Path>
+							<Path>SFX\piano3_CB6A98EB.wem</Path>
 						</File>
 						<File Id="982686293" Language="SFX">
 							<ShortName>violin1.wav</ShortName>
-							<Path>SFX\violin1_D79FB2B7.wem</Path>
+							<Path>SFX\violin1_CB6A98EB.wem</Path>
 						</File>
 						<File Id="1012717257" Language="SFX">
 							<ShortName>violin3.wav</ShortName>
-							<Path>SFX\violin3_D79FB2B7.wem</Path>
+							<Path>SFX\violin3_CB6A98EB.wem</Path>
 						</File>
 						<File Id="1030601659" Language="SFX">
 							<ShortName>violin4.wav</ShortName>
-							<Path>SFX\violin4_D79FB2B7.wem</Path>
+							<Path>SFX\violin4_CB6A98EB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

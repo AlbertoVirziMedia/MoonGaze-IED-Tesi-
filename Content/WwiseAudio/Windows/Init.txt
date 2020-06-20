@@ -1,10 +1,7 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
-	789730089	Enemies_Movement			\Default Work Unit\Enemies\Enemies_Movement	
 	3824661808	Kria_Movement_Speed			\Default Work Unit\Kria\Kria_Movement_Speed	
 
 Switch	ID	Name	Switch Group			Notes
-	1874288895	Idle	Enemies_Movement			
-	2108779966	Walk	Enemies_Movement			
 	712161704	Run	Kria_Movement_Speed			
 	2108779966	Walk	Kria_Movement_Speed			
 
@@ -45,8 +42,13 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3869140995	Non_World			\Default Work Unit\Master Audio Bus\Non_World	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Non_World\Music	
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	148343756	Health_Effects			\Default Work Unit\Master Audio Bus\World\Health_Effects	
+	1530676313	Exterior_Rev			\Default Work Unit\Master Audio Bus\World\Exterior_Rev	
+
 Effect plug-ins	ID	Name	Type				Notes
 	1396341940	Tape_Slap_Back	iZotope Trash Delay			
+	4190220820	Voice_CenterOnly_Lowered	Wwise Pitch Shifter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
