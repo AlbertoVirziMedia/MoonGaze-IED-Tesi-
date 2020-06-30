@@ -1,0 +1,135 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "LiocarpioCharacter.h"
+#include "BehaviorTree/BehaviorTreeComponent.h"
+#include "Perception/PawnSensingComponent.h"
+#include "Perception/AIPerceptionComponent.h"
+#include "Classes/AIController.h"
+#include "LiocarpioAIController.h"
+#include "Components/BoxComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Engine/SkeletalMesh.h"
+#include "Engine/SkeletalMeshSocket.h"
+#include "MainCharacter.h"
+#include "LiocarpioAnimInstance.h"
+#include "Public/TimerManager.h"
+#include "Engine/World.h"
+#include "Particles/ParticleSystemComponent.h"
+#include "Kismet/GameplayStatics.h"
+
+ALiocarpioCharacter::ALiocarpioCharacter()
+{
+	bCanTakeDamage = true;
+	TakeDamageStop = 3.f;
+}
+
+void ALiocarpioCharacter::BeginPlay()
+{
+	/**/
+	/*IA Setting
+	/**/
+	//IA Controller Reference
+	AIController = Cast<ALiocarpioAIController>(GetController());
+	if (!AIController)
+	{
+
+	}
+	else
+	{
+
+	}
+
+	//Register the function that is going to fire when the character sees a Pawn
+	if (PawnSensingComp)
+	{
+
+	}
+
+	/**/
+	/*Bind Action On Overlap of DamageCollider Component
+	/**/
+	if (!DamageCollider)
+	{
+
+	}
+	else
+	{
+		DamageCollider->OnComponentBeginOverlap.AddDynamic(this, &ALiocarpioCharacter::DamageColliderBeginOverlap);
+		DamageCollider->OnComponentEndOverlap.AddDynamic(this, &ALiocarpioCharacter::DamageColliderEndOverlap);
+	}
+
+	/**/
+	/*AnimInstance Setting
+	/**/
+	LAnimInstance = Cast<ULiocarpioAnimInstance>(GetMesh()->GetAnimInstance());
+	if (!LAnimInstance)
+	{
+
+	}
+	else
+	{
+
+	}
+
+}
+
+void ALiocarpioCharacter::DamageColliderBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
+{
+
+}
+
+void ALiocarpioCharacter::DamageColliderEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+
+}
+
+void ALiocarpioCharacter::MeleeAttack()
+{
+
+}
+
+void ALiocarpioCharacter::MeleeAttackEnd()
+{
+
+}
+
+float ALiocarpioCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
+{
+	if(LAnimInstance)
+	{
+		if (bCanTakeDamage)
+		{
+//			LAnimInstance->TakeDamageAnim();
+			bCanTakeDamage = false;
+			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &ALiocarpioCharacter::ResetTakeDamage, TakeDamageStop, false);
+		}
+	}
+	bIsGettingDameged = true;
+	if (Health - DamageAmount <= 0.f)
+	{
+//		LAnimInstance->DeathAnim();
+		bEnemyIsAlive = false;
+	}
+	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+}
+
+void ALiocarpioCharacter::ResetTakeDamage()
+{
+	bCanTakeDamage = true;
+}
+
+void ALiocarpioCharacter::Die()
+{
+
+}
+
+void ALiocarpioCharacter::DeadEnd()
+{
+
+}
+
+void ALiocarpioCharacter::Disappear()
+{
+
+}

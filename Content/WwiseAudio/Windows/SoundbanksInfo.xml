@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\anty\Documents\Prototipo Tesi\Prototipo Tesi\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\anty\Documents\Prototipo Tesi\Prototipo Tesi\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\anty\Documents\GitHub\MoonGaze-IED-Tesi-\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\alber\Downloads\Prototipo Tesi 5.1\Prototipo Tesi\Prototipo Tesi\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\alber\Downloads\Prototipo Tesi 5.1\Prototipo Tesi\Prototipo Tesi\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\alber\Documents\Unreal Projects\Tesi 4.24\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\anty\Documents\Prototipo Tesi\Prototipo Tesi\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\alber\Downloads\Prototipo Tesi 5.1\Prototipo Tesi\Prototipo Tesi\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -41,7 +41,7 @@
 				<AuxBus Id="1530676313" Name="Exterior_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Exterior_Rev"/>
 			</IncludedAuxBusses>
 			<IncludedMemoryFiles>
-				<File Id="245359029" Language="SFX">
+				<File Id="966657340" Language="SFX">
 					<ShortName>AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See_72EF6462.wem</Path>
 				</File>
@@ -60,7 +60,7 @@
 				<AuxBus Id="1530676313" Name="Exterior_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Exterior_Rev"/>
 			</IncludedAuxBusses>
 			<ExcludedMemoryFiles>
-				<File Id="245359029" Language="SFX">
+				<File Id="966657340" Language="SFX">
 					<ShortName>AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See_72EF6462.wem</Path>
 				</File>
@@ -1138,6 +1138,14 @@
 						<File Id="926497556" Language="SFX">
 							<ShortName>medusa_idle_texture.wav</ShortName>
 							<Path>SFX\medusa_idle_texture_69E04A33.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3939057507" Name="Medusa_Dummy" ObjectPath="\Events\Default Work Unit\Medusa_Dummy">
+					<IncludedMemoryFiles>
+						<File Id="136206231" Language="SFX">
+							<ShortName>White Noise vs Pink Noise vs Brown Noise Side by Side Preview (online-audio-converter.com).wav</ShortName>
+							<Path>SFX\White Noise vs Pink Noise vs Brown Noise Side by Side Preview (online-audio-converter.com)_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
