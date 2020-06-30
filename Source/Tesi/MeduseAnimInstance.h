@@ -30,6 +30,13 @@ public:
 	class AMedusaCharacter* MCharacter;
 
 	/**/
+	/*Character AnimInstance Attack Variables
+	/**/
+	//Reference to the AnimMontage
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	UAnimMontage* MCombatMontage;
+
+	/**/
 	/*AnimInstance Functions
 	/**/
 	//Native Initialization Animation override
@@ -37,4 +44,13 @@ public:
 	//Update animation function override
 	UFUNCTION(BlueprintCallable, Category = AnimationProperties)
 	void UpdateAnimationProperties();
+
+	//
+	UFUNCTION(BlueprintCallable, Category = AnimationProperties)
+	void TakeDamageAnim();
+	//
+	UFUNCTION()
+	void DeathAnim();
+
+
 };

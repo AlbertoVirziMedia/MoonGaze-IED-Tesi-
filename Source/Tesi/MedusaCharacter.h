@@ -27,6 +27,23 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bIsGettingDameged;
 
+	//AnimInstance Ref
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Animation")
+	class UMeduseAnimInstance* MAnimInstance;
+	//Reference to the Combat Montage
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	class UAnimMontage* MCombatMontage;
+
+	//Anim Montage Variables
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TakeDamageAnim")
+	bool bCanTakeDamage;
+	//Time to give to the TakeDamageTimer
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TakeDamageAnim")
+	float TakeDamageStop;
+	//TakeDamageTimer
+	UPROPERTY()
+	FTimerHandle TakeDamageHandle;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -38,6 +55,9 @@ public:
 	/**/
 	// Function Called when enemy sight spot the Main Character
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser) override;
+	//
+	UFUNCTION()
+	void ResetTakeDamage();
 	
 	/**/
 	/*Death Functions

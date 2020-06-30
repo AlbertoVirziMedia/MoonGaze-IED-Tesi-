@@ -34,3 +34,23 @@ void UMeduseAnimInstance::UpdateAnimationProperties()
 	}
 }
 
+void UMeduseAnimInstance::TakeDamageAnim()
+{
+	if (MCombatMontage)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Reaction"));
+		Montage_Play(MCombatMontage, 1.0f);
+		Montage_JumpToSection(FName("Reaction"), MCombatMontage);
+	}
+}
+
+void UMeduseAnimInstance::DeathAnim()
+{
+	if (MCombatMontage)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Death"));
+		Montage_Play(MCombatMontage, 1.0f);
+		Montage_JumpToSection(FName("Death"), MCombatMontage);
+	}
+}
+

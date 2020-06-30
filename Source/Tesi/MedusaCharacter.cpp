@@ -4,10 +4,14 @@
 #include "MedusaCharacter.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "MeduseAIController.h"
+#include "MeduseAnimInstance.h"
+#include "Public/TimerManager.h"
+#include "Engine/World.h"
 
 AMedusaCharacter::AMedusaCharacter()
 {
-	
+	bCanTakeDamage = true;
+	TakeDamageStop = 3.f;
 }
 
 void AMedusaCharacter::BeginPlay()
@@ -21,18 +25,54 @@ void AMedusaCharacter::BeginPlay()
 	AIController = Cast<AMeduseAIController>(GetController());
 	if (!AIController)
 	{
-		GLog->Log("medusa Ai Controller non creato");
+
 	}
 	else
 	{
-		GLog->Log("AI");
+
+	}
+
+	/**/
+	/*AnimInstance Setting
+	/**/
+	MAnimInstance = Cast<UMeduseAnimInstance>(GetMesh()->GetAnimInstance());
+	if (!MAnimInstance)
+	{
+		GLog->Log("Medusa not Anim");
+	}
+	else
+	{
+		GLog->Log("Medusa Anim");
 	}
 }
 
 float AMedusaCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
 	bIsGettingDameged = true;
+
+	if (MAnimInstance)
+	{
+		if (bCanTakeDamage)
+		{
+			MAnimInstance->TakeDamageAnim();
+			bCanTakeDamage = false;
+			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AMedusaCharacter::ResetTakeDamage, TakeDamageStop, false);
+			UE_LOG(LogTemp, Warning, TEXT("StartTimer"));
+		}
+	}
+	bIsGettingDameged = true;
+	if (Health - DamageAmount <= 0.f)
+	{
+		MAnimInstance->DeathAnim();
+		bEnemyIsAlive = false;
+	}
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+}
+
+void AMedusaCharacter::ResetTakeDamage()
+{
+	bCanTakeDamage = true;
+	UE_LOG(LogTemp, Warning, TEXT("EndTimer"));
 }
 
 void AMedusaCharacter::Die()

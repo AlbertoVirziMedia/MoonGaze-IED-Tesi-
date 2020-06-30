@@ -35,11 +35,11 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 	AIController = Cast<AEsploratoriMeleeAIController>(GetController());
 	if (!AIController)
 	{
-		GLog->Log("Ai Controller non creato");
+
 	}
 	else
 	{
-		GLog->Log("AI");
+
 	}
 
 	//Register the function that is going to fire when the character sees a Pawn
@@ -53,11 +53,10 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 	/**/
 	if (!DamageCollider)
 	{
-		GLog->Log("DamageCollider Non Creato");
+
 	}
 	else
 	{
-		GLog->Log("DamageCollider Creato");
 		DamageCollider->OnComponentBeginOverlap.AddDynamic(this, &AEsploratoriMeleeCharacter::DamageColliderBeginOverlap);
 		DamageCollider->OnComponentEndOverlap.AddDynamic(this, &AEsploratoriMeleeCharacter::DamageColliderEndOverlap);
 	}
@@ -68,11 +67,11 @@ void AEsploratoriMeleeCharacter::BeginPlay()
 	EMAnimInstance = Cast<UEsploratoriMeleeAnimInstance>(GetMesh()->GetAnimInstance());
 	if (!EMAnimInstance)
 	{
-		GLog->Log("not Anim");
+
 	}
 	else
 	{
-		GLog->Log("Anim");
+
 	}
 
 }
@@ -106,7 +105,6 @@ float AEsploratoriMeleeCharacter::TakeDamage(float DamageAmount, struct FDamageE
 			EMAnimInstance->TakeDamageAnim();
 			bCanTakeDamage = false;
 			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AEsploratoriMeleeCharacter::ResetTakeDamage, TakeDamageStop, false);
-			UE_LOG(LogTemp, Warning, TEXT("StartTimer"));
 		}
 	}
 	bIsGettingDameged = true;
@@ -121,7 +119,6 @@ float AEsploratoriMeleeCharacter::TakeDamage(float DamageAmount, struct FDamageE
 void AEsploratoriMeleeCharacter::ResetTakeDamage()
 {
 	bCanTakeDamage = true;
-	UE_LOG(LogTemp, Warning, TEXT("EndTimer"));
 }
 
 void AEsploratoriMeleeCharacter::Die()
