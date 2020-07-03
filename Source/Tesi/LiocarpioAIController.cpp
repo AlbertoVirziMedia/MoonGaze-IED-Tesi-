@@ -36,5 +36,6 @@ void ALiocarpioAIController::OnPossess(APawn* InPawn)
 		LBlackboardComp->InitializeBlackboard(*(LCharacter->CharacterBehaviorTree->BlackboardAsset));
 
 		LBehaviorTreeComp->StartTree(*LCharacter->CharacterBehaviorTree);
+		GLog->Log("PorcoDio");
 	}
 }
