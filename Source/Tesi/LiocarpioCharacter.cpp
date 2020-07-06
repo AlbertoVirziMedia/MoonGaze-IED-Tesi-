@@ -6,7 +6,7 @@
 #include "Perception/PawnSensingComponent.h"
 #include "Perception/AIPerceptionComponent.h"
 #include "Classes/AIController.h"
-#include "LiocarpioAIController.h"
+//#include "EsploratoriMeleeAIController.h"
 #include "Components/BoxComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/SkeletalMesh.h"
@@ -20,17 +20,27 @@
 
 ALiocarpioCharacter::ALiocarpioCharacter()
 {
+
+	/**/
+	/*Create Component
+	/**/
+	//Damage Collider (Collider that damage Main Character)
+	DamageColliderDx = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderDx"));
+	DamageColliderDx->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("GranchioDxSocket"));
+
 	bCanTakeDamage = true;
 	TakeDamageStop = 3.f;
 }
 
 void ALiocarpioCharacter::BeginPlay()
 {
+	Super::BeginPlay();
+
 	/**/
 	/*IA Setting
 	/**/
-	//IA Controller Reference
-	AIController = Cast<ALiocarpioAIController>(GetController());
+	/*	//IA Controller Reference
+	AIController = Cast<AEsploratoriMeleeAIController>(GetController());
 	if (!AIController)
 	{
 
@@ -51,6 +61,19 @@ void ALiocarpioCharacter::BeginPlay()
 	{
 		DamageCollider->OnComponentBeginOverlap.AddDynamic(this, &ALiocarpioCharacter::DamageColliderBeginOverlap);
 		DamageCollider->OnComponentEndOverlap.AddDynamic(this, &ALiocarpioCharacter::DamageColliderEndOverlap);
+	}
+
+	/**/
+	/*Bind Action On Overlap of DamageCollider Component
+	/**/
+	if (!DamageColliderDx)
+	{
+
+	}
+	else
+	{
+		DamageColliderDx->OnComponentBeginOverlap.AddDynamic(this, &ALiocarpioCharacter::DamageColliderDxBeginOverlap);
+		DamageColliderDx->OnComponentEndOverlap.AddDynamic(this, &ALiocarpioCharacter::DamageColliderDxEndOverlap);
 	}
 
 	/**/
@@ -78,6 +101,16 @@ void ALiocarpioCharacter::DamageColliderEndOverlap(UPrimitiveComponent* Overlapp
 
 }
 
+void ALiocarpioCharacter::DamageColliderDxBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
+{
+
+}
+
+void ALiocarpioCharacter::DamageColliderDxEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+
+}
+
 void ALiocarpioCharacter::MeleeAttack()
 {
 
@@ -90,21 +123,22 @@ void ALiocarpioCharacter::MeleeAttackEnd()
 
 float ALiocarpioCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
-	if(LAnimInstance)
+/*	if (EMAnimInstance)
 	{
 		if (bCanTakeDamage)
 		{
-//			LAnimInstance->TakeDamageAnim();
+			EMAnimInstance->TakeDamageAnim();
 			bCanTakeDamage = false;
-			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &ALiocarpioCharacter::ResetTakeDamage, TakeDamageStop, false);
+			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AEsploratoriMeleeCharacter::ResetTakeDamage, TakeDamageStop, false);
 		}
 	}
 	bIsGettingDameged = true;
 	if (Health - DamageAmount <= 0.f)
 	{
-//		LAnimInstance->DeathAnim();
+		EMAnimInstance->DeathAnim();
 		bEnemyIsAlive = false;
 	}
+*/
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
 
@@ -127,3 +161,4 @@ void ALiocarpioCharacter::Disappear()
 {
 
 }
+

@@ -4,6 +4,7 @@
 #include "LiocarpioAnimInstance.h"
 #include "LiocarpioCharacter.h"
 
+//
 void ULiocarpioAnimInstance::NativeInitializeAnimation()
 {
 	if (Pawn == nullptr)
@@ -24,7 +25,7 @@ void ULiocarpioAnimInstance::UpdateAnimationProperties()
 		Pawn = TryGetPawnOwner();
 		if (Pawn)
 		{
-			LCharacter = Cast<ALiocarpioCharacter>(Pawn);
+			LCharacter = Cast<ALiocarpioCharacter>(Pawn);		
 		}
 	}
 	if (Pawn)
@@ -33,6 +34,7 @@ void ULiocarpioAnimInstance::UpdateAnimationProperties()
 		FVector LateralSpeed = FVector(Speed.X, Speed.Y, 0.0f);
 		MovementSpeed = LateralSpeed.Size();
 	}
+	
 }
 
 void ULiocarpioAnimInstance::TakeDamageAnim()
@@ -52,3 +54,4 @@ void ULiocarpioAnimInstance::DeathAnim()
 		Montage_JumpToSection(FName("Death"), LCombatMontage);
 	}
 }
+

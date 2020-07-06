@@ -14,9 +14,9 @@ class TESI_API ALiocarpioAIController : public AAIController
 {
 	GENERATED_BODY()
 
-	ALiocarpioAIController();
-
 public:
+
+	ALiocarpioAIController();
 
 	/**/
 	/*Only Variables
@@ -45,5 +45,5 @@ public:
 	//Get Blackboard
 	FORCEINLINE UBlackboardComponent* GetBlackboardComp() const { return LBlackboardComp; };
 
-
+	
 };

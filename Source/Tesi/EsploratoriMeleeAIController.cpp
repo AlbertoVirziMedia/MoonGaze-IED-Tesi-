@@ -2,7 +2,6 @@
 
 
 #include "EsploratoriMeleeAIController.h"
-#include "Perception/AIPerceptionComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "BehaviorTree/BlackboardComponent.h"

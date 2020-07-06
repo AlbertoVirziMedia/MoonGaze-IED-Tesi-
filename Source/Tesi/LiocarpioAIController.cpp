@@ -2,7 +2,6 @@
 
 
 #include "LiocarpioAIController.h"
-#include "Perception/AIPerceptionComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "BehaviorTree/BlackboardComponent.h"
@@ -33,6 +32,5 @@ void ALiocarpioAIController::OnPossess(APawn* InPawn)
 		LBlackboardComp->InitializeBlackboard(*(LCharacter->CharacterBehaviorTree->BlackboardAsset));
 
 		LBehaviorTreeComp->StartTree(*LCharacter->CharacterBehaviorTree);
-		GLog->Log("PorcoDio");
 	}
 }

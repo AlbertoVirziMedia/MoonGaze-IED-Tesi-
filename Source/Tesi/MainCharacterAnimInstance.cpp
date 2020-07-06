@@ -12,6 +12,8 @@ void UMainCharacterAnimInstance::NativeInitializeAnimation()
 	{
 		Pawn = TryGetPawnOwner();
 	}
+
+	bIsBlocking = false;
 }
 
 void UMainCharacterAnimInstance::UpdateAnimationProperties()
@@ -104,23 +106,10 @@ void UMainCharacterAnimInstance::Damage()
 
 void UMainCharacterAnimInstance::Blocking()
 {
-
-	BlockingAnimRate = 0.f;
-
 	if (CombatMontage)
 	{
-		Montage_Play(CombatMontage, BlockingAnimRate);
+		Montage_Play(CombatMontage, 1.f);
 		Montage_JumpToSection(FName("Block"), CombatMontage);
-	}
-}
-
-void UMainCharacterAnimInstance::BlockEnd()
-{
-	BlockingAnimRate = 1.f;
-
-	if (CombatMontage)
-	{
-		Montage_Play(CombatMontage, BlockingAnimRate);
-		Montage_JumpToSection(FName("Block"), CombatMontage);
+		bIsBlocking = true;
 	}
 }

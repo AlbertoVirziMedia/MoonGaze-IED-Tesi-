@@ -14,9 +14,9 @@ class TESI_API AEsploratoriMeleeAIController : public AAIController
 {
 	GENERATED_BODY()
 
-	AEsploratoriMeleeAIController();
-
 public:
+
+	AEsploratoriMeleeAIController();
 
 	/**/
 	/*Only Variables
@@ -44,10 +44,5 @@ public:
 
 	//Get Blackboard
 	FORCEINLINE UBlackboardComponent* GetBlackboardComp() const { return EMBlackboardComp; };
-
-	/**/
-	/*IA Sight Function
-	/**/
-
 
 };

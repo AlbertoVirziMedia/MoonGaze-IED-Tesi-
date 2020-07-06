@@ -92,10 +92,16 @@ public:
 	/*Character AnimInstance Blocking Variables
 	/**/
 	//Float that change the anim rate of the blocking animation
+	//
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool bIsBlocking;
+	//
 	float BlockingAnimRate;
 	//
+	UFUNCTION(BlueprintCallable)
 	void Blocking();
 	//
+	UFUNCTION(BlueprintImplementableEvent)
 	void BlockEnd();
 
 	
