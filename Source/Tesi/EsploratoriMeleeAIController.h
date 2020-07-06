@@ -22,10 +22,6 @@ public:
 	/*Only Variables
 	/**/
 
-	//AI Perception
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
-	class UAIPerceptionComponent* AIPerceptionComp;
-
 	/**/
 	/*IA Behavior Variables
 	/**/

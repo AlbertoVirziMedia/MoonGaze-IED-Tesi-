@@ -11,9 +11,6 @@
 
 AEsploratoriMeleeAIController::AEsploratoriMeleeAIController()
 {
-	//AI Perception Comp that update every frame what Enmies see
-	AIPerceptionComp = CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("AIPerceptionComp"));
-	//OnUpdatefunction of this component is in BP
 
 	//Create Reference to BlackBoard
 	EMBlackboardComp = CreateDefaultSubobject<UBlackboardComponent>(TEXT("EMBlackboardComp"));

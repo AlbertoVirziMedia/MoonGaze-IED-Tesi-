@@ -40,12 +40,6 @@ void ALiocarpioCharacter::BeginPlay()
 
 	}
 
-	//Register the function that is going to fire when the character sees a Pawn
-	if (PawnSensingComp)
-	{
-
-	}
-
 	/**/
 	/*Bind Action On Overlap of DamageCollider Component
 	/**/

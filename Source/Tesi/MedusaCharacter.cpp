@@ -57,7 +57,6 @@ float AMedusaCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const
 			MAnimInstance->TakeDamageAnim();
 			bCanTakeDamage = false;
 			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AMedusaCharacter::ResetTakeDamage, TakeDamageStop, false);
-			UE_LOG(LogTemp, Warning, TEXT("StartTimer"));
 		}
 	}
 	bIsGettingDameged = true;
@@ -72,7 +71,6 @@ float AMedusaCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const
 void AMedusaCharacter::ResetTakeDamage()
 {
 	bCanTakeDamage = true;
-	UE_LOG(LogTemp, Warning, TEXT("EndTimer"));
 }
 
 void AMedusaCharacter::Die()

@@ -104,12 +104,13 @@ void UMainCharacterAnimInstance::Damage()
 
 void UMainCharacterAnimInstance::Blocking()
 {
+
 	BlockingAnimRate = 0.f;
 
 	if (CombatMontage)
 	{
 		Montage_Play(CombatMontage, BlockingAnimRate);
-		Montage_JumpToSection(FName("Blocking"), CombatMontage);
+		Montage_JumpToSection(FName("Block"), CombatMontage);
 	}
 }
 
@@ -120,6 +121,6 @@ void UMainCharacterAnimInstance::BlockEnd()
 	if (CombatMontage)
 	{
 		Montage_Play(CombatMontage, BlockingAnimRate);
-		Montage_JumpToSection(FName("Blocking"), CombatMontage);
+		Montage_JumpToSection(FName("Block"), CombatMontage);
 	}
 }

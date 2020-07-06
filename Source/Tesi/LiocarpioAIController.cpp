@@ -11,9 +11,6 @@
 
 ALiocarpioAIController::ALiocarpioAIController()
 {
-	//AI Perception Comp that update every frame what Enmies see
-	AIPerceptionComp = CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("AIPerceptionComp"));
-	//OnUpdatefunction of this component is in BP
 
 	//Create Reference to BlackBoard
 	LBlackboardComp = CreateDefaultSubobject<UBlackboardComponent>(TEXT("LBlackboardComp"));

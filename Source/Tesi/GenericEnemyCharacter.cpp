@@ -25,16 +25,6 @@ AGenericEnemyCharacter::AGenericEnemyCharacter()
 	DamageCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("EnemySocket"));
 
 	/**/
-	/*IA Sight Comp
-	/**/
-	//Initializing the pawn sensing component (Sight and hearing)
-	PawnSensingComp = CreateDefaultSubobject<UPawnSensingComponent>(TEXT("PawnSensingComp"));
-	//Set the peripheral vision angle to 90 degrees
-	PawnSensingComp->SetPeripheralVisionAngle(60.f);
-	//Set the update functions
-	PawnSensingComp->bEnableSensingUpdates = true;
-
-	/**/
 	/*Enemy Stats
 	/**/
 	//Max Health
@@ -74,6 +64,9 @@ AGenericEnemyCharacter::AGenericEnemyCharacter()
 void AGenericEnemyCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	//
+	EnemyPosition = GetActorLocation();
 
 }
 

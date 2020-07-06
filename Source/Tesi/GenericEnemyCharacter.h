@@ -19,21 +19,12 @@ public:
 	/*Only Variables
 	/**/
 	//Enemy Character position in the world
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Position")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Position")
 	FVector EnemyPosition;
-
 
 	//BehaviourTree Reference
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
 	class UBehaviorTree* CharacterBehaviorTree;
-
-
-	/**/
-	/*IA Sight/Hearing Variables
-	/**/
-	/*The Component which is used for the "seeing" sense of the AI*/
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
-	class UPawnSensingComponent* PawnSensingComp;
 
 	/**/
 	/*Stats Variables

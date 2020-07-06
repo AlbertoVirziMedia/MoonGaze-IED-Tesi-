@@ -371,35 +371,31 @@ void AMainCharacter::BlockEnd()
 //This Function is Unreal function for TakeDamage
 float AMainCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
-	if (!bIsBlocking)
+	if (Health - DamageAmount <= 0.f)
 	{
-		if (Health - DamageAmount <= 0.f)
+		Health -= DamageAmount;
+		Die();
+	}
+	else
+	{
+		Health -= DamageAmount;
+		//Reference to the main character anim instance
+		UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+		if (MainCharacterAnimInstanceRef)
 		{
-			Health -= DamageAmount;
-			Die();
-		}
-		else
-		{
-			Health -= DamageAmount;
-			//Reference to the main character anim instance
-			UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-			if (MainCharacterAnimInstanceRef)
-			{
-				MainCharacterAnimInstanceRef->Damage();
-				RefToCharacterMovementComp->MaxWalkSpeed = MontageWalkSpeed;
+			MainCharacterAnimInstanceRef->Damage();
+			RefToCharacterMovementComp->MaxWalkSpeed = MontageWalkSpeed;
 
-				if (DamageCauser)
+			if (DamageCauser)
+			{
+				AEnemyCharacter* Enemy = Cast<AEnemyCharacter>(DamageCauser);
+				if (Enemy)
 				{
-					AEnemyCharacter* Enemy = Cast<AEnemyCharacter>(DamageCauser);
-					if (Enemy)
-					{
-						Enemy->bHasValidTarget = false;
-					}
+					Enemy->bHasValidTarget = false;
 				}
 			}
 		}
 	}
-
 	return DamageAmount;
 }
 
