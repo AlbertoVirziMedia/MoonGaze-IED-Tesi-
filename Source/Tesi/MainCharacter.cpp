@@ -348,12 +348,15 @@ void AMainCharacter::AttackEnd()
 
 void AMainCharacter::Blocking()
 {
-	bIsBlocking = true;
-
 	UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-	if (MainCharacterAnimInstanceRef)
+	if (!MainCharacterAnimInstanceRef->bIsInAir)
 	{
-		MainCharacterAnimInstanceRef->Blocking();
+		bIsBlocking = true;
+
+		if (MainCharacterAnimInstanceRef)
+		{
+			MainCharacterAnimInstanceRef->Blocking();
+		}
 	}
 }
 

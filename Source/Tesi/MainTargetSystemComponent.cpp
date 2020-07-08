@@ -135,25 +135,38 @@ void UMainTargetSystemComponent::TickComponent(float DeltaTime, ELevelTick TickT
 		}
 		if (CameraComponent)
 		{
-			CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(StartingCameraPosition), FVector(StartingCameraPosition.X, StartingCameraPosition.Y, ChangeZCameraPosition), GetWorld()->GetDeltaSeconds(), 0.1f));
-			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(StartingCameraRotation), FRotator(ChangeRollCameraRotation, StartingCameraRotation.Pitch, StartingCameraRotation.Yaw), GetWorld()->GetDeltaSeconds(), 0.1f));
+			if (!IsCameraInTarget)
+			{
+				CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(StartingCameraPosition), FVector(StartingCameraPosition.X, StartingCameraPosition.Y, ChangeZCameraPosition), GetWorld()->GetDeltaSeconds(), 0.1f));
+				CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(StartingCameraRotation), FRotator(ChangeRollCameraRotation, StartingCameraRotation.Pitch, StartingCameraRotation.Yaw), GetWorld()->GetDeltaSeconds(), 0.1f));
+				GLog->Log("DioCane");
+				if (CameraComponent->GetRelativeLocation == FVector(StartingCameraPosition.X, StartingCameraPosition.Y, ChangeZCameraPosition))
+				{
+					IsCameraInTarget = true;
+					GLog->Log("CameraTrue");
+				}
+			}
 		}
-*/
-		USpringArmComponent* CameraBoom = MainCharacter->FindComponentByClass<USpringArmComponent>();
+
+/*		USpringArmComponent* CameraBoom = MainCharacter->FindComponentByClass<USpringArmComponent>();
 		if (!CameraBoom)
 		{
 			
 		}
 		if (CameraBoom)
 		{
-			if (CameraBoom->SocketOffset != FVector(0.f, 0.f, OnTargetZOffset))
+			if (!IsCameraInTarget)
 			{
 				CameraBoom->SocketOffset = FMath::VInterpTo(FVector(0.f, 0.f, 0.f), FVector(0.f, 0.f, OnTargetZOffset), GetWorld()->GetDeltaSeconds(), 0.1f);
 				GLog->Log("DioCane");
-				IsCameraInTarget = true;
+				if (CameraBoom->SocketOffset == FVector(0.f, 0.f, OnTargetZOffset))
+				{
+					IsCameraInTarget = true;
+					GLog->Log("CameraTrue");
+				}			
 			}
 		}
-
+*/
 	}
 
 	if (!TargetLocked)
@@ -165,24 +178,38 @@ void UMainTargetSystemComponent::TickComponent(float DeltaTime, ELevelTick TickT
 		}
 		if (CameraComponent)
 		{
-			CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(OnTargetCameraPosition), FVector(StartingCameraPosition), GetWorld()->GetDeltaSeconds(), 0.1f));
-			CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(OnTargetCameraRotation), FRotator(StartingCameraRotation), GetWorld()->GetDeltaSeconds(), 0.1f));
+			if (IsCameraInTarget)
+			{
+				CameraComponent->SetRelativeLocation(FMath::VInterpTo(FVector(OnTargetCameraPosition), FVector(StartingCameraPosition), GetWorld()->GetDeltaSeconds(), 0.1f));
+				CameraComponent->SetRelativeRotation(FMath::RInterpTo(FRotator(OnTargetCameraRotation), FRotator(StartingCameraRotation), GetWorld()->GetDeltaSeconds(), 0.1f));
+				
+				if (CameraComponent->GetRelativeLocation == FVector(StartingCameraPosition))
+				{
+					IsCameraInTarget = false;
+					GLog->Log("CameraFalse");
+				}
+			}
 		}
-*/
-		USpringArmComponent* CameraBoom = MainCharacter->FindComponentByClass<USpringArmComponent>();
+
+/*		USpringArmComponent* CameraBoom = MainCharacter->FindComponentByClass<USpringArmComponent>();
 		if (!CameraBoom)
 		{
 
 		}
 		if (CameraBoom)
 		{
-			if (CameraBoom->SocketOffset != FVector(0.f, 0.f, 0.f))
+			if (IsCameraInTarget)
 			{
 				CameraBoom->SocketOffset = FMath::VInterpTo(FVector(0.f, 0.f, OnTargetZOffset), FVector(0.f, 0.f, 0.f), GetWorld()->GetDeltaSeconds(), 0.1f);
-				IsCameraInTarget = false;
 				GLog->Log("DioBestia");
+				if (CameraBoom->SocketOffset == FVector(0.f, 0.f, 0.f))
+				{
+					IsCameraInTarget = false;
+					GLog->Log("CameraFalse");
+				}
 			}
 		}
+*/
 	}
 }
 
