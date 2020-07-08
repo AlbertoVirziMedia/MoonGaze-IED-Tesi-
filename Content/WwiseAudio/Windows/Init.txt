@@ -31,23 +31,27 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Reflect Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	85412153	Ambience			\Default Work Unit\Master Audio Bus\World\Ambience	
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
 	1564565979	Ambient_Music			\Default Work Unit\Master Audio Bus\Non_World\Music\Ambient_Music	
 	1929840817	Fight_Music			\Default Work Unit\Master Audio Bus\Non_World\Music\Fight_Music	
 	1945819544	Kria			\Default Work Unit\Master Audio Bus\World\Kria	
 	2242381963	Enemies			\Default Work Unit\Master Audio Bus\World\Enemies	
 	2609808943	World			\Default Work Unit\Master Audio Bus\World	
+	2841829810	Ambience_Binauralizer			\Default Work Unit\Master Audio Bus\World\Ambience_Binauralizer	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3869140995	Non_World			\Default Work Unit\Master Audio Bus\Non_World	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Non_World\Music	
+	3998213830	Ambience Ambisonic			\Default Work Unit\Master Audio Bus\World\Ambience_Binauralizer\Ambience Ambisonic	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	148343756	Health_Effects			\Default Work Unit\Master Audio Bus\World\Health_Effects	
+	1280108929	Tunnel_Rev			\Default Work Unit\Master Audio Bus\World\Tunnel_Rev	
 	1530676313	Exterior_Rev			\Default Work Unit\Master Audio Bus\World\Exterior_Rev	
 
 Effect plug-ins	ID	Name	Type				Notes
+	351972310	Auro_Headphone_(Custom)	Auro Headphone			
 	684135704	Hamburg_Harburger_See_Org_Ambisonics_(Custom)	Wwise Convolution Reverb			NOTE SA: Sounds tiny and filtered compared to stereo version.    Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 2ms 
+	704341189	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	1396341940	Tape_Slap_Back	iZotope Trash Delay			
 	4190220820	Voice_CenterOnly_Lowered	Wwise Pitch Shifter			
 
