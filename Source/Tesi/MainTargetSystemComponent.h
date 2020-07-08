@@ -59,6 +59,10 @@ public:
 	/**/
 	FVector StartingCameraPosition;
 	FRotator StartingCameraRotation;
+	//
+	float OnTargetZOffset;
+	//
+	bool IsCameraInTarget;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target System | Camera")
 	float ChangeZCameraPosition;
