@@ -22,7 +22,7 @@ public:
 	/*IA Variables
 	/**/
 //	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
-//	class AEsploratoriMeleeAIController* AIController;
+	class ALiocarpioAIController* AIController;
 	//bool that check when the enemy his hitten
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bIsGettingDameged;

@@ -6,7 +6,7 @@
 #include "Perception/PawnSensingComponent.h"
 #include "Perception/AIPerceptionComponent.h"
 #include "Classes/AIController.h"
-//#include "EsploratoriMeleeAIController.h"
+#include "LiocarpioAIController.h"
 #include "Components/BoxComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/SkeletalMesh.h"
@@ -39,8 +39,8 @@ void ALiocarpioCharacter::BeginPlay()
 	/**/
 	/*IA Setting
 	/**/
-	/*	//IA Controller Reference
-	AIController = Cast<AEsploratoriMeleeAIController>(GetController());
+	//IA Controller Reference
+	AIController = Cast<ALiocarpioAIController>(GetController());
 	if (!AIController)
 	{
 
@@ -123,22 +123,22 @@ void ALiocarpioCharacter::MeleeAttackEnd()
 
 float ALiocarpioCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
-/*	if (EMAnimInstance)
+	if (LAnimInstance)
 	{
 		if (bCanTakeDamage)
 		{
-			EMAnimInstance->TakeDamageAnim();
+			LAnimInstance->TakeDamageAnim();
 			bCanTakeDamage = false;
-			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AEsploratoriMeleeCharacter::ResetTakeDamage, TakeDamageStop, false);
+			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &ALiocarpioCharacter::ResetTakeDamage, TakeDamageStop, false);
 		}
 	}
 	bIsGettingDameged = true;
 	if (Health - DamageAmount <= 0.f)
 	{
-		EMAnimInstance->DeathAnim();
+		LAnimInstance->DeathAnim();
 		bEnemyIsAlive = false;
 	}
-*/
+
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
 
