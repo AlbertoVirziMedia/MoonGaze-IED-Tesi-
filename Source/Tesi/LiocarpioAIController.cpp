@@ -34,3 +34,18 @@ void ALiocarpioAIController::OnPossess(APawn* InPawn)
 		LBehaviorTreeComp->StartTree(*LCharacter->CharacterBehaviorTree);
 	}
 }
+
+void ALiocarpioAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	
+	if (LCharacter)
+	{
+		LIsAlive = LCharacter->bEnemyIsAlive;
+		if (!LIsAlive)
+		{
+			LBehaviorTreeComp->StopTree();
+			
+		}
+	}
+}

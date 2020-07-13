@@ -135,7 +135,8 @@ float ALiocarpioCharacter::TakeDamage(float DamageAmount, struct FDamageEvent co
 	bIsGettingDameged = true;
 	if (Health - DamageAmount <= 0.f)
 	{
-		LAnimInstance->DeathAnim();
+		GLog->Log("Death");
+		ALiocarpioCharacter::Die();
 		bEnemyIsAlive = false;
 	}
 
@@ -149,7 +150,15 @@ void ALiocarpioCharacter::ResetTakeDamage()
 
 void ALiocarpioCharacter::Die()
 {
-
+	if (AIController)
+	{
+		AIController->LBehaviorTreeComp->StopTree();
+		GLog->Log("StopTree");
+	}
+	if (LAnimInstance)
+	{
+		LAnimInstance->DeathAnim();
+	}
 }
 
 void ALiocarpioCharacter::DeadEnd()
