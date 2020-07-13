@@ -21,7 +21,8 @@ public:
 	/**/
 	/*Only Variables
 	/**/
-
+	class ALiocarpioCharacter* LCharacter;
+	bool LIsAlive;
 	/**/
 	/*IA Behavior Variables
 	/**/
@@ -41,6 +42,9 @@ public:
 
 	//Override of the OnPossess function
 	virtual void OnPossess(APawn* InPawn) override;
+
+	//
+	virtual void Tick(float DeltaTime) override;
 
 	//Get Blackboard
 	FORCEINLINE UBlackboardComponent* GetBlackboardComp() const { return LBlackboardComp; };
