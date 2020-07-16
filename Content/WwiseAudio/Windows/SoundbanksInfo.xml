@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\anty\Documents\Prototipo Tesi 6.2\Prototipo Tesi 6.1\Prototipo Tesi\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\anty\Documents\Prototipo Tesi 6.2\Prototipo Tesi 6.1\Prototipo Tesi\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\anty\Documents\GitHub\MoonGaze-IED-Tesi-\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\alber\Downloads\Prototipo Tesi 6.3\Prototipo Tesi 6.1\Prototipo Tesi\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\alber\Downloads\Prototipo Tesi 6.3\Prototipo Tesi 6.1\Prototipo Tesi\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\alber\Documents\Unreal Projects\Tesi 4.24\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\anty\Documents\Prototipo Tesi 6.2\Prototipo Tesi 6.1\Prototipo Tesi\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\alber\Downloads\Prototipo Tesi 6.3\Prototipo Tesi 6.1\Prototipo Tesi\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -384,6 +384,10 @@
 				</Event>
 				<Event Id="391505112" Name="Kria_Hurt" ObjectPath="\Events\Default Work Unit\Kria\Kria_Hurt">
 					<IncludedMemoryFiles>
+						<File Id="5840082" Language="SFX">
+							<ShortName>kria_scossa_medusa\kria_scossa_medusa_002.wav</ShortName>
+							<Path>SFX\kria_scossa_medusa\kria_scossa_medusa_002_9B19BE89.wem</Path>
+						</File>
 						<File Id="91345559" Language="SFX">
 							<ShortName>kria_voice_damage_heavy_003.wav</ShortName>
 							<Path>SFX\kria_voice_damage_heavy_003_B32F345B.wem</Path>
@@ -436,6 +440,14 @@
 							<ShortName>kria_voice_damage_light_003.wav</ShortName>
 							<Path>SFX\kria_voice_damage_light_003_670AD442.wem</Path>
 						</File>
+						<File Id="1013086416" Language="SFX">
+							<ShortName>kria_scossa_medusa\kria_scossa_medusa_001.wav</ShortName>
+							<Path>SFX\kria_scossa_medusa\kria_scossa_medusa_001_97CCB5BE.wem</Path>
+						</File>
+						<File Id="1062341699" Language="SFX">
+							<ShortName>kria_scossa_medusa\kria_scossa_medusa_003.wav</ShortName>
+							<Path>SFX\kria_scossa_medusa\kria_scossa_medusa_003_5267243F.wem</Path>
+						</File>
 						<File Id="1070941213" Language="SFX">
 							<ShortName>esploratori_weapon_impact_fionda_kria_003.wav</ShortName>
 							<Path>SFX\esploratori_weapon_impact_fionda_kria_003_3D26717F.wem</Path>
@@ -461,6 +473,13 @@
 								<File Id="721888648"/>
 								<File Id="418854553"/>
 								<File Id="553847784"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EC212983-F732-4B18-B843-F612295E68E5}">
+							<Media>
+								<File Id="1013086416"/>
+								<File Id="5840082"/>
+								<File Id="1062341699"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -1113,23 +1132,15 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2658294157" Name="Granchio_Attack" ObjectPath="\Events\Default Work Unit\Enemies\Granchio\Granchio_Attack">
+				<Event Id="2094926061" Name="Granchio_Attack_Heavy" ObjectPath="\Events\Default Work Unit\Enemies\Granchio\Granchio_Attack_Heavy">
 					<IncludedMemoryFiles>
 						<File Id="1212766" Language="SFX">
 							<ShortName>granchio_footsteps_water\granchio_footsteps_water_003.wav</ShortName>
 							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_003_84875D65.wem</Path>
 						</File>
-						<File Id="35907420" Language="SFX">
-							<ShortName>granchio_attack_swish\granchio_attack_swish_002.wav</ShortName>
-							<Path>SFX\granchio_attack_swish\granchio_attack_swish_002_F507E3A9.wem</Path>
-						</File>
 						<File Id="40850543" Language="SFX">
 							<ShortName>granchio_footsteps_stone_002.wav</ShortName>
 							<Path>SFX\granchio_footsteps_stone_002_84875D65.wem</Path>
-						</File>
-						<File Id="67607886" Language="SFX">
-							<ShortName>granchio_movement\granchio_movement_003.wav</ShortName>
-							<Path>SFX\granchio_movement\granchio_movement_003_B327639B.wem</Path>
 						</File>
 						<File Id="82178294" Language="SFX">
 							<ShortName>granchio_footsteps_water\granchio_footsteps_water_004.wav</ShortName>
@@ -1151,10 +1162,6 @@
 							<ShortName>granchio_footsteps_stone_003.wav</ShortName>
 							<Path>SFX\granchio_footsteps_stone_003_84875D65.wem</Path>
 						</File>
-						<File Id="259797406" Language="SFX">
-							<ShortName>granchio_attack_swish\granchio_attack_swish_001.wav</ShortName>
-							<Path>SFX\granchio_attack_swish\granchio_attack_swish_001_A771A5D0.wem</Path>
-						</File>
 						<File Id="281684754" Language="SFX">
 							<ShortName>Granchio_Swoosh_Low_short_003.wav</ShortName>
 							<Path>SFX\Granchio_Swoosh_Low_short_003_80F4B39A.wem</Path>
@@ -1163,10 +1170,6 @@
 							<ShortName>granchio_voice_attack_001.wav</ShortName>
 							<Path>SFX\granchio_voice_attack_001_A749651F.wem</Path>
 						</File>
-						<File Id="513562617" Language="SFX">
-							<ShortName>granchio_movement\granchio_movement_002.wav</ShortName>
-							<Path>SFX\granchio_movement\granchio_movement_002_D0EE97E9.wem</Path>
-						</File>
 						<File Id="667550241" Language="SFX">
 							<ShortName>Granchio_Swoosh_Low_short_002.wav</ShortName>
 							<Path>SFX\Granchio_Swoosh_Low_short_002_5A6A7C4B.wem</Path>
@@ -1174,10 +1177,6 @@
 						<File Id="693520424" Language="SFX">
 							<ShortName>granchio_footsteps_stone_001.wav</ShortName>
 							<Path>SFX\granchio_footsteps_stone_001_84875D65.wem</Path>
-						</File>
-						<File Id="850898443" Language="SFX">
-							<ShortName>granchio_movement\granchio_movement_004.wav</ShortName>
-							<Path>SFX\granchio_movement\granchio_movement_004_B8C26A39.wem</Path>
 						</File>
 						<File Id="861890406" Language="SFX">
 							<ShortName>granchio_voice_attack_003.wav</ShortName>
@@ -1191,6 +1190,48 @@
 							<ShortName>granchio_footsteps_water\granchio_footsteps_water_002.wav</ShortName>
 							<Path>SFX\granchio_footsteps_water\granchio_footsteps_water_002_84875D65.wem</Path>
 						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BA501C03-5502-40BD-BD32-7EE4517D3E2C}">
+							<Media>
+								<File Id="693520424"/>
+								<File Id="40850543"/>
+								<File Id="238332546"/>
+								<File Id="194759813"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{418EF324-8831-459E-BE1F-C56FB03F5327}">
+							<Media>
+								<File Id="112821672"/>
+								<File Id="948318373"/>
+								<File Id="1212766"/>
+								<File Id="82178294"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3667127812" Name="Granchio_Attack_Light" ObjectPath="\Events\Default Work Unit\Enemies\Granchio\Granchio_Attack_Light">
+					<IncludedMemoryFiles>
+						<File Id="35907420" Language="SFX">
+							<ShortName>granchio_attack_swish\granchio_attack_swish_002.wav</ShortName>
+							<Path>SFX\granchio_attack_swish\granchio_attack_swish_002_F507E3A9.wem</Path>
+						</File>
+						<File Id="67607886" Language="SFX">
+							<ShortName>granchio_movement\granchio_movement_003.wav</ShortName>
+							<Path>SFX\granchio_movement\granchio_movement_003_B327639B.wem</Path>
+						</File>
+						<File Id="259797406" Language="SFX">
+							<ShortName>granchio_attack_swish\granchio_attack_swish_001.wav</ShortName>
+							<Path>SFX\granchio_attack_swish\granchio_attack_swish_001_A771A5D0.wem</Path>
+						</File>
+						<File Id="513562617" Language="SFX">
+							<ShortName>granchio_movement\granchio_movement_002.wav</ShortName>
+							<Path>SFX\granchio_movement\granchio_movement_002_D0EE97E9.wem</Path>
+						</File>
+						<File Id="850898443" Language="SFX">
+							<ShortName>granchio_movement\granchio_movement_004.wav</ShortName>
+							<Path>SFX\granchio_movement\granchio_movement_004_B8C26A39.wem</Path>
+						</File>
 						<File Id="992433071" Language="SFX">
 							<ShortName>granchio_attack_swish\granchio_attack_swish_003.wav</ShortName>
 							<Path>SFX\granchio_attack_swish\granchio_attack_swish_003_0BB22C53.wem</Path>
@@ -1200,47 +1241,6 @@
 							<Path>SFX\granchio_movement\granchio_movement_001_B135D87F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{A632DAFE-BCCF-4453-8171-6221CDB74C2B}">
-							<Media>
-								<File Id="898114340"/>
-								<File Id="667550241"/>
-								<File Id="281684754"/>
-								<File Id="418510054"/>
-								<File Id="130230092"/>
-								<File Id="861890406"/>
-							</Media>
-							<Children>
-								<SwitchContainer SwitchValue="{BA501C03-5502-40BD-BD32-7EE4517D3E2C}">
-									<Media>
-										<File Id="693520424"/>
-										<File Id="40850543"/>
-										<File Id="238332546"/>
-										<File Id="194759813"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{418EF324-8831-459E-BE1F-C56FB03F5327}">
-									<Media>
-										<File Id="112821672"/>
-										<File Id="948318373"/>
-										<File Id="1212766"/>
-										<File Id="82178294"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{355E0796-4317-4186-B653-785654C91EC0}">
-							<Media>
-								<File Id="259797406"/>
-								<File Id="35907420"/>
-								<File Id="992433071"/>
-								<File Id="1063473848"/>
-								<File Id="513562617"/>
-								<File Id="67607886"/>
-								<File Id="850898443"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 				</Event>
 				<Event Id="4264334010" Name="Granchio_Damage" ObjectPath="\Events\Default Work Unit\Enemies\Granchio\Granchio_Damage">
 					<IncludedMemoryFiles>
@@ -1426,45 +1426,21 @@
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{82787380-7A1B-4D1D-ACF2-1E71E0863E18}">
-							<Children>
-								<SwitchContainer SwitchValue="{BA501C03-5502-40BD-BD32-7EE4517D3E2C}">
-									<Media>
-										<File Id="693520424"/>
-										<File Id="40850543"/>
-										<File Id="238332546"/>
-										<File Id="194759813"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{418EF324-8831-459E-BE1F-C56FB03F5327}">
-									<Media>
-										<File Id="112821672"/>
-										<File Id="948318373"/>
-										<File Id="1212766"/>
-										<File Id="82178294"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
+						<SwitchContainer SwitchValue="{BA501C03-5502-40BD-BD32-7EE4517D3E2C}">
+							<Media>
+								<File Id="693520424"/>
+								<File Id="40850543"/>
+								<File Id="238332546"/>
+								<File Id="194759813"/>
+							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{90B74F69-E670-49A0-BF49-DB392481998D}">
-							<Children>
-								<SwitchContainer SwitchValue="{BA501C03-5502-40BD-BD32-7EE4517D3E2C}">
-									<Media>
-										<File Id="693520424"/>
-										<File Id="40850543"/>
-										<File Id="238332546"/>
-										<File Id="194759813"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{418EF324-8831-459E-BE1F-C56FB03F5327}">
-									<Media>
-										<File Id="112821672"/>
-										<File Id="948318373"/>
-										<File Id="1212766"/>
-										<File Id="82178294"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
+						<SwitchContainer SwitchValue="{418EF324-8831-459E-BE1F-C56FB03F5327}">
+							<Media>
+								<File Id="112821672"/>
+								<File Id="948318373"/>
+								<File Id="1212766"/>
+								<File Id="82178294"/>
+							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -1492,7 +1468,7 @@
 					<IncludedMemoryFiles>
 						<File Id="276901612" Language="SFX">
 							<ShortName>medusa_idle_texture.wav</ShortName>
-							<Path>SFX\medusa_idle_texture_D5D464E5.wem</Path>
+							<Path>SFX\medusa_idle_texture_B88C4B4E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1501,23 +1477,11 @@
 				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
 			</GameParameters>
 			<SwitchGroups>
-				<SwitchGroup Id="2025838686" Name="Granchio_Walk" ObjectPath="\Switches\Default Work Unit\Enemies\Granchio_Walk">
-					<Switches>
-						<Switch Id="1881534084" Name="Walk_Forward" ObjectPath="\Switches\Default Work Unit\Enemies\Granchio_Walk\Walk_Forward"/>
-						<Switch Id="1874467062" Name="Walk_Backward" ObjectPath="\Switches\Default Work Unit\Enemies\Granchio_Walk\Walk_Backward"/>
-					</Switches>
-				</SwitchGroup>
 				<SwitchGroup Id="2095220232" Name="Death_Body_Fall" ObjectPath="\Switches\Default Work Unit\General\Death_Body_Fall">
 					<Switches>
 						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\General\Death_Body_Fall\Stone"/>
 						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\General\Death_Body_Fall\Water"/>
 						<Switch Id="376462290" Name="Sea" ObjectPath="\Switches\Default Work Unit\General\Death_Body_Fall\Sea"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="2658294157" Name="Granchio_Attack" ObjectPath="\Switches\Default Work Unit\Enemies\Granchio_Attack">
-					<Switches>
-						<Switch Id="3667127812" Name="Granchio_Attack_Light" ObjectPath="\Switches\Default Work Unit\Enemies\Granchio_Attack\Granchio_Attack_Light"/>
-						<Switch Id="2094926061" Name="Granchio_Attack_Heavy" ObjectPath="\Switches\Default Work Unit\Enemies\Granchio_Attack\Granchio_Attack_Heavy"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="4064446173" Name="Surface_Type" ObjectPath="\Switches\Default Work Unit\General\Surface_Type">

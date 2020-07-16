@@ -213,29 +213,35 @@ void AMainCharacter::LookUpAtRate(float Rate)
 //Move Forward Function
 void AMainCharacter::MoveForward(float Value)
 {
-	if ((Controller != nullptr) && (Value != 0.0f))
+	if (bIsAlive)
 	{
-		//Find which way is forward
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
+		if ((Controller != nullptr) && (Value != 0.0f))
+		{
+			//Find which way is forward
+			const FRotator Rotation = Controller->GetControlRotation();
+			const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
 
-		//const FRotator Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X); 
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		AddMovementInput(Direction, Value);
-	}
+			//const FRotator Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X); 
+			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+			AddMovementInput(Direction, Value);
+		}
+	}	
 }
 
 //Move Right/Left Function
 void AMainCharacter::MoveRight(float Value)
 {
-	if ((Controller != nullptr) && (Value != 0.0f))
+	if (bIsAlive)
 	{
-		//Find which way is forward
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
+		if ((Controller != nullptr) && (Value != 0.0f))
+		{
+			//Find which way is forward
+			const FRotator Rotation = Controller->GetControlRotation();
+			const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
 
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		AddMovementInput(Direction, Value);
+			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+			AddMovementInput(Direction, Value);
+		}
 	}
 }
 
@@ -280,7 +286,7 @@ void AMainCharacter::Landed(const FHitResult& Hit)
 //Dash Function
 void AMainCharacter::Dash()
 {
-	if (CanDash)
+	if (CanDash && bIsAlive)
 	{
 		FVector InputVector = GetLastMovementInputVector();
 		if (InputVector == FVector(0,0,0))
@@ -322,20 +328,22 @@ void AMainCharacter::SetEquippedWeapon(AWeapon* WeaponToSet)
 //Start the attack function
 void AMainCharacter::Attack()
 {
-	//Set the attack button bool
-	bAttackButtonDown = true;
-	if (EquippedWeapon)
+	if (bIsAlive)
 	{
-		EquippedWeapon->WeaponAttack();
-	}
-	//Reference to the main character anim instance
-	UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-	if (MainCharacterAnimInstanceRef)
-	{
-		//Call the Main Character Anim Instance Attack Function
-		MainCharacterAnimInstanceRef->Attack();
-//		MainCharacterPlayerController->PlayerCameraManager->PlayCameraShake(CameraAttackShake, 1.f);
-		RefToCharacterMovementComp->MaxWalkSpeed = MontageWalkSpeed;
+		//Set the attack button bool
+		bAttackButtonDown = true;
+		if (EquippedWeapon)
+		{
+			EquippedWeapon->WeaponAttack();
+		}
+		//Reference to the main character anim instance
+		UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+		if (MainCharacterAnimInstanceRef)
+		{
+			//Call the Main Character Anim Instance Attack Function
+			MainCharacterAnimInstanceRef->Attack();
+			RefToCharacterMovementComp->MaxWalkSpeed = MontageWalkSpeed;
+		}
 	}
 }
 
@@ -349,7 +357,7 @@ void AMainCharacter::AttackEnd()
 void AMainCharacter::Blocking()
 {
 	UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-	if (!MainCharacterAnimInstanceRef->bIsInAir)
+	if (!MainCharacterAnimInstanceRef->bIsInAir && bIsAlive)
 	{
 		bIsBlocking = true;
 
