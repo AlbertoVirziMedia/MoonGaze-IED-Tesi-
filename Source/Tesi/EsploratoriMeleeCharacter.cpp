@@ -106,6 +106,7 @@ float AEsploratoriMeleeCharacter::TakeDamage(float DamageAmount, struct FDamageE
 	{
 		EMAnimInstance->DeathAnim();
 		bEnemyIsAlive = false;
+		AIController->StopTree();
 	}
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
