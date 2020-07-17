@@ -44,8 +44,7 @@ void ALiocarpioAIController::Tick(float DeltaTime)
 		LIsAlive = LCharacter->bEnemyIsAlive;
 		if (!LIsAlive)
 		{
-			LBehaviorTreeComp->StopTree();
-			
+			LBehaviorTreeComp->StopTree();	
 		}
 	}
 }

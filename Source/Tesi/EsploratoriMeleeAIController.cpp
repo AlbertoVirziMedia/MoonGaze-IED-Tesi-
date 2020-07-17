@@ -22,7 +22,7 @@ void AEsploratoriMeleeAIController::OnPossess(APawn* InPawn)
 {
 	Super::OnPossess(InPawn);
 
-	//Cast EnemyRangeCharacter and check if it's my own EnemyAiCharacter
+	//Cast EnemyMeleeCharacter and check if it's my own EnemyAiCharacter
 	AEsploratoriMeleeCharacter* EMCharacter = Cast<AEsploratoriMeleeCharacter>(InPawn);
 
 	//If ER is Enemy Character and he have the BehaviorTree
@@ -32,5 +32,20 @@ void AEsploratoriMeleeAIController::OnPossess(APawn* InPawn)
 		EMBlackboardComp->InitializeBlackboard(*(EMCharacter->CharacterBehaviorTree->BlackboardAsset));
 
 		EMBehaviorTreeComp->StartTree(*EMCharacter->CharacterBehaviorTree);
+	}
+}
+
+void AEsploratoriMeleeAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (EMCharacter)
+	{
+		EMIsAlive = EMCharacter->bEnemyIsAlive;
+		if (!EMIsAlive)
+		{
+			EMBehaviorTreeComp->StopTree();
+			GLog->Log("Dead")
+		}
 	}
 }

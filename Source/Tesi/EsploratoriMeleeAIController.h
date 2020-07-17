@@ -21,6 +21,8 @@ public:
 	/**/
 	/*Only Variables
 	/**/
+	class AEsploratoriMeleeCharacter* EMCharacter;
+	bool EMIsAlive;
 
 	/**/
 	/*IA Behavior Variables
@@ -41,6 +43,9 @@ public:
 
 	//Override of the OnPossess function
 	virtual void OnPossess(APawn* InPawn) override;
+
+	//
+	virtual void Tick(float DeltaTime) override;
 
 	//Get Blackboard
 	FORCEINLINE UBlackboardComponent* GetBlackboardComp() const { return EMBlackboardComp; };
