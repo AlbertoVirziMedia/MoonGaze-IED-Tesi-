@@ -37,8 +37,6 @@ UMainTargetSystemComponent::UMainTargetSystemComponent()
 
 	TargetableActors = APawn::StaticClass();
 
-	TargetLocked = false;
-
 	/**/
 	/*Target System Camera Variables
 	/**/
