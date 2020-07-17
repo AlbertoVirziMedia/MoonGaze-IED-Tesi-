@@ -34,3 +34,9 @@ void AEsploratoriMeleeAIController::OnPossess(APawn* InPawn)
 		EMBehaviorTreeComp->StartTree(*EMCharacter->CharacterBehaviorTree);
 	}
 }
+
+void AEsploratoriMeleeAIController::StopTree()
+{
+	EMBehaviorTreeComp->Deactivate();
+	EMBehaviorTreeComp->StopTree();
+}

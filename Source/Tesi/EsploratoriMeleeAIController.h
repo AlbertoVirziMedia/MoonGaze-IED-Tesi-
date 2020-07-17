@@ -42,6 +42,8 @@ public:
 	//Override of the OnPossess function
 	virtual void OnPossess(APawn* InPawn) override;
 
+	void StopTree();
+
 	//Get Blackboard
 	FORCEINLINE UBlackboardComponent* GetBlackboardComp() const { return EMBlackboardComp; };
 
