@@ -76,11 +76,6 @@ public:
 	void DamageColliderEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 	/**/
-	/*Attack Functions
-	/**/
-	void MeleeAttack();
-	void MeleeAttackEnd();
-	/**/
 	/*Death Functions
 	/**/
 	//Function called when enemy die

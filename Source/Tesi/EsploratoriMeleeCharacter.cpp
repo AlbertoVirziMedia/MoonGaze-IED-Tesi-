@@ -3,8 +3,6 @@
 
 #include "EsploratoriMeleeCharacter.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
-#include "Perception/PawnSensingComponent.h"
-#include "Perception/AIPerceptionComponent.h"
 #include "Classes/AIController.h"
 #include "EsploratoriMeleeAIController.h"
 #include "Components/BoxComponent.h"
@@ -76,16 +74,6 @@ void AEsploratoriMeleeCharacter::DamageColliderBeginOverlap(UPrimitiveComponent*
 }
 
 void AEsploratoriMeleeCharacter::DamageColliderEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-
-}
-
-void AEsploratoriMeleeCharacter::MeleeAttack()
-{
-
-}
-
-void AEsploratoriMeleeCharacter::MeleeAttackEnd()
 {
 
 }
