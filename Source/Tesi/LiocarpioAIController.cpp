@@ -45,7 +45,7 @@ void ALiocarpioAIController::Tick(float DeltaTime)
 		if (!LIsAlive)
 		{
 			LBehaviorTreeComp->StopTree();
-			
+			LBehaviorTreeComp->Deactivate();
 		}
 	}
 }
