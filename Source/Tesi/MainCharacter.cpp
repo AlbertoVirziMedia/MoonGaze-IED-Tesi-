@@ -328,17 +328,18 @@ void AMainCharacter::SetEquippedWeapon(AWeapon* WeaponToSet)
 //Start the attack function
 void AMainCharacter::Attack()
 {
+	//Reference to the main character anim instance
+	UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	bool bIsInAir = MainCharacterAnimInstanceRef->bIsInAir;
 	if (bIsAlive)
 	{
 		//Set the attack button bool
 		bAttackButtonDown = true;
-		if (EquippedWeapon)
+		if (EquippedWeapon && !bIsInAir)
 		{
 			EquippedWeapon->WeaponAttack();
 		}
-		//Reference to the main character anim instance
-		UMainCharacterAnimInstance* MainCharacterAnimInstanceRef = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-		if (MainCharacterAnimInstanceRef)
+		if (MainCharacterAnimInstanceRef && !bIsInAir)
 		{
 			//Call the Main Character Anim Instance Attack Function
 			MainCharacterAnimInstanceRef->Attack();
@@ -351,7 +352,7 @@ void AMainCharacter::Attack()
 void AMainCharacter::AttackEnd()
 {
 	bAttackButtonDown = false;
-	RefToCharacterMovementComp->SetMovementMode(MOVE_Walking);
+//	RefToCharacterMovementComp->SetMovementMode(MOVE_Walking);
 }
 
 void AMainCharacter::Blocking()
