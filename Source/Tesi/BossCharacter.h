@@ -21,8 +21,8 @@ public:
 	/**/
 	/*IA Variables
 	/**/
-//	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
-//	class ABossAIController* AIController;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+	class ABossAIController* AIController;
 	//bool that check when the enemy his hitten
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bIsGettingDameged;

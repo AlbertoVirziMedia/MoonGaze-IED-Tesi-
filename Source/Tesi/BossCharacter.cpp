@@ -4,7 +4,7 @@
 #include "BossCharacter.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "Classes/AIController.h"
-//#include "EsploratoriMeleeAIController.h"
+#include "BossAIController.h"
 #include "Components/BoxComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/SkeletalMesh.h"
@@ -25,9 +25,9 @@ ABossCharacter::ABossCharacter()
 	DamageColliderDx = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderDX"));
 	DamageColliderDx->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("BossDxSocket"));
 
-/*	DamageColliderLanterna = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderDx"));
+	DamageColliderLanterna = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderLanterna"));
 	DamageColliderLanterna->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("BossLanternaSocket"));
-*/
+
 }
 
 void ABossCharacter::BeginPlay()
@@ -38,7 +38,7 @@ void ABossCharacter::BeginPlay()
 	/*IA Setting
 	/**/
 	//IA Controller Reference
-/*	AIController = Cast<ABossAIController>(GetController());
+	AIController = Cast<ABossAIController>(GetController());
 	if (!AIController)
 	{
 
@@ -47,7 +47,7 @@ void ABossCharacter::BeginPlay()
 	{
 
 	}
-*/
+
 	/**/
 	/*Bind Action On Overlap of DamageCollider Component
 	/**/
@@ -94,7 +94,7 @@ float ABossCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const &
 	{
 		BossAnimInstance->DeathAnim();
 		bEnemyIsAlive = false;
-//		AIController->StopTree();
+		AIController->StopTree();
 	}
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
