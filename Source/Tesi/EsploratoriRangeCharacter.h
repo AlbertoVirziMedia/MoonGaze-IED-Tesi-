@@ -25,7 +25,14 @@ public:
 //	class AEsploratoriMeleeAIController* AIController;
 	//bool that check when the enemy his hitten
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
-		bool bIsGettingDameged;
+	bool bIsGettingDameged;
+
+	/**/
+	/*EsploratoriRange Need another DamageCollider
+	/**/
+	//Damage Collider
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
+	class UBoxComponent* DamageColliderBastone;
 
 	//AnimInstance Ref
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Animation")

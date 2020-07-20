@@ -18,6 +18,13 @@
 
 AEsploratoriRangeCharacter::AEsploratoriRangeCharacter()
 {
+	/**/
+	/*Create Component
+	/**/
+	//Damage Collider (Collider that damage Main Character)
+	DamageColliderBastone = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderBastone"));
+	DamageColliderBastone->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("DamageColliderBastone"));
+
 	bCanTakeDamage = true;
 	TakeDamageStop = 3.f;
 }

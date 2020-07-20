@@ -121,6 +121,18 @@ AMainCharacter::AMainCharacter()
 	//Bool That check if the player is blocking
 	bIsBlocking = false;
 
+/*	//
+	MainTargetComp = FindComponentByClass<UMainTargetSystemComponent>();
+	if (MainTargetComp)
+	{
+		MainTarget = MainTargetComp->TargetLocked;
+	}
+	else
+	{
+
+	}
+
+*/
 }
 
 // Called when the game starts or when spawned
@@ -149,7 +161,15 @@ void AMainCharacter::Tick(float DeltaTime)
 	{
 		EnemyTargetRefToDistance = CombatTarget;
 	}
+/*	if (MainTargetComp)
+	{
+		MainTarget = MainTargetComp->TargetLocked;
+	}
+	else
+	{
 
+	}
+*/	
 }
 
 // Called to bind functionality to input

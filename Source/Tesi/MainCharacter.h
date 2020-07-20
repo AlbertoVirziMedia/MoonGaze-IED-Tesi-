@@ -166,6 +166,11 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Enemy Distance")
 	class AGenericEnemyCharacter* EnemyTargetRefToDistance;
 
+	//
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "MainTarget")
+	class UMainTargetSystemComponent* MainTargetComp;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "MainTarget")
+	bool MainTarget;
 
 protected:
 	// Called when the game starts or when spawned
