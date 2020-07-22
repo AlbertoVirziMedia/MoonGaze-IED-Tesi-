@@ -121,18 +121,9 @@ AMainCharacter::AMainCharacter()
 	//Bool That check if the player is blocking
 	bIsBlocking = false;
 
-/*	//
-	MainTargetComp = FindComponentByClass<UMainTargetSystemComponent>();
-	if (MainTargetComp)
-	{
-		MainTarget = MainTargetComp->TargetLocked;
-	}
-	else
-	{
+	//Play Once the death animation
+	bPlayOnce = false;
 
-	}
-
-*/
 }
 
 // Called when the game starts or when spawned
@@ -161,15 +152,6 @@ void AMainCharacter::Tick(float DeltaTime)
 	{
 		EnemyTargetRefToDistance = CombatTarget;
 	}
-/*	if (MainTargetComp)
-	{
-		MainTarget = MainTargetComp->TargetLocked;
-	}
-	else
-	{
-
-	}
-*/	
 }
 
 // Called to bind functionality to input
@@ -406,6 +388,7 @@ float AMainCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const &
 	if (Health - DamageAmount <= 0.f)
 	{
 		Health -= DamageAmount;
+		bPlayOnce = true;
 		Die();
 	}
 	else
@@ -435,10 +418,11 @@ float AMainCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const &
 void AMainCharacter::Die()
 {
 	UAnimInstance* AnimIstance = GetMesh()->GetAnimInstance();
-	if (AnimIstance && CombatMontage)
+	if (AnimIstance && CombatMontage && bPlayOnce)
 	{
 		AnimIstance->Montage_Play(CombatMontage, 1.0f);
 		AnimIstance->Montage_JumpToSection(FName("Death"));
+		bPlayOnce = false;
 	}
 	bIsAlive = false;
 }

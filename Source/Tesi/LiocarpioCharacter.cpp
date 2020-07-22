@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "LiocarpioCharacter.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "Perception/PawnSensingComponent.h"
@@ -30,6 +29,8 @@ ALiocarpioCharacter::ALiocarpioCharacter()
 
 	bCanTakeDamage = true;
 	TakeDamageStop = 3.f;
+
+	bPlayDeathOnce = true;
 }
 
 void ALiocarpioCharacter::BeginPlay()
@@ -133,11 +134,11 @@ float ALiocarpioCharacter::TakeDamage(float DamageAmount, struct FDamageEvent co
 		}
 	}
 	bIsGettingDameged = true;
-	if (Health - DamageAmount <= 0.f)
+	if (Health - DamageAmount <= 0.f  && bPlayDeathOnce)
 	{
-		GLog->Log("Death");
 		ALiocarpioCharacter::Die();
 		bEnemyIsAlive = false;
+		bPlayDeathOnce = false;
 	}
 
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
@@ -153,7 +154,6 @@ void ALiocarpioCharacter::Die()
 	if (AIController)
 	{
 		AIController->LBehaviorTreeComp->StopTree();
-		GLog->Log("StopTree");
 	}
 	if (LAnimInstance)
 	{

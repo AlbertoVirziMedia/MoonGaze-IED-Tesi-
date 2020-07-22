@@ -129,6 +129,9 @@ public:
 	//WalkSpeed during Attack and Damage
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	float MontageWalkSpeed;
+	//PlayThe Dead animation just once
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool bPlayOnce;
 
 	/**/
 	/*Player Combat 
@@ -166,11 +169,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Enemy Distance")
 	class AGenericEnemyCharacter* EnemyTargetRefToDistance;
 
-	//
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "MainTarget")
-	class UMainTargetSystemComponent* MainTargetComp;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "MainTarget")
-	bool MainTarget;
 
 protected:
 	// Called when the game starts or when spawned

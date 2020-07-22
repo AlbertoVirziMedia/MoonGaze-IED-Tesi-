@@ -45,6 +45,10 @@ public:
 	class UAnimMontage* LCombatMontage;
 
 	//Anim Montage Variables
+	//
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TakeDamageAnim")
+	bool bPlayDeathOnce;
+	//
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TakeDamageAnim")
 	bool bCanTakeDamage;
 	//Time to give to the TakeDamageTimer
