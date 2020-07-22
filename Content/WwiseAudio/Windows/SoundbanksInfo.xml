@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\alber\Downloads\Prototipo Tesi 6.5\Prototipo Tesi 6.5\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\alber\Downloads\Prototipo Tesi 6.5\Prototipo Tesi 6.5\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\alber\Documents\Unreal Projects\Tesi 4.24\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\anty\Desktop\Prototipo Tesi 6.5\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\anty\Documents\GitHub\MoonGaze-IED-Tesi-\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\alber\Downloads\Prototipo Tesi 6.5\Prototipo Tesi 6.5\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\anty\Desktop\Prototipo Tesi 6.5\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -894,17 +894,89 @@
 							<ShortName>Kria_Attack_Impact_Weapon_Coral_003.wav</ShortName>
 							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_003_84875D65.wem</Path>
 						</File>
+						<File Id="175491956" Language="SFX">
+							<ShortName>vampirism\vampirisim_001.wav</ShortName>
+							<Path>SFX\vampirism\vampirisim_001_E9D0980B.wem</Path>
+						</File>
+						<File Id="195612381" Language="SFX">
+							<ShortName>kria_weapon_impact_granchio_heavy_002.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_granchio_heavy_002_2D1AC218.wem</Path>
+						</File>
+						<File Id="288668600" Language="SFX">
+							<ShortName>kria_weapon_impact_granchio_heavy_001.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_granchio_heavy_001_B71820A6.wem</Path>
+						</File>
+						<File Id="296831731" Language="SFX">
+							<ShortName>kria_weapon_impact_granchio_light_001.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_granchio_light_001_8656D6F3.wem</Path>
+						</File>
+						<File Id="402709175" Language="SFX">
+							<ShortName>kria_weapon_impact_esploratore_heavy_001.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_esploratore_heavy_001_EC6FB1E4.wem</Path>
+						</File>
+						<File Id="412750688" Language="SFX">
+							<ShortName>kria_weapon_impact_medusa_light_002.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_medusa_light_002_9DBB1EE1.wem</Path>
+						</File>
+						<File Id="453854595" Language="SFX">
+							<ShortName>kria_weapon_impact_esploratore_light_003.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_esploratore_light_003_953BB387.wem</Path>
+						</File>
+						<File Id="516998432" Language="SFX">
+							<ShortName>kria_weapon_impact_medusa_heavy_001.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_medusa_heavy_001_904E0B85.wem</Path>
+						</File>
+						<File Id="540940673" Language="SFX">
+							<ShortName>vampirism\vampirisim_003.wav</ShortName>
+							<Path>SFX\vampirism\vampirisim_003_F826E27D.wem</Path>
+						</File>
+						<File Id="575194853" Language="SFX">
+							<ShortName>kria_weapon_impact_granchio_light_002.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_granchio_light_002_7DAE6962.wem</Path>
+						</File>
 						<File Id="630270714" Language="SFX">
 							<ShortName>Weapon_Hit_Ice\Kria Hit Pietra 2.wav</ShortName>
 							<Path>SFX\Weapon_Hit_Ice\Kria Hit Pietra 2_84875D65.wem</Path>
+						</File>
+						<File Id="630783749" Language="SFX">
+							<ShortName>kria_weapon_impact_medusa_light_001.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_medusa_light_001_DDD37250.wem</Path>
+						</File>
+						<File Id="631494099" Language="SFX">
+							<ShortName>kria_weapon_impact_esploratore_light_001.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_esploratore_light_001_F86BC531.wem</Path>
+						</File>
+						<File Id="641074525" Language="SFX">
+							<ShortName>kria_weapon_impact_medusa_light_003.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_medusa_light_003_921C6278.wem</Path>
 						</File>
 						<File Id="666423206" Language="SFX">
 							<ShortName>Kria_Attack_Impact_Weapon_Coral_002.wav</ShortName>
 							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_002_84875D65.wem</Path>
 						</File>
+						<File Id="721347747" Language="SFX">
+							<ShortName>kria_weapon_impact_esploratore_heavy_002.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_esploratore_heavy_002_AE2F7F14.wem</Path>
+						</File>
+						<File Id="791897381" Language="SFX">
+							<ShortName>kria_weapon_impact_medusa_heavy_002.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_medusa_heavy_002_AD78C85C.wem</Path>
+						</File>
 						<File Id="794423929" Language="SFX">
 							<ShortName>Weapon_Hit_Ice\Kria Hit Pietra 1.wav</ShortName>
 							<Path>SFX\Weapon_Hit_Ice\Kria Hit Pietra 1_84875D65.wem</Path>
+						</File>
+						<File Id="810502995" Language="SFX">
+							<ShortName>kria_weapon_impact_esploratore_light_002.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_esploratore_light_002_21AEC4B4.wem</Path>
+						</File>
+						<File Id="926089563" Language="SFX">
+							<ShortName>vampirism\vampirisim_002.wav</ShortName>
+							<Path>SFX\vampirism\vampirisim_002_00362D50.wem</Path>
+						</File>
+						<File Id="1066839889" Language="SFX">
+							<ShortName>kria_weapon_impact_granchio_light_003.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_granchio_light_003_C02DD3DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -919,6 +991,42 @@
 							<Media>
 								<File Id="794423929"/>
 								<File Id="630270714"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{373B57D7-D723-4D67-AC9F-AD8B73D0C298}">
+							<Media>
+								<File Id="402709175"/>
+								<File Id="721347747"/>
+								<File Id="631494099"/>
+								<File Id="810502995"/>
+								<File Id="453854595"/>
+								<File Id="175491956"/>
+								<File Id="926089563"/>
+								<File Id="540940673"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{88E29083-D4C6-43A8-BF7B-21A39213F258}">
+							<Media>
+								<File Id="288668600"/>
+								<File Id="195612381"/>
+								<File Id="296831731"/>
+								<File Id="575194853"/>
+								<File Id="1066839889"/>
+								<File Id="175491956"/>
+								<File Id="926089563"/>
+								<File Id="540940673"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7287E8E4-7EE7-4364-B883-8AA80890943A}">
+							<Media>
+								<File Id="516998432"/>
+								<File Id="791897381"/>
+								<File Id="630783749"/>
+								<File Id="412750688"/>
+								<File Id="641074525"/>
+								<File Id="175491956"/>
+								<File Id="926089563"/>
+								<File Id="540940673"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
