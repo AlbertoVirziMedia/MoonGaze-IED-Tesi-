@@ -21,8 +21,8 @@ public:
 	/**/
 	/*IA Variables
 	/**/
-//	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
-//	class AEsploratoriMeleeAIController* AIController;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+	class AEsploratoriRangeAIController* AIController;
 	//bool that check when the enemy his hitten
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bIsGettingDameged;
@@ -42,6 +42,9 @@ public:
 	class UAnimMontage* ERCombatMontage;
 
 	//Anim Montage Variables
+	//
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TakeDamageAnim")
+	bool bPlayDeathOnce;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TakeDamageAnim")
 	bool bCanTakeDamage;
 	//Time to give to the TakeDamageTimer
