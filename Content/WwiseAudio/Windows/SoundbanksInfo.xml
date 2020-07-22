@@ -30,6 +30,7 @@
 				</Event>
 			</IncludedEvents>
 			<IncludedAuxBusses>
+				<AuxBus Id="1280108929" Name="Tunnel_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Tunnel_Rev"/>
 				<AuxBus Id="1530676313" Name="Exterior_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Exterior_Rev"/>
 			</IncludedAuxBusses>
 			<IncludedMemoryFiles>
