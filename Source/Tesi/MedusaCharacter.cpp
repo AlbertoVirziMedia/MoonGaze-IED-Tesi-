@@ -12,6 +12,9 @@ AMedusaCharacter::AMedusaCharacter()
 {
 	bCanTakeDamage = true;
 	TakeDamageStop = 3.f;
+
+	//
+	bPlayDeathOnce = true;
 }
 
 void AMedusaCharacter::BeginPlay()
@@ -48,23 +51,25 @@ void AMedusaCharacter::BeginPlay()
 
 float AMedusaCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
-	bIsGettingDameged = true;
-
-	if (MAnimInstance)
+	if (bPlayDeathOnce)
 	{
-		if (bCanTakeDamage)
+		bIsGettingDameged = true;
+		if (MAnimInstance)
 		{
-			MAnimInstance->TakeDamageAnim();
-			bCanTakeDamage = false;
-			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AMedusaCharacter::ResetTakeDamage, TakeDamageStop, false);
+			if (bCanTakeDamage)
+			{
+				MAnimInstance->TakeDamageAnim();
+				bCanTakeDamage = false;
+				GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AMedusaCharacter::ResetTakeDamage, TakeDamageStop, false);
+			}
 		}
-	}
-	bIsGettingDameged = true;
-	if (Health - DamageAmount <= 0.f)
-	{
-		MAnimInstance->DeathAnim();
-		bEnemyIsAlive = false;
-	}
+		bIsGettingDameged = true;
+		if (Health - DamageAmount <= 0.f)
+		{
+			MAnimInstance->DeathAnim();
+			bEnemyIsAlive = false;
+		}
+	}	
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
 
