@@ -20,6 +20,9 @@ AEsploratoriMeleeCharacter::AEsploratoriMeleeCharacter()
 {
 	bCanTakeDamage = true;
 	TakeDamageStop = 3.f;
+
+	//
+	bPlayDeathOnce = true;
 }
 
 void AEsploratoriMeleeCharacter::BeginPlay()
@@ -80,21 +83,25 @@ void AEsploratoriMeleeCharacter::DamageColliderEndOverlap(UPrimitiveComponent* O
 
 float AEsploratoriMeleeCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
-	if (EMAnimInstance)
+	if (bPlayDeathOnce)
 	{
-		if (bCanTakeDamage)
+		if (EMAnimInstance)
 		{
-			EMAnimInstance->TakeDamageAnim();
-			bCanTakeDamage = false;
-			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AEsploratoriMeleeCharacter::ResetTakeDamage, TakeDamageStop, false);
+			if (bCanTakeDamage)
+			{
+				EMAnimInstance->TakeDamageAnim();
+				bCanTakeDamage = false;
+				GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AEsploratoriMeleeCharacter::ResetTakeDamage, TakeDamageStop, false);
+			}
 		}
-	}
-	bIsGettingDameged = true;
-	if (Health - DamageAmount <= 0.f)
-	{
-		EMAnimInstance->DeathAnim();
-		bEnemyIsAlive = false;
-		AIController->StopTree();
+		bIsGettingDameged = true;
+		if (Health - DamageAmount <= 0.f)
+		{
+			EMAnimInstance->DeathAnim();
+			bEnemyIsAlive = false;
+			AIController->StopTree();
+			bPlayDeathOnce = false;
+		}
 	}
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
