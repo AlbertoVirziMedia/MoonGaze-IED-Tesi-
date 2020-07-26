@@ -1,7 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1233121652	Start_Level			\Default Work Unit\Music\Start_Level	
-	1643114936	Crab_Aggro			\Default Work Unit\Music\Crab_Aggro	
-	4258958663	Fight_End			\Default Work Unit\Music\Fight_End	
+	3991942870	Music			\Default Work Unit\Music\Music	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3863955802	Figthing_Variable			\Default Work Unit\Figthing_Variable	
@@ -11,61 +9,61 @@ State	ID	Name	State Group			Notes
 	1600559959	No_Fight	Figthing_Variable			
 	2458972060	Crab_Fight	Figthing_Variable			
 
-Custom State	ID	Name	State Group	Owner		Notes
-	816121651	No_Fight	Figthing_Variable	\Interactive Music Hierarchy\Default Work Unit\Fight_Monster		
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	1796724183	Kria_Distance_Enemy			\Default Work Unit\Kria_Distance_Enemy	
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	27450099	piano7	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\piano7_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano7\piano7		2163762
-	31188997	A1_MGBT_MASTER_05	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_05_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A1_MGBT_MASTER_05\A1_MGBT_MASTER_05		236788
-	47300373	A2_MGBT_MASTER_19	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_19_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A2_MGBT_MASTER_19\A2_MGBT_MASTER_19		220731
-	60288330	C1_MGBT_MASTER_50	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_50_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\C1_MGBT_MASTER_50\C1_MGBT_MASTER_50		224225
-	67344236	C1_MGBT_MASTER_55	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_55_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\C1_MGBT_MASTER_55\C1_MGBT_MASTER_55		212804
-	67789531	A2_MGBT_MASTER_22	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_22_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A2_MGBT_MASTER_22\A2_MGBT_MASTER_22		221684
-	116099335	C1_MGBT_MASTER_54	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_54_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\C1_MGBT_MASTER_54\C1_MGBT_MASTER_54		222900
-	216015220	A2_MGBT_MASTER_21	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_21_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A2_MGBT_MASTER_21\A2_MGBT_MASTER_21		226852
-	235571209	piano4	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\piano4_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano4\piano4		536968
-	239475937	C1_MGBT_MASTER_53	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_53_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\C1_MGBT_MASTER_53\C1_MGBT_MASTER_53		220852
-	253110057	A1_MGBT_MASTER_08	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_08_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A1_MGBT_MASTER_08\A1_MGBT_MASTER_08		219219
-	381369376	A2_MGBT_MASTER_20	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_20_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A2_MGBT_MASTER_20\A2_MGBT_MASTER_20		221974
-	389185223	A2_MGBT_MASTER_18	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_18_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A2_MGBT_MASTER_18\A2_MGBT_MASTER_18		217650
-	399711432	piano8	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\piano8_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano8\piano8		1289711
-	412320655	piano	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\piano_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano\piano		944221
-	415218281	B1_MGBT_MASTER_36	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_36_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\B1_MGBT_MASTER_36\B1_MGBT_MASTER_36		220277
-	424440834	A1_MGBT_MASTER_04	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_04_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A1_MGBT_MASTER_04\A1_MGBT_MASTER_04		220511
-	426264062	MGBT_MASTER_ENDING	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\MGBT_MASTER_ENDING3_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Ending\MGBT_MASTER_ENDING		320758
-	462341851	C1_MGBT_MASTER_52	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_52_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\C1_MGBT_MASTER_52\C1_MGBT_MASTER_52		218092
-	478355079	violin5	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\violin5_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin5\violin5		1441744
-	572067956	A2_MGBT_MASTER_23	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_23_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A2_MGBT_MASTER_23\A2_MGBT_MASTER_23		217074
-	589759264	violin2	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\violin2_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin2\violin2		879284
-	644843942	TensionBrass	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\TensionBrass_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Tension_Layer\Tension_Segment\TensionBrass		3280429
-	649318971	A1_MGBT_MASTER_02	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_02_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A1_MGBT_MASTER_02\A1_MGBT_MASTER_02		221943
-	683698442	piano5	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\piano5_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano5\piano5		566588
-	694833976	piano2	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\piano2_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano2\piano2		1281943
-	741828705	A1_MGBT_MASTER_03	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_03_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A1_MGBT_MASTER_03\A1_MGBT_MASTER_03		222007
-	802960479	B1_MGBT_MASTER_33	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_33_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\B1_MGBT_MASTER_33\B1_MGBT_MASTER_33		216494
-	818642215	A1_MGBT_MASTER_01	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_01_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A1_MGBT_MASTER_01\A1_MGBT_MASTER_01		323352
-	828975824	TensionNovo	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\TensionNovo_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Tension_Layer\Tension_Segment\TensionNovo		5719902
-	831249777	A2_MGBT_MASTER_24	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_24_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A2_MGBT_MASTER_24\A2_MGBT_MASTER_24		218510
-	834072984	piano6	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\piano6_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano6\piano6		1406274
-	838040734	MGBT_MASTER_ENDING	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\MGBT_MASTER_ENDING_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Ending\MGBT_MASTER_ENDING		519986
-	853218476	B1_MGBT_MASTER_38	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_38_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\B1_MGBT_MASTER_38\B1_MGBT_MASTER_38		222182
-	854763918	B1_MGBT_MASTER_40	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_40_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\B1_MGBT_MASTER_40\B1_MGBT_MASTER_40		218682
-	883622085	piano3	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\piano3_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Piano\piano3\piano3		819084
-	904735810	A1_MGBT_MASTER_07	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_07_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A1_MGBT_MASTER_07\A1_MGBT_MASTER_07		220649
-	905623581	B1_MGBT_MASTER_39	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_39_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\B1_MGBT_MASTER_39\B1_MGBT_MASTER_39		224419
-	921892043	C1_MGBT_MASTER_51	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_51_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\C1_MGBT_MASTER_51\C1_MGBT_MASTER_51		213360
-	930436441	A1_MGBT_MASTER_06	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_06_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A1_MGBT_MASTER_06\A1_MGBT_MASTER_06		223806
-	939351504	MGBT_MASTER_ENDING	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\MGBT_MASTER_ENDING2_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Ending\MGBT_MASTER_ENDING		317283
-	948644579	C1_MGBT_MASTER_56	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_56_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\C1_MGBT_MASTER_56\C1_MGBT_MASTER_56		219194
-	971314088	B1_MGBT_MASTER_34	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_34_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\B1_MGBT_MASTER_34\B1_MGBT_MASTER_34		217917
-	982686293	violin1	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\violin1_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin1\violin1		625457
-	1006938764	C1_MGBT_MASTER_49	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_49_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\C1_MGBT_MASTER_49\C1_MGBT_MASTER_49		222745
-	1012717257	violin3	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\violin3_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin3\violin3		787559
-	1015904306	B1_MGBT_MASTER_35	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_35_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\B1_MGBT_MASTER_35\B1_MGBT_MASTER_35		218028
-	1018285137	B1_MGBT_MASTER_37	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_37_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\B1_MGBT_MASTER_37\B1_MGBT_MASTER_37		217343
-	1030601659	violin4	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\violin4_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Ambient_Music_1\Violins\violin4\violin4		1228492
-	1039111476	A2_MGBT_MASTER_17	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_17_CB6A98EB.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Monster\Fight_Crab\A2_MGBT_MASTER_17\A2_MGBT_MASTER_17		217053
+	31188997	A1_MGBT_MASTER_05	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_05_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A1_MGBT_MASTER_05\A1_MGBT_MASTER_05		233940
+	34237948	amb21	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb21_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb21\amb21		559325
+	47300373	A2_MGBT_MASTER_19	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_19_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A2_MGBT_MASTER_19\A2_MGBT_MASTER_19		222005
+	60288330	C1_MGBT_MASTER_50	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_50_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\C1_MGBT_MASTER_50\C1_MGBT_MASTER_50		225773
+	67344236	C1_MGBT_MASTER_55	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_55_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\C1_MGBT_MASTER_55\C1_MGBT_MASTER_55		216522
+	67789531	A2_MGBT_MASTER_22	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_22_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A2_MGBT_MASTER_22\A2_MGBT_MASTER_22		226372
+	98642276	amb02	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb02_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb02\amb02		1132724
+	116099335	C1_MGBT_MASTER_54	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_54_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\C1_MGBT_MASTER_54\C1_MGBT_MASTER_54		220045
+	216015220	A2_MGBT_MASTER_21	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_21_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A2_MGBT_MASTER_21\A2_MGBT_MASTER_21		221782
+	239475937	C1_MGBT_MASTER_53	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_53_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\C1_MGBT_MASTER_53\C1_MGBT_MASTER_53		221948
+	246404179	amb18	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb18_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb18\amb18		802517
+	253110057	A1_MGBT_MASTER_08	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_08_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A1_MGBT_MASTER_08\A1_MGBT_MASTER_08		222477
+	266603977	amb06	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb06_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb06\amb06		1012791
+	307708554	amb04	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb04_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb04\amb04		1235956
+	324774413	amb13	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb13_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb13\amb13		1315617
+	342671854	amb03	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb03_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb03\amb03		1055987
+	353705101	amb11	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb11_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb11\amb11		1367386
+	373518832	amb12	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb12_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb12\amb12		1786584
+	381369376	A2_MGBT_MASTER_20	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_20_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A2_MGBT_MASTER_20\A2_MGBT_MASTER_20		222466
+	389185223	A2_MGBT_MASTER_18	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_18_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A2_MGBT_MASTER_18\A2_MGBT_MASTER_18		223199
+	415218281	B1_MGBT_MASTER_36	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_36_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\B1_MGBT_MASTER_36\B1_MGBT_MASTER_36		224107
+	424440834	A1_MGBT_MASTER_04	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_04_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A1_MGBT_MASTER_04\A1_MGBT_MASTER_04		223509
+	426264062	MGBT_MASTER_ENDING	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\MGBT_MASTER_ENDING3_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Ending\MGBT_MASTER_ENDING		328805
+	462341851	C1_MGBT_MASTER_52	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_52_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\C1_MGBT_MASTER_52\C1_MGBT_MASTER_52		218523
+	482828625	amb19	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb19_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb19\amb19		1221414
+	569756933	amb08	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb08_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb08\amb08		926607
+	572067956	A2_MGBT_MASTER_23	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_23_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A2_MGBT_MASTER_23\A2_MGBT_MASTER_23		222674
+	628644575	amb10	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb10_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb10\amb10		1891859
+	649318971	A1_MGBT_MASTER_02	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_02_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A1_MGBT_MASTER_02\A1_MGBT_MASTER_02		221230
+	650079054	amb20	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb20_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb20\amb20		891711
+	658175556	amb15	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb15_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb15\amb15		1563982
+	686494125	amb17	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb17_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb17\amb17		978910
+	727890818	amb07	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb07_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb07\amb07		1160579
+	741828705	A1_MGBT_MASTER_03	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_03_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A1_MGBT_MASTER_03\A1_MGBT_MASTER_03		222296
+	802960479	B1_MGBT_MASTER_33	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_33_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\B1_MGBT_MASTER_33\B1_MGBT_MASTER_33		219455
+	804833138	amb16	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb16_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb16\amb16		776721
+	818642215	A1_MGBT_MASTER_01	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_01_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A1_MGBT_MASTER_01\A1_MGBT_MASTER_01		326263
+	831249777	A2_MGBT_MASTER_24	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_24_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A2_MGBT_MASTER_24\A2_MGBT_MASTER_24		220804
+	838040734	MGBT_MASTER_ENDING	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\MGBT_MASTER_ENDING_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Ending\MGBT_MASTER_ENDING		532024
+	853218476	B1_MGBT_MASTER_38	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_38_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\B1_MGBT_MASTER_38\B1_MGBT_MASTER_38		225917
+	854763918	B1_MGBT_MASTER_40	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_40_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\B1_MGBT_MASTER_40\B1_MGBT_MASTER_40		220720
+	861109320	amb14	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb14_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb14\amb14		1508252
+	865804294	amb22	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb22_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb22\amb22		1438282
+	904735810	A1_MGBT_MASTER_07	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_07_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A1_MGBT_MASTER_07\A1_MGBT_MASTER_07		226972
+	905623581	B1_MGBT_MASTER_39	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_39_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\B1_MGBT_MASTER_39\B1_MGBT_MASTER_39		224212
+	921892043	C1_MGBT_MASTER_51	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_51_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\C1_MGBT_MASTER_51\C1_MGBT_MASTER_51		215828
+	930436441	A1_MGBT_MASTER_06	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A1_MGBT_MASTER_06_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A1_MGBT_MASTER_06\A1_MGBT_MASTER_06		228367
+	939351504	MGBT_MASTER_ENDING	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\MGBT_MASTER_ENDING2_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Ending\MGBT_MASTER_ENDING		326522
+	948644579	C1_MGBT_MASTER_56	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_56_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\C1_MGBT_MASTER_56\C1_MGBT_MASTER_56		220168
+	971314088	B1_MGBT_MASTER_34	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_34_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\B1_MGBT_MASTER_34\B1_MGBT_MASTER_34		221261
+	1006397161	amb09	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb09_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb09\amb09		1432497
+	1006938764	C1_MGBT_MASTER_49	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\C1_MGBT_MASTER_49_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\C1_MGBT_MASTER_49\C1_MGBT_MASTER_49		224774
+	1015904306	B1_MGBT_MASTER_35	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_35_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\B1_MGBT_MASTER_35\B1_MGBT_MASTER_35		217803
+	1018285137	B1_MGBT_MASTER_37	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\B1_MGBT_MASTER_37_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\B1_MGBT_MASTER_37\B1_MGBT_MASTER_37		219485
+	1039111476	A2_MGBT_MASTER_17	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\A2_MGBT_MASTER_17_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Fight_Crab\A2_MGBT_MASTER_17\A2_MGBT_MASTER_17		229514
+	1058689161	amb05	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\amb05_1CA62143.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ambient_Music\amb05\amb05		1445654
 

@@ -1488,6 +1488,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="779649011" Name="Fumo_Barriera" ObjectPath="\Events\Default Work Unit\Enemies\Fumo_Barriera"/>
 				<Event Id="2094926061" Name="Granchio_Attack_Heavy" ObjectPath="\Events\Default Work Unit\Enemies\Granchio\Granchio_Attack_Heavy">
 					<IncludedMemoryFiles>
 						<File Id="40850543" Language="SFX">
@@ -1702,6 +1703,14 @@
 				</Event>
 				<Event Id="2712953313" Name="Medusa_Death" ObjectPath="\Events\Default Work Unit\Enemies\Medusa\Medusa_Death">
 					<IncludedMemoryFiles>
+						<File Id="11064735" Language="SFX">
+							<ShortName>dissolvenza_death\dissolvenza_death_001.wav</ShortName>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_001_1A8A6114.wem</Path>
+						</File>
+						<File Id="61577600" Language="SFX">
+							<ShortName>dissolvenza_death\dissolvenza_death_002.wav</ShortName>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_002_1854AC3A.wem</Path>
+						</File>
 						<File Id="137074154" Language="SFX">
 							<ShortName>medusa_death\medusa_death_001.wav</ShortName>
 							<Path>SFX\medusa_death\medusa_death_001_21360756.wem</Path>
@@ -1709,6 +1718,10 @@
 						<File Id="390134407" Language="SFX">
 							<ShortName>medusa_death\medusa_death_002.wav</ShortName>
 							<Path>SFX\medusa_death\medusa_death_002_9BC67A12.wem</Path>
+						</File>
+						<File Id="615366918" Language="SFX">
+							<ShortName>dissolvenza_death\dissolvenza_death_003.wav</ShortName>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_003_FC6611AF.wem</Path>
 						</File>
 						<File Id="818276609" Language="SFX">
 							<ShortName>medusa_death\medusa_death_003.wav</ShortName>
@@ -1738,150 +1751,259 @@
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1643114936" Name="Crab_Aggro" ObjectPath="\Events\Default Work Unit\Music\Crab_Aggro">
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music\Music">
 					<IncludedMemoryFiles>
 						<File Id="31188997" Language="SFX">
 							<ShortName>A1_MGBT_MASTER_05.wav</ShortName>
-							<Path>SFX\A1_MGBT_MASTER_05_CB6A98EB.wem</Path>
+							<Path>SFX\A1_MGBT_MASTER_05_1CA62143.wem</Path>
+						</File>
+						<File Id="34237948" Language="SFX">
+							<ShortName>amb21.wav</ShortName>
+							<Path>SFX\amb21_1CA62143.wem</Path>
 						</File>
 						<File Id="47300373" Language="SFX">
 							<ShortName>A2_MGBT_MASTER_19.wav</ShortName>
-							<Path>SFX\A2_MGBT_MASTER_19_CB6A98EB.wem</Path>
+							<Path>SFX\A2_MGBT_MASTER_19_1CA62143.wem</Path>
 						</File>
 						<File Id="60288330" Language="SFX">
 							<ShortName>C1_MGBT_MASTER_50.wav</ShortName>
-							<Path>SFX\C1_MGBT_MASTER_50_CB6A98EB.wem</Path>
+							<Path>SFX\C1_MGBT_MASTER_50_1CA62143.wem</Path>
 						</File>
 						<File Id="67344236" Language="SFX">
 							<ShortName>C1_MGBT_MASTER_55.wav</ShortName>
-							<Path>SFX\C1_MGBT_MASTER_55_CB6A98EB.wem</Path>
+							<Path>SFX\C1_MGBT_MASTER_55_1CA62143.wem</Path>
 						</File>
 						<File Id="67789531" Language="SFX">
 							<ShortName>A2_MGBT_MASTER_22.wav</ShortName>
-							<Path>SFX\A2_MGBT_MASTER_22_CB6A98EB.wem</Path>
+							<Path>SFX\A2_MGBT_MASTER_22_1CA62143.wem</Path>
+						</File>
+						<File Id="98642276" Language="SFX">
+							<ShortName>amb02.wav</ShortName>
+							<Path>SFX\amb02_1CA62143.wem</Path>
 						</File>
 						<File Id="116099335" Language="SFX">
 							<ShortName>C1_MGBT_MASTER_54.wav</ShortName>
-							<Path>SFX\C1_MGBT_MASTER_54_CB6A98EB.wem</Path>
+							<Path>SFX\C1_MGBT_MASTER_54_1CA62143.wem</Path>
 						</File>
 						<File Id="216015220" Language="SFX">
 							<ShortName>A2_MGBT_MASTER_21.wav</ShortName>
-							<Path>SFX\A2_MGBT_MASTER_21_CB6A98EB.wem</Path>
+							<Path>SFX\A2_MGBT_MASTER_21_1CA62143.wem</Path>
 						</File>
 						<File Id="239475937" Language="SFX">
 							<ShortName>C1_MGBT_MASTER_53.wav</ShortName>
-							<Path>SFX\C1_MGBT_MASTER_53_CB6A98EB.wem</Path>
+							<Path>SFX\C1_MGBT_MASTER_53_1CA62143.wem</Path>
+						</File>
+						<File Id="246404179" Language="SFX">
+							<ShortName>amb18.wav</ShortName>
+							<Path>SFX\amb18_1CA62143.wem</Path>
 						</File>
 						<File Id="253110057" Language="SFX">
 							<ShortName>A1_MGBT_MASTER_08.wav</ShortName>
-							<Path>SFX\A1_MGBT_MASTER_08_CB6A98EB.wem</Path>
+							<Path>SFX\A1_MGBT_MASTER_08_1CA62143.wem</Path>
+						</File>
+						<File Id="266603977" Language="SFX">
+							<ShortName>amb06.wav</ShortName>
+							<Path>SFX\amb06_1CA62143.wem</Path>
+						</File>
+						<File Id="307708554" Language="SFX">
+							<ShortName>amb04.wav</ShortName>
+							<Path>SFX\amb04_1CA62143.wem</Path>
+						</File>
+						<File Id="324774413" Language="SFX">
+							<ShortName>amb13.wav</ShortName>
+							<Path>SFX\amb13_1CA62143.wem</Path>
+						</File>
+						<File Id="342671854" Language="SFX">
+							<ShortName>amb03.wav</ShortName>
+							<Path>SFX\amb03_1CA62143.wem</Path>
+						</File>
+						<File Id="353705101" Language="SFX">
+							<ShortName>amb11.wav</ShortName>
+							<Path>SFX\amb11_1CA62143.wem</Path>
+						</File>
+						<File Id="373518832" Language="SFX">
+							<ShortName>amb12.wav</ShortName>
+							<Path>SFX\amb12_1CA62143.wem</Path>
 						</File>
 						<File Id="381369376" Language="SFX">
 							<ShortName>A2_MGBT_MASTER_20.wav</ShortName>
-							<Path>SFX\A2_MGBT_MASTER_20_CB6A98EB.wem</Path>
+							<Path>SFX\A2_MGBT_MASTER_20_1CA62143.wem</Path>
 						</File>
 						<File Id="389185223" Language="SFX">
 							<ShortName>A2_MGBT_MASTER_18.wav</ShortName>
-							<Path>SFX\A2_MGBT_MASTER_18_CB6A98EB.wem</Path>
+							<Path>SFX\A2_MGBT_MASTER_18_1CA62143.wem</Path>
 						</File>
 						<File Id="415218281" Language="SFX">
 							<ShortName>B1_MGBT_MASTER_36.wav</ShortName>
-							<Path>SFX\B1_MGBT_MASTER_36_CB6A98EB.wem</Path>
+							<Path>SFX\B1_MGBT_MASTER_36_1CA62143.wem</Path>
 						</File>
 						<File Id="424440834" Language="SFX">
 							<ShortName>A1_MGBT_MASTER_04.wav</ShortName>
-							<Path>SFX\A1_MGBT_MASTER_04_CB6A98EB.wem</Path>
+							<Path>SFX\A1_MGBT_MASTER_04_1CA62143.wem</Path>
 						</File>
 						<File Id="426264062" Language="SFX">
 							<ShortName>MGBT_MASTER_ENDING3.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_ENDING3_CB6A98EB.wem</Path>
+							<Path>SFX\MGBT_MASTER_ENDING3_1CA62143.wem</Path>
 						</File>
 						<File Id="462341851" Language="SFX">
 							<ShortName>C1_MGBT_MASTER_52.wav</ShortName>
-							<Path>SFX\C1_MGBT_MASTER_52_CB6A98EB.wem</Path>
+							<Path>SFX\C1_MGBT_MASTER_52_1CA62143.wem</Path>
+						</File>
+						<File Id="482828625" Language="SFX">
+							<ShortName>amb19.wav</ShortName>
+							<Path>SFX\amb19_1CA62143.wem</Path>
+						</File>
+						<File Id="569756933" Language="SFX">
+							<ShortName>amb08.wav</ShortName>
+							<Path>SFX\amb08_1CA62143.wem</Path>
 						</File>
 						<File Id="572067956" Language="SFX">
 							<ShortName>A2_MGBT_MASTER_23.wav</ShortName>
-							<Path>SFX\A2_MGBT_MASTER_23_CB6A98EB.wem</Path>
+							<Path>SFX\A2_MGBT_MASTER_23_1CA62143.wem</Path>
+						</File>
+						<File Id="628644575" Language="SFX">
+							<ShortName>amb10.wav</ShortName>
+							<Path>SFX\amb10_1CA62143.wem</Path>
 						</File>
 						<File Id="649318971" Language="SFX">
 							<ShortName>A1_MGBT_MASTER_02.wav</ShortName>
-							<Path>SFX\A1_MGBT_MASTER_02_CB6A98EB.wem</Path>
+							<Path>SFX\A1_MGBT_MASTER_02_1CA62143.wem</Path>
+						</File>
+						<File Id="650079054" Language="SFX">
+							<ShortName>amb20.wav</ShortName>
+							<Path>SFX\amb20_1CA62143.wem</Path>
+						</File>
+						<File Id="658175556" Language="SFX">
+							<ShortName>amb15.wav</ShortName>
+							<Path>SFX\amb15_1CA62143.wem</Path>
+						</File>
+						<File Id="686494125" Language="SFX">
+							<ShortName>amb17.wav</ShortName>
+							<Path>SFX\amb17_1CA62143.wem</Path>
+						</File>
+						<File Id="727890818" Language="SFX">
+							<ShortName>amb07.wav</ShortName>
+							<Path>SFX\amb07_1CA62143.wem</Path>
 						</File>
 						<File Id="741828705" Language="SFX">
 							<ShortName>A1_MGBT_MASTER_03.wav</ShortName>
-							<Path>SFX\A1_MGBT_MASTER_03_CB6A98EB.wem</Path>
+							<Path>SFX\A1_MGBT_MASTER_03_1CA62143.wem</Path>
 						</File>
 						<File Id="802960479" Language="SFX">
 							<ShortName>B1_MGBT_MASTER_33.wav</ShortName>
-							<Path>SFX\B1_MGBT_MASTER_33_CB6A98EB.wem</Path>
+							<Path>SFX\B1_MGBT_MASTER_33_1CA62143.wem</Path>
+						</File>
+						<File Id="804833138" Language="SFX">
+							<ShortName>amb16.wav</ShortName>
+							<Path>SFX\amb16_1CA62143.wem</Path>
 						</File>
 						<File Id="818642215" Language="SFX">
 							<ShortName>A1_MGBT_MASTER_01.wav</ShortName>
-							<Path>SFX\A1_MGBT_MASTER_01_CB6A98EB.wem</Path>
+							<Path>SFX\A1_MGBT_MASTER_01_1CA62143.wem</Path>
 						</File>
 						<File Id="831249777" Language="SFX">
 							<ShortName>A2_MGBT_MASTER_24.wav</ShortName>
-							<Path>SFX\A2_MGBT_MASTER_24_CB6A98EB.wem</Path>
+							<Path>SFX\A2_MGBT_MASTER_24_1CA62143.wem</Path>
 						</File>
 						<File Id="838040734" Language="SFX">
 							<ShortName>MGBT_MASTER_ENDING.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_ENDING_CB6A98EB.wem</Path>
+							<Path>SFX\MGBT_MASTER_ENDING_1CA62143.wem</Path>
 						</File>
 						<File Id="853218476" Language="SFX">
 							<ShortName>B1_MGBT_MASTER_38.wav</ShortName>
-							<Path>SFX\B1_MGBT_MASTER_38_CB6A98EB.wem</Path>
+							<Path>SFX\B1_MGBT_MASTER_38_1CA62143.wem</Path>
 						</File>
 						<File Id="854763918" Language="SFX">
 							<ShortName>B1_MGBT_MASTER_40.wav</ShortName>
-							<Path>SFX\B1_MGBT_MASTER_40_CB6A98EB.wem</Path>
+							<Path>SFX\B1_MGBT_MASTER_40_1CA62143.wem</Path>
+						</File>
+						<File Id="861109320" Language="SFX">
+							<ShortName>amb14.wav</ShortName>
+							<Path>SFX\amb14_1CA62143.wem</Path>
+						</File>
+						<File Id="865804294" Language="SFX">
+							<ShortName>amb22.wav</ShortName>
+							<Path>SFX\amb22_1CA62143.wem</Path>
 						</File>
 						<File Id="904735810" Language="SFX">
 							<ShortName>A1_MGBT_MASTER_07.wav</ShortName>
-							<Path>SFX\A1_MGBT_MASTER_07_CB6A98EB.wem</Path>
+							<Path>SFX\A1_MGBT_MASTER_07_1CA62143.wem</Path>
 						</File>
 						<File Id="905623581" Language="SFX">
 							<ShortName>B1_MGBT_MASTER_39.wav</ShortName>
-							<Path>SFX\B1_MGBT_MASTER_39_CB6A98EB.wem</Path>
+							<Path>SFX\B1_MGBT_MASTER_39_1CA62143.wem</Path>
 						</File>
 						<File Id="921892043" Language="SFX">
 							<ShortName>C1_MGBT_MASTER_51.wav</ShortName>
-							<Path>SFX\C1_MGBT_MASTER_51_CB6A98EB.wem</Path>
+							<Path>SFX\C1_MGBT_MASTER_51_1CA62143.wem</Path>
 						</File>
 						<File Id="930436441" Language="SFX">
 							<ShortName>A1_MGBT_MASTER_06.wav</ShortName>
-							<Path>SFX\A1_MGBT_MASTER_06_CB6A98EB.wem</Path>
+							<Path>SFX\A1_MGBT_MASTER_06_1CA62143.wem</Path>
 						</File>
 						<File Id="939351504" Language="SFX">
 							<ShortName>MGBT_MASTER_ENDING2.wav</ShortName>
-							<Path>SFX\MGBT_MASTER_ENDING2_CB6A98EB.wem</Path>
+							<Path>SFX\MGBT_MASTER_ENDING2_1CA62143.wem</Path>
 						</File>
 						<File Id="948644579" Language="SFX">
 							<ShortName>C1_MGBT_MASTER_56.wav</ShortName>
-							<Path>SFX\C1_MGBT_MASTER_56_CB6A98EB.wem</Path>
+							<Path>SFX\C1_MGBT_MASTER_56_1CA62143.wem</Path>
 						</File>
 						<File Id="971314088" Language="SFX">
 							<ShortName>B1_MGBT_MASTER_34.wav</ShortName>
-							<Path>SFX\B1_MGBT_MASTER_34_CB6A98EB.wem</Path>
+							<Path>SFX\B1_MGBT_MASTER_34_1CA62143.wem</Path>
+						</File>
+						<File Id="1006397161" Language="SFX">
+							<ShortName>amb09.wav</ShortName>
+							<Path>SFX\amb09_1CA62143.wem</Path>
 						</File>
 						<File Id="1006938764" Language="SFX">
 							<ShortName>C1_MGBT_MASTER_49.wav</ShortName>
-							<Path>SFX\C1_MGBT_MASTER_49_CB6A98EB.wem</Path>
+							<Path>SFX\C1_MGBT_MASTER_49_1CA62143.wem</Path>
 						</File>
 						<File Id="1015904306" Language="SFX">
 							<ShortName>B1_MGBT_MASTER_35.wav</ShortName>
-							<Path>SFX\B1_MGBT_MASTER_35_CB6A98EB.wem</Path>
+							<Path>SFX\B1_MGBT_MASTER_35_1CA62143.wem</Path>
 						</File>
 						<File Id="1018285137" Language="SFX">
 							<ShortName>B1_MGBT_MASTER_37.wav</ShortName>
-							<Path>SFX\B1_MGBT_MASTER_37_CB6A98EB.wem</Path>
+							<Path>SFX\B1_MGBT_MASTER_37_1CA62143.wem</Path>
 						</File>
 						<File Id="1039111476" Language="SFX">
 							<ShortName>A2_MGBT_MASTER_17.wav</ShortName>
-							<Path>SFX\A2_MGBT_MASTER_17_CB6A98EB.wem</Path>
+							<Path>SFX\A2_MGBT_MASTER_17_1CA62143.wem</Path>
+						</File>
+						<File Id="1058689161" Language="SFX">
+							<ShortName>amb05.wav</ShortName>
+							<Path>SFX\amb05_1CA62143.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
+						<SwitchContainer SwitchValue="{27BA6441-1AAD-47E0-B021-53B31829B1AB}">
+							<Media>
+								<File Id="98642276"/>
+								<File Id="342671854"/>
+								<File Id="307708554"/>
+								<File Id="1058689161"/>
+								<File Id="266603977"/>
+								<File Id="727890818"/>
+								<File Id="569756933"/>
+								<File Id="1006397161"/>
+								<File Id="628644575"/>
+								<File Id="353705101"/>
+								<File Id="373518832"/>
+								<File Id="324774413"/>
+								<File Id="861109320"/>
+								<File Id="658175556"/>
+								<File Id="804833138"/>
+								<File Id="686494125"/>
+								<File Id="246404179"/>
+								<File Id="482828625"/>
+								<File Id="650079054"/>
+								<File Id="34237948"/>
+								<File Id="865804294"/>
+							</Media>
+						</SwitchContainer>
 						<SwitchContainer SwitchValue="{D7AE1FDD-BA2D-40EF-92D9-3002E67F45F7}">
 							<Media>
 								<File Id="818642215"/>
@@ -1920,75 +2042,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="4258958663" Name="Fight_End" ObjectPath="\Events\Default Work Unit\Music\Fight_End"/>
-				<Event Id="1233121652" Name="Start_Level" ObjectPath="\Events\Default Work Unit\Music\Start_Level">
-					<IncludedMemoryFiles>
-						<File Id="27450099" Language="SFX">
-							<ShortName>piano7.wav</ShortName>
-							<Path>SFX\piano7_CB6A98EB.wem</Path>
-						</File>
-						<File Id="235571209" Language="SFX">
-							<ShortName>piano4.wav</ShortName>
-							<Path>SFX\piano4_CB6A98EB.wem</Path>
-						</File>
-						<File Id="399711432" Language="SFX">
-							<ShortName>piano8.wav</ShortName>
-							<Path>SFX\piano8_CB6A98EB.wem</Path>
-						</File>
-						<File Id="412320655" Language="SFX">
-							<ShortName>piano.wav</ShortName>
-							<Path>SFX\piano_CB6A98EB.wem</Path>
-						</File>
-						<File Id="478355079" Language="SFX">
-							<ShortName>violin5.wav</ShortName>
-							<Path>SFX\violin5_CB6A98EB.wem</Path>
-						</File>
-						<File Id="589759264" Language="SFX">
-							<ShortName>violin2.wav</ShortName>
-							<Path>SFX\violin2_CB6A98EB.wem</Path>
-						</File>
-						<File Id="644843942" Language="SFX">
-							<ShortName>TensionBrass.wav</ShortName>
-							<Path>SFX\TensionBrass_CB6A98EB.wem</Path>
-						</File>
-						<File Id="683698442" Language="SFX">
-							<ShortName>piano5.wav</ShortName>
-							<Path>SFX\piano5_CB6A98EB.wem</Path>
-						</File>
-						<File Id="694833976" Language="SFX">
-							<ShortName>piano2.wav</ShortName>
-							<Path>SFX\piano2_CB6A98EB.wem</Path>
-						</File>
-						<File Id="828975824" Language="SFX">
-							<ShortName>TensionNovo.wav</ShortName>
-							<Path>SFX\TensionNovo_CB6A98EB.wem</Path>
-						</File>
-						<File Id="834072984" Language="SFX">
-							<ShortName>piano6.wav</ShortName>
-							<Path>SFX\piano6_CB6A98EB.wem</Path>
-						</File>
-						<File Id="883622085" Language="SFX">
-							<ShortName>piano3.wav</ShortName>
-							<Path>SFX\piano3_CB6A98EB.wem</Path>
-						</File>
-						<File Id="982686293" Language="SFX">
-							<ShortName>violin1.wav</ShortName>
-							<Path>SFX\violin1_CB6A98EB.wem</Path>
-						</File>
-						<File Id="1012717257" Language="SFX">
-							<ShortName>violin3.wav</ShortName>
-							<Path>SFX\violin3_CB6A98EB.wem</Path>
-						</File>
-						<File Id="1030601659" Language="SFX">
-							<ShortName>violin4.wav</ShortName>
-							<Path>SFX\violin4_CB6A98EB.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="1796724183" Name="Kria_Distance_Enemy" ObjectPath="\Game Parameters\Default Work Unit\Kria_Distance_Enemy"/>
-			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3863955802" Name="Figthing_Variable" ObjectPath="\States\Default Work Unit\Figthing_Variable">
 					<States>
