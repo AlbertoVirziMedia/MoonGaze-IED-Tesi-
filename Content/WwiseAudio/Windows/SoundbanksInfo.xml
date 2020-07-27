@@ -1744,7 +1744,7 @@
 					<IncludedMemoryFiles>
 						<File Id="276901612" Language="SFX">
 							<ShortName>medusa_idle_texture.wav</ShortName>
-							<Path>SFX\medusa_idle_texture_B88C4B4E.wem</Path>
+							<Path>SFX\medusa_idle_texture_EE11A5EB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
