@@ -1488,7 +1488,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="779649011" Name="Fumo_Barriera" ObjectPath="\Events\Default Work Unit\Enemies\Fumo_Barriera"/>
+				<Event Id="779649011" Name="Fumo_Barriera" ObjectPath="\Events\Default Work Unit\Enemies\Fumo_Barriera">
+					<IncludedMemoryFiles>
+						<File Id="185166148" Language="SFX">
+							<ShortName>fumo_barriera.wav</ShortName>
+							<Path>SFX\fumo_barriera_918C2735.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2094926061" Name="Granchio_Attack_Heavy" ObjectPath="\Events\Default Work Unit\Enemies\Granchio\Granchio_Attack_Heavy">
 					<IncludedMemoryFiles>
 						<File Id="40850543" Language="SFX">
@@ -1751,7 +1758,7 @@
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music\Music">
+				<Event Id="1072299391" Name="Music_Game" ObjectPath="\Events\Default Work Unit\Music\Music_Game">
 					<IncludedMemoryFiles>
 						<File Id="31188997" Language="SFX">
 							<ShortName>A1_MGBT_MASTER_05.wav</ShortName>
