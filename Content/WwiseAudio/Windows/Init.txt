@@ -6,9 +6,13 @@ Switch	ID	Name	Switch Group			Notes
 	2108779966	Walk	Kria_Movement_Speed			
 
 State Group	ID	Name			Wwise Object Path	Notes
+	3688152761	Boss_Fight			\Default Work Unit\Boss_Fight	
 	3863955802	Figthing_Variable			\Default Work Unit\Figthing_Variable	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Boss_Fight			
+	1165767839	Boss_Dead	Boss_Fight			
+	4265060404	Boss_Alive	Boss_Fight			
 	748895195	None	Figthing_Variable			
 	1600559959	No_Fight	Figthing_Variable			
 	2458972060	Crab_Fight	Figthing_Variable			
@@ -21,7 +25,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1873957695	Anechoic			\Factory Reflect Acoustic Textures\Textures\Anechoic	
 	1970351858	Fabric			\Factory Reflect Acoustic Textures\Textures\Fabric	
 	2058049674	Wood			\Factory Reflect Acoustic Textures\Textures\Wood	
-	2152744325	Kria_Health			\Default Work Unit\Kria_Health	
+	2152744325	Kria_Health			\Default Work Unit\Kria\Kria_Health	
 	2412606308	Carpet			\Factory Reflect Acoustic Textures\Textures\Carpet	
 	2637588553	Tile			\Factory Reflect Acoustic Textures\Textures\Tile	
 	2928161104	Curtains			\Factory Reflect Acoustic Textures\Textures\Curtains	
@@ -38,6 +42,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2242381963	Enemies			\Default Work Unit\Master Audio Bus\World\Enemies	
 	2609808943	World			\Default Work Unit\Master Audio Bus\World	
 	2841829810	Ambience_Binauralizer			\Default Work Unit\Master Audio Bus\World\Ambience_Binauralizer	
+	2985113282	Boss_Music			\Default Work Unit\Master Audio Bus\Non_World\Music\Boss_Music	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3869140995	Non_World			\Default Work Unit\Master Audio Bus\Non_World	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Non_World\Music	

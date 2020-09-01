@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\anty\Desktop\Prototipo Tesi 6.5\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\</SourceFilesRoot>
+		<ProjectRoot>C:\Users\anty\Desktop\Prototipo Tesi 7.1\Prototipo Tesi 7.1\Prototipo Tesi 7.1\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\anty\Desktop\Prototipo Tesi 7.1\Prototipo Tesi 7.1\Prototipo Tesi 7.1\.cache\Windows\</SourceFilesRoot>
 		<SoundBanksRoot>C:\Users\anty\Documents\GitHub\MoonGaze-IED-Tesi-\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\anty\Desktop\Prototipo Tesi 6.5\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\anty\Desktop\Prototipo Tesi 7.1\Prototipo Tesi 7.1\Prototipo Tesi 7.1\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -40,8 +40,8 @@
 				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
-				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
-				<GameParameter Id="3355108795" Name="Kria_Ocean" ObjectPath="\Game Parameters\Default Work Unit\Kria_Ocean"/>
+				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria\Kria_Health"/>
+				<GameParameter Id="3355108795" Name="Kria_Ocean" ObjectPath="\Game Parameters\Default Work Unit\Kria\Kria_Ocean"/>
 			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
@@ -60,8 +60,347 @@
 				</File>
 			</ExcludedMemoryFiles>
 			<GameParameters>
-				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
+				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria\Kria_Health"/>
 			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1560169506" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Boss</ObjectPath>
+			<ShortName>Boss</ShortName>
+			<Path>Boss.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3759269670" Name="Arena_Boss" ObjectPath="\Events\Default Work Unit\Ambience\Arena_Boss">
+					<IncludedMemoryFiles>
+						<File Id="62823413" Language="SFX">
+							<ShortName>Arena boss Roomtone Ambisonic (o5)_002.wav</ShortName>
+							<Path>SFX\Arena boss Roomtone Ambisonic (o5)_002_6D099DA9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4287927565" Name="Boss_Attack_Lanterna" ObjectPath="\Events\Default Work Unit\Boss\Boss_Attack_Lanterna">
+					<IncludedMemoryFiles>
+						<File Id="60909308" Language="SFX">
+							<ShortName>boss_weapon_impact_ground\boss_impact_ground_003.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_ground\boss_impact_ground_003_28FEDA6E.wem</Path>
+						</File>
+						<File Id="66908371" Language="SFX">
+							<ShortName>Swoosh_Long\Granchio_Swoosh_Low_long_001.wav</ShortName>
+							<Path>SFX\Swoosh_Long\Granchio_Swoosh_Low_long_001_59637AE3.wem</Path>
+						</File>
+						<File Id="111530892" Language="SFX">
+							<ShortName>boss_voice_attack_lanterna\boss_voice_attack_lanterna_003.wav</ShortName>
+							<Path>SFX\boss_voice_attack_lanterna\boss_voice_attack_lanterna_003_D937C54B.wem</Path>
+						</File>
+						<File Id="120551691" Language="SFX">
+							<ShortName>boss_movement_attacco_lanterna\boss_movement_attacco_lanterna_001.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_lanterna\boss_movement_attacco_lanterna_001_E8CCD6EF.wem</Path>
+						</File>
+						<File Id="125342611" Language="SFX">
+							<ShortName>Swoosh_Long\Granchio_Swoosh_Low_long_003.wav</ShortName>
+							<Path>SFX\Swoosh_Long\Granchio_Swoosh_Low_long_003_23297316.wem</Path>
+						</File>
+						<File Id="168477509" Language="SFX">
+							<ShortName>boss_weapon_impact_lanterna\Boss_attack_impact_lanterna_003.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_lanterna\Boss_attack_impact_lanterna_003_D1D8351C.wem</Path>
+						</File>
+						<File Id="340851903" Language="SFX">
+							<ShortName>Swoosh_Long\Granchio_Swoosh_Low_long_002.wav</ShortName>
+							<Path>SFX\Swoosh_Long\Granchio_Swoosh_Low_long_002_D71C324D.wem</Path>
+						</File>
+						<File Id="367455530" Language="SFX">
+							<ShortName>boss_voice_attack_lanterna\boss_voice_attack_lanterna_001.wav</ShortName>
+							<Path>SFX\boss_voice_attack_lanterna\boss_voice_attack_lanterna_001_259726E8.wem</Path>
+						</File>
+						<File Id="462538873" Language="SFX">
+							<ShortName>boss_movement_attacco_lanterna\boss_movement_attacco_lanterna_003.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_lanterna\boss_movement_attacco_lanterna_003_3FEE8C4C.wem</Path>
+						</File>
+						<File Id="508250204" Language="SFX">
+							<ShortName>boss_weapon_impact_lanterna\Boss_attack_impact_lanterna_002.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_lanterna\Boss_attack_impact_lanterna_002_5530526B.wem</Path>
+						</File>
+						<File Id="552406061" Language="SFX">
+							<ShortName>boss_weapon_impact_ground\boss_impact_ground_001.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_ground\boss_impact_ground_001_2B8FEB0E.wem</Path>
+						</File>
+						<File Id="784546634" Language="SFX">
+							<ShortName>boss_weapon_impact_ground\boss_impact_ground_002.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_ground\boss_impact_ground_002_0A96E5E3.wem</Path>
+						</File>
+						<File Id="830648910" Language="SFX">
+							<ShortName>boss_weapon_impact_lanterna\Boss_attack_impact_lanterna_001.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_lanterna\Boss_attack_impact_lanterna_001_7742EBD5.wem</Path>
+						</File>
+						<File Id="970602532" Language="SFX">
+							<ShortName>boss_movement_attacco_lanterna\boss_movement_attacco_lanterna_002.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_lanterna\boss_movement_attacco_lanterna_002_F1B8C87C.wem</Path>
+						</File>
+						<File Id="1060993668" Language="SFX">
+							<ShortName>boss_voice_attack_lanterna\boss_voice_attack_lanterna_002.wav</ShortName>
+							<Path>SFX\boss_voice_attack_lanterna\boss_voice_attack_lanterna_002_14EF1079.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="34949516" Name="Boss_Attack_Punch" ObjectPath="\Events\Default Work Unit\Boss\Boss_Attack_Punch">
+					<IncludedMemoryFiles>
+						<File Id="60909308" Language="SFX">
+							<ShortName>boss_weapon_impact_ground\boss_impact_ground_003.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_ground\boss_impact_ground_003_28FEDA6E.wem</Path>
+						</File>
+						<File Id="135505223" Language="SFX">
+							<ShortName>boss_movement_attacco_pugno\boss_movement_attacco_pugno_002.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_pugno\boss_movement_attacco_pugno_002_0C6DA884.wem</Path>
+						</File>
+						<File Id="185125000" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_002.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_002_3D4B1010.wem</Path>
+						</File>
+						<File Id="367832126" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_001.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_001_2C3B43AE.wem</Path>
+						</File>
+						<File Id="552406061" Language="SFX">
+							<ShortName>boss_weapon_impact_ground\boss_impact_ground_001.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_ground\boss_impact_ground_001_2B8FEB0E.wem</Path>
+						</File>
+						<File Id="590928900" Language="SFX">
+							<ShortName>boss_voice_attack_punch\Boss_voice_attack_punch_002.wav</ShortName>
+							<Path>SFX\boss_voice_attack_punch\Boss_voice_attack_punch_002_69A27019.wem</Path>
+						</File>
+						<File Id="636514446" Language="SFX">
+							<ShortName>boss_movement_attacco_pugno\boss_movement_attacco_pugno_003.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_pugno\boss_movement_attacco_pugno_003_3D516160.wem</Path>
+						</File>
+						<File Id="758575881" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_003.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_003_9A9C4713.wem</Path>
+						</File>
+						<File Id="784546634" Language="SFX">
+							<ShortName>boss_weapon_impact_ground\boss_impact_ground_002.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_ground\boss_impact_ground_002_0A96E5E3.wem</Path>
+						</File>
+						<File Id="850289190" Language="SFX">
+							<ShortName>boss_voice_attack_punch\Boss_voice_attack_punch_003.wav</ShortName>
+							<Path>SFX\boss_voice_attack_punch\Boss_voice_attack_punch_003_69A27019.wem</Path>
+						</File>
+						<File Id="864011953" Language="SFX">
+							<ShortName>boss_voice_attack_punch\Boss_voice_attack_punch_001.wav</ShortName>
+							<Path>SFX\boss_voice_attack_punch\Boss_voice_attack_punch_001_69A27019.wem</Path>
+						</File>
+						<File Id="1000590003" Language="SFX">
+							<ShortName>boss_movement_attacco_pugno\boss_movement_attacco_pugno_001.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_pugno\boss_movement_attacco_pugno_001_8B5EF5FA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1382876710" Name="Boss_Attack_Spit" ObjectPath="\Events\Default Work Unit\Boss\Boss_Attack_Spit">
+					<IncludedMemoryFiles>
+						<File Id="185125000" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_002.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_002_3D4B1010.wem</Path>
+						</File>
+						<File Id="278895017" Language="SFX">
+							<ShortName>boss_voice_attack_scream_spit\Boss_voice_scream_spit_003.wav</ShortName>
+							<Path>SFX\boss_voice_attack_scream_spit\Boss_voice_scream_spit_003_551D8749.wem</Path>
+						</File>
+						<File Id="367832126" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_001.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_001_2C3B43AE.wem</Path>
+						</File>
+						<File Id="371947173" Language="SFX">
+							<ShortName>boss_voice_attack_scream_spit\Boss_voice_scream_spit_002.wav</ShortName>
+							<Path>SFX\boss_voice_attack_scream_spit\Boss_voice_scream_spit_002_FD4A914C.wem</Path>
+						</File>
+						<File Id="521009224" Language="SFX">
+							<ShortName>boss_movement_attacco_spit\boss_movement_attacco_spit_002.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_spit\boss_movement_attacco_spit_002_6E68D58E.wem</Path>
+						</File>
+						<File Id="553212671" Language="SFX">
+							<ShortName>boss_voice_attack_scream_spit\Boss_voice_scream_spit_001.wav</ShortName>
+							<Path>SFX\boss_voice_attack_scream_spit\Boss_voice_scream_spit_001_1B381441.wem</Path>
+						</File>
+						<File Id="609159316" Language="SFX">
+							<ShortName>boss_movement_attacco_spit\boss_movement_attacco_spit_003.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_spit\boss_movement_attacco_spit_003_4ABB7318.wem</Path>
+						</File>
+						<File Id="758575881" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_003.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_003_9A9C4713.wem</Path>
+						</File>
+						<File Id="834352360" Language="SFX">
+							<ShortName>boss_movement_attacco_spit\boss_movement_attacco_spit_001.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_spit\boss_movement_attacco_spit_001_8CF9A13C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2671347828" Name="Boss_Attack_Sweep" ObjectPath="\Events\Default Work Unit\Boss\Boss_Attack_Sweep">
+					<IncludedMemoryFiles>
+						<File Id="185125000" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_002.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_002_3D4B1010.wem</Path>
+						</File>
+						<File Id="321691216" Language="SFX">
+							<ShortName>boss_movement_attacco_sweep\boss_movement_sweep_001.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_sweep\boss_movement_sweep_001_67FDDD42.wem</Path>
+						</File>
+						<File Id="367832126" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_001.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_001_2C3B43AE.wem</Path>
+						</File>
+						<File Id="421545507" Language="SFX">
+							<ShortName>boss_voice_attack_sweep\boss_voice_attack_sweep_001.wav</ShortName>
+							<Path>SFX\boss_voice_attack_sweep\boss_voice_attack_sweep_001_F2261E0F.wem</Path>
+						</File>
+						<File Id="758575881" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_003.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_003_9A9C4713.wem</Path>
+						</File>
+						<File Id="828131829" Language="SFX">
+							<ShortName>boss_movement_attacco_sweep\boss_movement_sweep_002.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_sweep\boss_movement_sweep_002_8C5E7D60.wem</Path>
+						</File>
+						<File Id="829644687" Language="SFX">
+							<ShortName>boss_voice_attack_sweep\boss_voice_attack_sweep_002.wav</ShortName>
+							<Path>SFX\boss_voice_attack_sweep\boss_voice_attack_sweep_002_D0834893.wem</Path>
+						</File>
+						<File Id="905373451" Language="SFX">
+							<ShortName>boss_voice_attack_sweep\boss_voice_attack_sweep_003.wav</ShortName>
+							<Path>SFX\boss_voice_attack_sweep\boss_voice_attack_sweep_003_5E6D6B32.wem</Path>
+						</File>
+						<File Id="961460278" Language="SFX">
+							<ShortName>boss_movement_attacco_sweep\boss_movement_sweep_003.wav</ShortName>
+							<Path>SFX\boss_movement_attacco_sweep\boss_movement_sweep_003_24A24688.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2713247166" Name="Boss_Damage" ObjectPath="\Events\Default Work Unit\Boss\Boss_Damage">
+					<IncludedMemoryFiles>
+						<File Id="168477228" Language="SFX">
+							<ShortName>Boss_voice_pain\Boss_pain_002.wav</ShortName>
+							<Path>SFX\Boss_voice_pain\Boss_pain_002_31EA6486.wem</Path>
+						</File>
+						<File Id="775843052" Language="SFX">
+							<ShortName>Boss_voice_pain\Boss_pain_003.wav</ShortName>
+							<Path>SFX\Boss_voice_pain\Boss_pain_003_2C6A480C.wem</Path>
+						</File>
+						<File Id="956671732" Language="SFX">
+							<ShortName>Boss_voice_pain\Boss_pain_001.wav</ShortName>
+							<Path>SFX\Boss_voice_pain\Boss_pain_001_9297D82C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4052139381" Name="Boss_Death" ObjectPath="\Events\Default Work Unit\Boss\Boss_Death">
+					<IncludedMemoryFiles>
+						<File Id="2949343" Language="SFX">
+							<ShortName>boss_movement_death\boss_movement_death_001.wav</ShortName>
+							<Path>SFX\boss_movement_death\boss_movement_death_001_A539D273.wem</Path>
+						</File>
+						<File Id="281089021" Language="SFX">
+							<ShortName>Boss_voice_death\Boss_death_001.wav</ShortName>
+							<Path>SFX\Boss_voice_death\Boss_death_001_800BE263.wem</Path>
+						</File>
+						<File Id="620576765" Language="SFX">
+							<ShortName>boss_movement_death\boss_movement_death_002.wav</ShortName>
+							<Path>SFX\boss_movement_death\boss_movement_death_002_58E35590.wem</Path>
+						</File>
+						<File Id="648421597" Language="SFX">
+							<ShortName>boss_movement_death\boss_movement_death_003.wav</ShortName>
+							<Path>SFX\boss_movement_death\boss_movement_death_003_A9EE9CAC.wem</Path>
+						</File>
+						<File Id="770921576" Language="SFX">
+							<ShortName>Boss_voice_death\Boss_death_003.wav</ShortName>
+							<Path>SFX\Boss_voice_death\Boss_death_003_66202741.wem</Path>
+						</File>
+						<File Id="902466521" Language="SFX">
+							<ShortName>Boss_voice_death\Boss_death_002.wav</ShortName>
+							<Path>SFX\Boss_voice_death\Boss_death_002_F6175B75.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3167145899" Name="Boss_Idle" ObjectPath="\Events\Default Work Unit\Boss\Boss_Idle">
+					<IncludedMemoryFiles>
+						<File Id="48175132" Language="SFX">
+							<ShortName>Boss_voice_idle\Boss_voice_idle_breath_out\boss_voice_idle_breath_out_003.wav</ShortName>
+							<Path>SFX\Boss_voice_idle\Boss_voice_idle_breath_out\boss_voice_idle_breath_out_003_998F7FA4.wem</Path>
+						</File>
+						<File Id="60368608" Language="SFX">
+							<ShortName>boss_movement_idle.wav</ShortName>
+							<Path>SFX\boss_movement_idle_3B293001.wem</Path>
+						</File>
+						<File Id="232255495" Language="SFX">
+							<ShortName>Boss_voice_idle\Boss_voice_idle_breath_out\boss_voice_idle_breath_out_002.wav</ShortName>
+							<Path>SFX\Boss_voice_idle\Boss_voice_idle_breath_out\boss_voice_idle_breath_out_002_C1BD8E7C.wem</Path>
+						</File>
+						<File Id="346771123" Language="SFX">
+							<ShortName>Boss_voice_idle\Boss_voice_idle_breath_in\boss_voice_idle_breath_in_003.wav</ShortName>
+							<Path>SFX\Boss_voice_idle\Boss_voice_idle_breath_in\boss_voice_idle_breath_in_003_ED512997.wem</Path>
+						</File>
+						<File Id="746143208" Language="SFX">
+							<ShortName>Boss_voice_idle\Boss_voice_idle_breath_in\boss_voice_idle_breath_in_002.wav</ShortName>
+							<Path>SFX\Boss_voice_idle\Boss_voice_idle_breath_in\boss_voice_idle_breath_in_002_164E7249.wem</Path>
+						</File>
+						<File Id="831015527" Language="SFX">
+							<ShortName>Boss_voice_idle\Boss_voice_idle_breath_out\boss_voice_idle_breath_out_001.wav</ShortName>
+							<Path>SFX\Boss_voice_idle\Boss_voice_idle_breath_out\boss_voice_idle_breath_out_001_005EFBB2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1971371388" Name="Boss_Impact_Spit" ObjectPath="\Events\Default Work Unit\Boss\Boss_Impact_Spit">
+					<IncludedMemoryFiles>
+						<File Id="454083696" Language="SFX">
+							<ShortName>boss_weapon_impact_spit\boss_weapon_impact_spit_002.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_spit\boss_weapon_impact_spit_002_B4F823D7.wem</Path>
+						</File>
+						<File Id="582055847" Language="SFX">
+							<ShortName>boss_weapon_impact_spit\boss_weapon_impact_spit_001.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_spit\boss_weapon_impact_spit_001_BE19A5C3.wem</Path>
+						</File>
+						<File Id="656225396" Language="SFX">
+							<ShortName>boss_weapon_impact_spit\boss_weapon_impact_spit_003.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_spit\boss_weapon_impact_spit_003_2FA55354.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="913192744" Name="Boss_Stance_Change" ObjectPath="\Events\Default Work Unit\Boss\Boss_Stance_Change">
+					<IncludedMemoryFiles>
+						<File Id="15521588" Language="SFX">
+							<ShortName>boss_movement_stance_change\boss_movement_stance_change_001.wav</ShortName>
+							<Path>SFX\boss_movement_stance_change\boss_movement_stance_change_001_3534B5E2.wem</Path>
+						</File>
+						<File Id="185125000" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_002.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_002_3D4B1010.wem</Path>
+						</File>
+						<File Id="292333715" Language="SFX">
+							<ShortName>boss_movement_stance_change\boss_movement_stance_change_002.wav</ShortName>
+							<Path>SFX\boss_movement_stance_change\boss_movement_stance_change_002_83F88D17.wem</Path>
+						</File>
+						<File Id="367832126" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_001.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_001_2C3B43AE.wem</Path>
+						</File>
+						<File Id="414091464" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_002.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_002_22020BAE.wem</Path>
+						</File>
+						<File Id="447888849" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_003.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_003_DDBB0D0D.wem</Path>
+						</File>
+						<File Id="499593907" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_001.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_001_CD141950.wem</Path>
+						</File>
+						<File Id="636368036" Language="SFX">
+							<ShortName>boss_movement_stance_change\boss_movement_stance_change_003.wav</ShortName>
+							<Path>SFX\boss_movement_stance_change\boss_movement_stance_change_003_D007C3F8.wem</Path>
+						</File>
+						<File Id="758575881" Language="SFX">
+							<ShortName>boss_footsteps\boss_footsteps_003.wav</ShortName>
+							<Path>SFX\boss_footsteps\boss_footsteps_003_9A9C4713.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="1945819544" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Kria</ObjectPath>
@@ -386,9 +725,17 @@
 							<ShortName>kria_scossa_medusa\kria_scossa_medusa_002.wav</ShortName>
 							<Path>SFX\kria_scossa_medusa\kria_scossa_medusa_002_A1B290F6.wem</Path>
 						</File>
+						<File Id="16374339" Language="SFX">
+							<ShortName>boss_weapon_attack_impact_kria\boss_weapon_impact_kria_002.wav</ShortName>
+							<Path>SFX\boss_weapon_attack_impact_kria\boss_weapon_impact_kria_002_8A5B4D82.wem</Path>
+						</File>
 						<File Id="36448204" Language="SFX">
 							<ShortName>esploratori_weapon_impact_bastone_kria\esploratore_weapon_impact_bastone_kria_001.wav</ShortName>
 							<Path>SFX\esploratori_weapon_impact_bastone_kria\esploratore_weapon_impact_bastone_kria_001_D3280EE9.wem</Path>
+						</File>
+						<File Id="53585671" Language="SFX">
+							<ShortName>boss_weapon_impact_ground\boss_impact_ground_001.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_ground\boss_impact_ground_001_0B7F4868.wem</Path>
 						</File>
 						<File Id="91345559" Language="SFX">
 							<ShortName>kria_voice_damage_heavy_003.wav</ShortName>
@@ -406,6 +753,10 @@
 							<ShortName>esploratori_weapon_impact_knife_kria_001.wav</ShortName>
 							<Path>SFX\esploratori_weapon_impact_knife_kria_001_72251D93.wem</Path>
 						</File>
+						<File Id="243219839" Language="SFX">
+							<ShortName>boss_weapon_attack_impact_kria\boss_weapon_impact_kria_001.wav</ShortName>
+							<Path>SFX\boss_weapon_attack_impact_kria\boss_weapon_impact_kria_001_F465DE61.wem</Path>
+						</File>
 						<File Id="247137309" Language="SFX">
 							<ShortName>kria_voice_damage_heavy_001.wav</ShortName>
 							<Path>SFX\kria_voice_damage_heavy_001_833E8E49.wem</Path>
@@ -418,6 +769,10 @@
 							<ShortName>esploratori_weapon_impact_knife_kria_002.wav</ShortName>
 							<Path>SFX\esploratori_weapon_impact_knife_kria_002_9BBED798.wem</Path>
 						</File>
+						<File Id="498766579" Language="SFX">
+							<ShortName>boss_weapon_impact_ground\boss_impact_ground_002.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_ground\boss_impact_ground_002_691B5B49.wem</Path>
+						</File>
 						<File Id="519639435" Language="SFX">
 							<ShortName>esploratori_weapon_impact_knife_kria_003.wav</ShortName>
 							<Path>SFX\esploratori_weapon_impact_knife_kria_003_6048526C.wem</Path>
@@ -426,6 +781,10 @@
 							<ShortName>granchio_weapon_impact_kria_003.wav</ShortName>
 							<Path>SFX\granchio_weapon_impact_kria_003_E6D93BD6.wem</Path>
 						</File>
+						<File Id="639135861" Language="SFX">
+							<ShortName>boss_weapon_attack_impact_kria\boss_weapon_impact_kria_003.wav</ShortName>
+							<Path>SFX\boss_weapon_attack_impact_kria\boss_weapon_impact_kria_003_B1934002.wem</Path>
+						</File>
 						<File Id="721888648" Language="SFX">
 							<ShortName>granchio_weapon_impact_kria_001.wav</ShortName>
 							<Path>SFX\granchio_weapon_impact_kria_001_60B80666.wem</Path>
@@ -433,6 +792,10 @@
 						<File Id="795259288" Language="SFX">
 							<ShortName>esploratori_weapon_impact_bastone_kria\esploratore_weapon_impact_bastone_kria_002.wav</ShortName>
 							<Path>SFX\esploratori_weapon_impact_bastone_kria\esploratore_weapon_impact_bastone_kria_002_E3BDF5D5.wem</Path>
+						</File>
+						<File Id="872956646" Language="SFX">
+							<ShortName>boss_weapon_impact_ground\boss_impact_ground_003.wav</ShortName>
+							<Path>SFX\boss_weapon_impact_ground\boss_impact_ground_003_1C85272D.wem</Path>
 						</File>
 						<File Id="880545703" Language="SFX">
 							<ShortName>esploratori_weapon_impact_fionda_kria\esploratori_weapon_impact_fionda_kria_002.wav</ShortName>
@@ -502,6 +865,16 @@
 									</Media>
 								</SwitchContainer>
 							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{244303AC-DBF6-484C-A8FE-C22A9B34E8CA}">
+							<Media>
+								<File Id="243219839"/>
+								<File Id="16374339"/>
+								<File Id="639135861"/>
+								<File Id="53585671"/>
+								<File Id="498766579"/>
+								<File Id="872956646"/>
+							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -887,6 +1260,10 @@
 				</Event>
 				<Event Id="3972774391" Name="Weapon_Hit" ObjectPath="\Events\Default Work Unit\Kria\Weapon_Hit">
 					<IncludedMemoryFiles>
+						<File Id="271655" Language="SFX">
+							<ShortName>kria_weapon_impact_boss\kria_weapon_impact_boss_heavy_001.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_boss\kria_weapon_impact_boss_heavy_001_7CA312EF.wem</Path>
+						</File>
 						<File Id="18540156" Language="SFX">
 							<ShortName>Kria_Attack_Impact_Weapon_Coral_001.wav</ShortName>
 							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_001_84875D65.wem</Path>
@@ -895,13 +1272,33 @@
 							<ShortName>Kria_Attack_Impact_Weapon_Coral_003.wav</ShortName>
 							<Path>SFX\Kria_Attack_Impact_Weapon_Coral_003_84875D65.wem</Path>
 						</File>
+						<File Id="101050807" Language="SFX">
+							<ShortName>kria_weapon_impact_boss\kria_weapon_impact_boss_light_002.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_boss\kria_weapon_impact_boss_light_002_DA81AA60.wem</Path>
+						</File>
+						<File Id="155606054" Language="SFX">
+							<ShortName>kria_weapon_impact_boss\kria_weapon_impact_boss_light_003.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_boss\kria_weapon_impact_boss_light_003_6A3960A0.wem</Path>
+						</File>
 						<File Id="175491956" Language="SFX">
 							<ShortName>vampirism\vampirisim_001.wav</ShortName>
 							<Path>SFX\vampirism\vampirisim_001_E9D0980B.wem</Path>
 						</File>
+						<File Id="186907153" Language="SFX">
+							<ShortName>kria_weapon_impact_boss\kria_weapon_impact_boss_light_001.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_boss\kria_weapon_impact_boss_light_001_3B397982.wem</Path>
+						</File>
 						<File Id="195612381" Language="SFX">
 							<ShortName>kria_weapon_impact_granchio_heavy_002.wav</ShortName>
 							<Path>SFX\kria_weapon_impact_granchio_heavy_002_2D1AC218.wem</Path>
+						</File>
+						<File Id="216835055" Language="SFX">
+							<ShortName>kria_weapon_impact_boss\kria_weapon_impact_boss_heavy_003.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_boss\kria_weapon_impact_boss_heavy_003_A728E0B3.wem</Path>
+						</File>
+						<File Id="241066086" Language="SFX">
+							<ShortName>kria_weapon_impact_boss\kria_weapon_impact_boss_heavy_002.wav</ShortName>
+							<Path>SFX\kria_weapon_impact_boss\kria_weapon_impact_boss_heavy_002_82C2DC34.wem</Path>
 						</File>
 						<File Id="288668600" Language="SFX">
 							<ShortName>kria_weapon_impact_granchio_heavy_001.wav</ShortName>
@@ -1030,6 +1427,19 @@
 								<File Id="540940673"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{439D5F99-93B8-44E9-BCBF-C0992390EB02}">
+							<Media>
+								<File Id="271655"/>
+								<File Id="241066086"/>
+								<File Id="216835055"/>
+								<File Id="186907153"/>
+								<File Id="101050807"/>
+								<File Id="155606054"/>
+								<File Id="175491956"/>
+								<File Id="926089563"/>
+								<File Id="540940673"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 				<Event Id="3713389253" Name="Weapon_On_Off" ObjectPath="\Events\Default Work Unit\Kria\Weapon_On_Off">
@@ -1062,8 +1472,8 @@
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
-				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
-				<GameParameter Id="3824661808" Name="Kria_Movement_Speed" ObjectPath="\Game Parameters\Default Work Unit\Kria_Movement_Speed"/>
+				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria\Kria_Health"/>
+				<GameParameter Id="3824661808" Name="Kria_Movement_Speed" ObjectPath="\Game Parameters\Default Work Unit\Kria\Kria_Movement_Speed"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2926367394" Name="Kria_Enemies_Hits" ObjectPath="\Switches\Default Work Unit\Kria\Kria_Enemies_Hits">
@@ -1072,6 +1482,7 @@
 						<Switch Id="3422721884" Name="EsploratoriRangeCharacter_BP" ObjectPath="\Switches\Default Work Unit\Kria\Kria_Enemies_Hits\EsploratoriRangeCharacter_BP"/>
 						<Switch Id="219529847" Name="LiocarpioCharacter_BP" ObjectPath="\Switches\Default Work Unit\Kria\Kria_Enemies_Hits\LiocarpioCharacter_BP"/>
 						<Switch Id="1072062012" Name="MedusaCharacter_BP" ObjectPath="\Switches\Default Work Unit\Kria\Kria_Enemies_Hits\MedusaCharacter_BP"/>
+						<Switch Id="4183422184" Name="BossCharacter_BP" ObjectPath="\Switches\Default Work Unit\Kria\Kria_Enemies_Hits\BossCharacter_BP"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="3824661808" Name="Kria_Movement_Speed" ObjectPath="\Switches\Default Work Unit\Kria\Kria_Movement_Speed">
@@ -1095,6 +1506,7 @@
 						<Switch Id="4029561118" Name="Granchio" ObjectPath="\Switches\Default Work Unit\General\Surface_Type\Granchio"/>
 						<Switch Id="2609729838" Name="Medusa" ObjectPath="\Switches\Default Work Unit\General\Surface_Type\Medusa"/>
 						<Switch Id="1923566115" Name="Esploratore" ObjectPath="\Switches\Default Work Unit\General\Surface_Type\Esploratore"/>
+						<Switch Id="1560169506" Name="Boss" ObjectPath="\Switches\Default Work Unit\General\Surface_Type\Boss"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
@@ -1750,7 +2162,7 @@
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
-				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria_Health"/>
+				<GameParameter Id="2152744325" Name="Kria_Health" ObjectPath="\Game Parameters\Default Work Unit\Kria\Kria_Health"/>
 			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="3991942870" Language="SFX">
@@ -1758,6 +2170,264 @@
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
+				<Event Id="320277571" Name="Boss_Music_Game" ObjectPath="\Events\Default Work Unit\Music\Boss_Music_Game">
+					<IncludedMemoryFiles>
+						<File Id="23242571" Language="SFX">
+							<ShortName>MoGaBOSS_13.wav</ShortName>
+							<Path>SFX\MoGaBOSS_13_1CA62143.wem</Path>
+						</File>
+						<File Id="29401072" Language="SFX">
+							<ShortName>MoGaBOSS_24.wav</ShortName>
+							<Path>SFX\MoGaBOSS_24_1CA62143.wem</Path>
+						</File>
+						<File Id="29618107" Language="SFX">
+							<ShortName>MoGaBOSS_26.wav</ShortName>
+							<Path>SFX\MoGaBOSS_26_1CA62143.wem</Path>
+						</File>
+						<File Id="48343825" Language="SFX">
+							<ShortName>MoGaBOSS_42.wav</ShortName>
+							<Path>SFX\MoGaBOSS_42_1CA62143.wem</Path>
+						</File>
+						<File Id="64632107" Language="SFX">
+							<ShortName>MoGaBOSS_46.wav</ShortName>
+							<Path>SFX\MoGaBOSS_46_1CA62143.wem</Path>
+						</File>
+						<File Id="77697348" Language="SFX">
+							<ShortName>MoGaBOSS_11.wav</ShortName>
+							<Path>SFX\MoGaBOSS_11_1CA62143.wem</Path>
+						</File>
+						<File Id="154905129" Language="SFX">
+							<ShortName>MoGaBOSS_27.wav</ShortName>
+							<Path>SFX\MoGaBOSS_27_1CA62143.wem</Path>
+						</File>
+						<File Id="165866801" Language="SFX">
+							<ShortName>MoGaBOSS_39.wav</ShortName>
+							<Path>SFX\MoGaBOSS_39_1CA62143.wem</Path>
+						</File>
+						<File Id="231805947" Language="SFX">
+							<ShortName>MoGaBOSS_37.wav</ShortName>
+							<Path>SFX\MoGaBOSS_37_1CA62143.wem</Path>
+						</File>
+						<File Id="248601234" Language="SFX">
+							<ShortName>MoGaBOSS_21.wav</ShortName>
+							<Path>SFX\MoGaBOSS_21_1CA62143.wem</Path>
+						</File>
+						<File Id="288145092" Language="SFX">
+							<ShortName>MoGaBOSS_16.wav</ShortName>
+							<Path>SFX\MoGaBOSS_16_1CA62143.wem</Path>
+						</File>
+						<File Id="327782493" Language="SFX">
+							<ShortName>MoGaBOSS_44.wav</ShortName>
+							<Path>SFX\MoGaBOSS_44_1CA62143.wem</Path>
+						</File>
+						<File Id="348962696" Language="SFX">
+							<ShortName>MoGaBOSS_17.wav</ShortName>
+							<Path>SFX\MoGaBOSS_17_1CA62143.wem</Path>
+						</File>
+						<File Id="356208471" Language="SFX">
+							<ShortName>MoGaBOSS_19.wav</ShortName>
+							<Path>SFX\MoGaBOSS_19_1CA62143.wem</Path>
+						</File>
+						<File Id="391109788" Language="SFX">
+							<ShortName>MoGaBOSS_34.wav</ShortName>
+							<Path>SFX\MoGaBOSS_34_1CA62143.wem</Path>
+						</File>
+						<File Id="424096538" Language="SFX">
+							<ShortName>MoGaBOSS_32.wav</ShortName>
+							<Path>SFX\MoGaBOSS_32_1CA62143.wem</Path>
+						</File>
+						<File Id="465028609" Language="SFX">
+							<ShortName>MoGaBOSS_25.wav</ShortName>
+							<Path>SFX\MoGaBOSS_25_1CA62143.wem</Path>
+						</File>
+						<File Id="475628863" Language="SFX">
+							<ShortName>MoGaBOSS_18.wav</ShortName>
+							<Path>SFX\MoGaBOSS_18_1CA62143.wem</Path>
+						</File>
+						<File Id="560354289" Language="SFX">
+							<ShortName>MoGaBOSS_47.wav</ShortName>
+							<Path>SFX\MoGaBOSS_47_1CA62143.wem</Path>
+						</File>
+						<File Id="575968461" Language="SFX">
+							<ShortName>MoGaBOSS_35.wav</ShortName>
+							<Path>SFX\MoGaBOSS_35_1CA62143.wem</Path>
+						</File>
+						<File Id="583154410" Language="SFX">
+							<ShortName>MoGaBOSS_08.wav</ShortName>
+							<Path>SFX\MoGaBOSS_08_1CA62143.wem</Path>
+						</File>
+						<File Id="585992977" Language="SFX">
+							<ShortName>MoGaBOSS_09.wav</ShortName>
+							<Path>SFX\MoGaBOSS_09_1CA62143.wem</Path>
+						</File>
+						<File Id="597036554" Language="SFX">
+							<ShortName>MoGaBOSS_10.wav</ShortName>
+							<Path>SFX\MoGaBOSS_10_1CA62143.wem</Path>
+						</File>
+						<File Id="598668583" Language="SFX">
+							<ShortName>MoGaBOSS_30.wav</ShortName>
+							<Path>SFX\MoGaBOSS_30_1CA62143.wem</Path>
+						</File>
+						<File Id="621138409" Language="SFX">
+							<ShortName>MoGaBOSS_38.wav</ShortName>
+							<Path>SFX\MoGaBOSS_38_1CA62143.wem</Path>
+						</File>
+						<File Id="645053179" Language="SFX">
+							<ShortName>MoGaBOSS_02.wav</ShortName>
+							<Path>SFX\MoGaBOSS_02_1CA62143.wem</Path>
+						</File>
+						<File Id="708668279" Language="SFX">
+							<ShortName>MoGaBOSS_28.wav</ShortName>
+							<Path>SFX\MoGaBOSS_28_1CA62143.wem</Path>
+						</File>
+						<File Id="710529995" Language="SFX">
+							<ShortName>MoGaBOSS_45.wav</ShortName>
+							<Path>SFX\MoGaBOSS_45_1CA62143.wem</Path>
+						</File>
+						<File Id="730184981" Language="SFX">
+							<ShortName>MoGaBOSS_14.wav</ShortName>
+							<Path>SFX\MoGaBOSS_14_1CA62143.wem</Path>
+						</File>
+						<File Id="778043618" Language="SFX">
+							<ShortName>MOGABOSS_CHAOSLAYER.wav</ShortName>
+							<Path>SFX\MOGABOSS_CHAOSLAYER_1CA62143.wem</Path>
+						</File>
+						<File Id="806552019" Language="SFX">
+							<ShortName>MoGaBOSS_41.wav</ShortName>
+							<Path>SFX\MoGaBOSS_41_1CA62143.wem</Path>
+						</File>
+						<File Id="809179156" Language="SFX">
+							<ShortName>MoGaBOSS_04.wav</ShortName>
+							<Path>SFX\MoGaBOSS_04_1CA62143.wem</Path>
+						</File>
+						<File Id="819235363" Language="SFX">
+							<ShortName>MoGaBOSS_31.wav</ShortName>
+							<Path>SFX\MoGaBOSS_31_1CA62143.wem</Path>
+						</File>
+						<File Id="844500541" Language="SFX">
+							<ShortName>MoGaBOSS_ENDING.wav</ShortName>
+							<Path>SFX\MoGaBOSS_ENDING_1CA62143.wem</Path>
+						</File>
+						<File Id="851501124" Language="SFX">
+							<ShortName>MoGaBOSS_23.wav</ShortName>
+							<Path>SFX\MoGaBOSS_23_1CA62143.wem</Path>
+						</File>
+						<File Id="851949456" Language="SFX">
+							<ShortName>MoGaBOSS_01.wav</ShortName>
+							<Path>SFX\MoGaBOSS_01_1CA62143.wem</Path>
+						</File>
+						<File Id="907166117" Language="SFX">
+							<ShortName>MoGaBOSS_20.wav</ShortName>
+							<Path>SFX\MoGaBOSS_20_1CA62143.wem</Path>
+						</File>
+						<File Id="910422136" Language="SFX">
+							<ShortName>MoGaBOSS_36.wav</ShortName>
+							<Path>SFX\MoGaBOSS_36_1CA62143.wem</Path>
+						</File>
+						<File Id="939196051" Language="SFX">
+							<ShortName>MoGaBOSS_15.wav</ShortName>
+							<Path>SFX\MoGaBOSS_15_1CA62143.wem</Path>
+						</File>
+						<File Id="939240049" Language="SFX">
+							<ShortName>MoGaBOSS_43.wav</ShortName>
+							<Path>SFX\MoGaBOSS_43_1CA62143.wem</Path>
+						</File>
+						<File Id="959941048" Language="SFX">
+							<ShortName>MoGaBOSS_03.wav</ShortName>
+							<Path>SFX\MoGaBOSS_03_1CA62143.wem</Path>
+						</File>
+						<File Id="967496357" Language="SFX">
+							<ShortName>MoGaBOSS_07.wav</ShortName>
+							<Path>SFX\MoGaBOSS_07_1CA62143.wem</Path>
+						</File>
+						<File Id="975791112" Language="SFX">
+							<ShortName>MoGaBOSS_33.wav</ShortName>
+							<Path>SFX\MoGaBOSS_33_1CA62143.wem</Path>
+						</File>
+						<File Id="1016213950" Language="SFX">
+							<ShortName>MoGaBOSS_05.wav</ShortName>
+							<Path>SFX\MoGaBOSS_05_1CA62143.wem</Path>
+						</File>
+						<File Id="1019536737" Language="SFX">
+							<ShortName>MoGaBOSS_40.wav</ShortName>
+							<Path>SFX\MoGaBOSS_40_1CA62143.wem</Path>
+						</File>
+						<File Id="1022601222" Language="SFX">
+							<ShortName>MoGaBOSS_06.wav</ShortName>
+							<Path>SFX\MoGaBOSS_06_1CA62143.wem</Path>
+						</File>
+						<File Id="1032851743" Language="SFX">
+							<ShortName>MoGaBOSS_12.wav</ShortName>
+							<Path>SFX\MoGaBOSS_12_1CA62143.wem</Path>
+						</File>
+						<File Id="1033360106" Language="SFX">
+							<ShortName>MoGaBOSS_29.wav</ShortName>
+							<Path>SFX\MoGaBOSS_29_1CA62143.wem</Path>
+						</File>
+						<File Id="1047792144" Language="SFX">
+							<ShortName>MoGaBOSS_22.wav</ShortName>
+							<Path>SFX\MoGaBOSS_22_1CA62143.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{F0AEA0CA-3A72-4BB4-896F-2C273A08319D}">
+							<Media>
+								<File Id="851949456"/>
+								<File Id="645053179"/>
+								<File Id="959941048"/>
+								<File Id="809179156"/>
+								<File Id="1016213950"/>
+								<File Id="1022601222"/>
+								<File Id="967496357"/>
+								<File Id="583154410"/>
+								<File Id="585992977"/>
+								<File Id="597036554"/>
+								<File Id="77697348"/>
+								<File Id="1032851743"/>
+								<File Id="23242571"/>
+								<File Id="730184981"/>
+								<File Id="939196051"/>
+								<File Id="288145092"/>
+								<File Id="348962696"/>
+								<File Id="475628863"/>
+								<File Id="356208471"/>
+								<File Id="907166117"/>
+								<File Id="248601234"/>
+								<File Id="1047792144"/>
+								<File Id="851501124"/>
+								<File Id="29401072"/>
+								<File Id="465028609"/>
+								<File Id="29618107"/>
+								<File Id="154905129"/>
+								<File Id="708668279"/>
+								<File Id="1033360106"/>
+								<File Id="598668583"/>
+								<File Id="819235363"/>
+								<File Id="424096538"/>
+								<File Id="975791112"/>
+								<File Id="391109788"/>
+								<File Id="575968461"/>
+								<File Id="910422136"/>
+								<File Id="231805947"/>
+								<File Id="621138409"/>
+								<File Id="165866801"/>
+								<File Id="1019536737"/>
+								<File Id="806552019"/>
+								<File Id="48343825"/>
+								<File Id="939240049"/>
+								<File Id="327782493"/>
+								<File Id="710529995"/>
+								<File Id="64632107"/>
+								<File Id="560354289"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D2266AD4-8A46-48D7-B04F-3DA34E7A8246}">
+							<Media>
+								<File Id="844500541"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1072299391" Name="Music_Game" ObjectPath="\Events\Default Work Unit\Music\Music_Game">
 					<IncludedMemoryFiles>
 						<File Id="31188997" Language="SFX">
@@ -2050,7 +2720,17 @@
 					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3556884147" Name="Boss_Life" ObjectPath="\Game Parameters\Default Work Unit\Boss\Boss_Life"/>
+			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="3688152761" Name="Boss_Fight" ObjectPath="\States\Default Work Unit\Boss_Fight">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Boss_Fight\None"/>
+						<State Id="1165767839" Name="Boss_Dead" ObjectPath="\States\Default Work Unit\Boss_Fight\Boss_Dead"/>
+						<State Id="4265060404" Name="Boss_Alive" ObjectPath="\States\Default Work Unit\Boss_Fight\Boss_Alive"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="3863955802" Name="Figthing_Variable" ObjectPath="\States\Default Work Unit\Figthing_Variable">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Figthing_Variable\None"/>

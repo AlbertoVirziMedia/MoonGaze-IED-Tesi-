@@ -2,8 +2,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	2213992659	Exterior			\Default Work Unit\Ambience\Exterior	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	2152744325	Kria_Health			\Default Work Unit\Kria_Health	
-	3355108795	Kria_Ocean			\Default Work Unit\Kria_Ocean	
+	2152744325	Kria_Health			\Default Work Unit\Kria\Kria_Health	
+	3355108795	Kria_Ocean			\Default Work Unit\Kria\Kria_Ocean	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2609808943	World			\Default Work Unit\Master Audio Bus\World	
@@ -22,9 +22,9 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	884991999	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambience_Exterior\Exterior\Wind\SoundSeed Air Wind	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	779301257	Ambience Sea far Ambisonic(o5)01number-001	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\Ambience Sea far Ambisonic(o5)01number-001_3F0F4952.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambience_Exterior\Exterior\Ambience Sea far Ambisonic(o5)01number-001		21858413
-	837671843	Ambience Sea Close Ambisonic(o5)01number-002	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\SFX\Ambience Sea Close Ambisonic(o5)01number-002_82FE0218.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambience_Exterior\Exterior\Ambience Sea Close Ambisonic(o5)01number-002		41478156
+	779301257	Ambience Sea far Ambisonic(o5)01number-001	C:\Users\anty\Desktop\Prototipo Tesi 7.1\Prototipo Tesi 7.1\Prototipo Tesi 7.1\.cache\Windows\SFX\Ambience Sea far Ambisonic(o5)01number-001_3F0F4952.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambience_Exterior\Exterior\Ambience Sea far Ambisonic(o5)01number-001		21858413
+	837671843	Ambience Sea Close Ambisonic(o5)01number-002	C:\Users\anty\Desktop\Prototipo Tesi 7.1\Prototipo Tesi 7.1\Prototipo Tesi 7.1\.cache\Windows\SFX\Ambience Sea Close Ambisonic(o5)01number-002_82FE0218.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambience_Exterior\Exterior\Ambience Sea Close Ambisonic(o5)01number-002		41478156
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
-	245359029	Hamburg_Harburger_See_Org_Ambisonics_(Custom)	C:\Users\anty\Desktop\Prototipo Tesi 6.5\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See_72EF6462.wem	Wwise Convolution Reverb (Custom)	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Exterior_Rev\Hamburg_Harburger_See_Org_Ambisonics_(Custom)	NOTE SA: Sounds tiny and filtered compared to stereo version.    Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 2ms 	734032
+	245359029	Hamburg_Harburger_See_Org_Ambisonics_(Custom)	C:\Users\anty\Desktop\Prototipo Tesi 7.1\Prototipo Tesi 7.1\Prototipo Tesi 7.1\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See_72EF6462.wem	Wwise Convolution Reverb (Custom)	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Exterior_Rev\Hamburg_Harburger_See_Org_Ambisonics_(Custom)	NOTE SA: Sounds tiny and filtered compared to stereo version.    Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 2ms 	734032
 
