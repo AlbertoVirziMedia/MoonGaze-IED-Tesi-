@@ -32,11 +32,16 @@
 			<IncludedAuxBusses>
 				<AuxBus Id="1280108929" Name="Tunnel_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Tunnel_Rev"/>
 				<AuxBus Id="1530676313" Name="Exterior_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Exterior_Rev"/>
+				<AuxBus Id="2427335711" Name="Arena_Open_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Arena_Open_Rev"/>
 			</IncludedAuxBusses>
 			<IncludedMemoryFiles>
 				<File Id="245359029" Language="SFX">
 					<ShortName>AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See_72EF6462.wem</Path>
+				</File>
+				<File Id="602284699" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Misc\AE_FireDepartment.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Misc\AE_FireDepartment_6D610D88.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
@@ -53,6 +58,7 @@
 				<AuxBus Id="1280108929" Name="Tunnel_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Tunnel_Rev"/>
 				<AuxBus Id="1409592220" Name="Boss_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Boss_Rev"/>
 				<AuxBus Id="1530676313" Name="Exterior_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Exterior_Rev"/>
+				<AuxBus Id="2427335711" Name="Arena_Open_Rev" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Arena_Open_Rev"/>
 			</IncludedAuxBusses>
 			<ExcludedMemoryFiles>
 				<File Id="242975716" Language="SFX">
@@ -62,6 +68,10 @@
 				<File Id="245359029" Language="SFX">
 					<ShortName>AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR_Amb\Exteriors\AK Amb Hamburg Harburger See_72EF6462.wem</Path>
+				</File>
+				<File Id="602284699" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Misc\AE_FireDepartment.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Misc\AE_FireDepartment_6D610D88.wem</Path>
 				</File>
 			</ExcludedMemoryFiles>
 			<GameParameters>
@@ -1641,7 +1651,7 @@
 					<IncludedMemoryFiles>
 						<File Id="11064735" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_001.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_001_1A8A6114.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_001_AC1D8A11.wem</Path>
 						</File>
 						<File Id="18183436" Language="SFX">
 							<ShortName>Esploratore_Voice_death_001.wav</ShortName>
@@ -1649,7 +1659,7 @@
 						</File>
 						<File Id="61577600" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_002.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_002_1854AC3A.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_002_C374174D.wem</Path>
 						</File>
 						<File Id="307946513" Language="SFX">
 							<ShortName>Esploratore_Voice_death_003.wav</ShortName>
@@ -1669,7 +1679,7 @@
 						</File>
 						<File Id="615366918" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_003.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_003_FC6611AF.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_003_199B2AB0.wem</Path>
 						</File>
 						<File Id="777939814" Language="SFX">
 							<ShortName>esploratori_death\esploratori_death_body_fall_coltello\esploratore_death_body_fall_coltello_002.wav</ShortName>
@@ -1837,7 +1847,7 @@
 					<IncludedMemoryFiles>
 						<File Id="11064735" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_001.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_001_1A8A6114.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_001_AC1D8A11.wem</Path>
 						</File>
 						<File Id="18183436" Language="SFX">
 							<ShortName>Esploratore_Voice_death_001.wav</ShortName>
@@ -1849,7 +1859,7 @@
 						</File>
 						<File Id="61577600" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_002.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_002_1854AC3A.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_002_C374174D.wem</Path>
 						</File>
 						<File Id="200847089" Language="SFX">
 							<ShortName>esploratori_death\esploratori_death_body_fall_bastone\esploratori_death_body_fall_bastone_001.wav</ShortName>
@@ -1869,7 +1879,7 @@
 						</File>
 						<File Id="615366918" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_003.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_003_FC6611AF.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_003_199B2AB0.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1909,7 +1919,7 @@
 					<IncludedMemoryFiles>
 						<File Id="185166148" Language="SFX">
 							<ShortName>fumo_barriera.wav</ShortName>
-							<Path>SFX\fumo_barriera_A3781FA8.wem</Path>
+							<Path>SFX\fumo_barriera_B729BF6B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -2021,7 +2031,7 @@
 					<IncludedMemoryFiles>
 						<File Id="11064735" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_001.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_001_1A8A6114.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_001_AC1D8A11.wem</Path>
 						</File>
 						<File Id="46889315" Language="SFX">
 							<ShortName>granchio_movement\granchio_movement_004.wav</ShortName>
@@ -2029,7 +2039,7 @@
 						</File>
 						<File Id="61577600" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_002.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_002_1854AC3A.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_002_C374174D.wem</Path>
 						</File>
 						<File Id="217925141" Language="SFX">
 							<ShortName>granchio_movement\granchio_movement_002.wav</ShortName>
@@ -2049,7 +2059,7 @@
 						</File>
 						<File Id="615366918" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_003.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_003_FC6611AF.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_003_199B2AB0.wem</Path>
 						</File>
 						<File Id="670118047" Language="SFX">
 							<ShortName>granchio_movement\granchio_movement_001.wav</ShortName>
@@ -2129,11 +2139,11 @@
 					<IncludedMemoryFiles>
 						<File Id="11064735" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_001.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_001_1A8A6114.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_001_AC1D8A11.wem</Path>
 						</File>
 						<File Id="61577600" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_002.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_002_1854AC3A.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_002_C374174D.wem</Path>
 						</File>
 						<File Id="137074154" Language="SFX">
 							<ShortName>medusa_death\medusa_death_001.wav</ShortName>
@@ -2145,7 +2155,7 @@
 						</File>
 						<File Id="615366918" Language="SFX">
 							<ShortName>dissolvenza_death\dissolvenza_death_003.wav</ShortName>
-							<Path>SFX\dissolvenza_death\dissolvenza_death_003_FC6611AF.wem</Path>
+							<Path>SFX\dissolvenza_death\dissolvenza_death_003_199B2AB0.wem</Path>
 						</File>
 						<File Id="818276609" Language="SFX">
 							<ShortName>medusa_death\medusa_death_003.wav</ShortName>
@@ -2161,7 +2171,7 @@
 					<IncludedMemoryFiles>
 						<File Id="276901612" Language="SFX">
 							<ShortName>medusa_idle_texture.wav</ShortName>
-							<Path>SFX\medusa_idle_texture_3C8DAA23.wem</Path>
+							<Path>SFX\medusa_idle_texture_5D717B8B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -2169,7 +2179,7 @@
 					<IncludedMemoryFiles>
 						<File Id="276901612" Language="SFX">
 							<ShortName>medusa_idle_texture.wav</ShortName>
-							<Path>SFX\medusa_idle_texture_3C8DAA23.wem</Path>
+							<Path>SFX\medusa_idle_texture_5D717B8B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
