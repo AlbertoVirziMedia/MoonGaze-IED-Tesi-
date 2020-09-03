@@ -68,6 +68,7 @@ float AMedusaCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const
 		{
 			MAnimInstance->DeathAnim();
 			bEnemyIsAlive = false;
+			bPlayDeathOnce = false;
 		}
 	}	
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
