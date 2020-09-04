@@ -33,6 +33,8 @@ public:
 	//Reference to the Combat Montage
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	class UAnimMontage* BossCombatMontage;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TakeDamageAnim")
+	bool bPlayDeathOnce;
 
 	/**/
 	/*Combat Variables

@@ -28,6 +28,8 @@ ABossCharacter::ABossCharacter()
 	DamageColliderLanterna = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderLanterna"));
 	DamageColliderLanterna->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("BossLanternaSocket"));
 
+	//Death Anim bool
+	bPlayDeathOnce = true;
 }
 
 void ABossCharacter::BeginPlay()
@@ -90,9 +92,13 @@ void ABossCharacter::DamageColliderEndOverlap(UPrimitiveComponent* OverlappedCom
 float ABossCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
 	bIsGettingDameged = true;
+	if (bPlayDeathOnce)
+	{
+
+	}
 	if (Health - DamageAmount <= 0.f)
 	{
-		BossAnimInstance->DeathAnim();
+//		BossAnimInstance->DeathAnim();
 		bEnemyIsAlive = false;
 		AIController->StopTree();
 	}
