@@ -22,7 +22,7 @@ AGenericEnemyCharacter::AGenericEnemyCharacter()
 	/**/
 	//Damage Collider (Collider that damage Main Character)
 	DamageCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageCollider"));
-	DamageCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("EnemySocket"));
+	//DamageCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("EnemySocket"));
 
 	/**/
 	/*Enemy Stats
