@@ -387,9 +387,12 @@ float AMainCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const &
 {
 	if (Health - DamageAmount <= 0.f)
 	{
-		Health -= DamageAmount;
-		bPlayOnce = true;
-		Die();
+		if (!bPlayOnce)
+		{
+			Health -= DamageAmount;
+			bPlayOnce = true;
+			Die();
+		}	
 	}
 	else
 	{
@@ -422,7 +425,6 @@ void AMainCharacter::Die()
 	{
 		AnimIstance->Montage_Play(CombatMontage, 1.0f);
 		AnimIstance->Montage_JumpToSection(FName("Death"));
-		bPlayOnce = false;
 	}
 	bIsAlive = false;
 }

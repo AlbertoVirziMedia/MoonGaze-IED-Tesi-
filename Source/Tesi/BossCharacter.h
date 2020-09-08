@@ -33,8 +33,7 @@ public:
 	//Reference to the Combat Montage
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	class UAnimMontage* BossCombatMontage;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TakeDamageAnim")
-	bool bPlayDeathOnce;
+
 
 	/**/
 	/*Combat Variables
@@ -45,9 +44,10 @@ public:
 	//Damage Collider
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
 	class UBoxComponent* DamageColliderDx;
-	//Damage Collider
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
 	class UBoxComponent* DamageColliderLanterna;
+
+
 
 protected:
 

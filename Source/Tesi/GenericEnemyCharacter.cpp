@@ -22,7 +22,6 @@ AGenericEnemyCharacter::AGenericEnemyCharacter()
 	/**/
 	//Damage Collider (Collider that damage Main Character)
 	DamageCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageCollider"));
-	//DamageCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("EnemySocket"));
 
 	/**/
 	/*Enemy Stats
@@ -67,6 +66,15 @@ void AGenericEnemyCharacter::BeginPlay()
 
 	//
 	EnemyPosition = GetActorLocation();
+
+	if (!DamageCollider)
+	{
+
+	}
+	else
+	{
+		DamageCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("EnemySocket"));
+	}
 
 }
 

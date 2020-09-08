@@ -25,12 +25,10 @@ ALiocarpioCharacter::ALiocarpioCharacter()
 	/**/
 	//Damage Collider (Collider that damage Main Character)
 	DamageColliderDx = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderDx"));
-	DamageColliderDx->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("GranchioDxSocket"));
+//	DamageColliderDx->SetupAttachment(GetMesh(), FName("GranchioDxSocket"));
 
 	bCanTakeDamage = true;
 	TakeDamageStop = 3.f;
-
-	bPlayDeathOnce = true;
 }
 
 void ALiocarpioCharacter::BeginPlay()
@@ -73,6 +71,7 @@ void ALiocarpioCharacter::BeginPlay()
 	}
 	else
 	{
+		DamageColliderDx->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("GranchioDxSocket"));
 		DamageColliderDx->OnComponentBeginOverlap.AddDynamic(this, &ALiocarpioCharacter::DamageColliderDxBeginOverlap);
 		DamageColliderDx->OnComponentEndOverlap.AddDynamic(this, &ALiocarpioCharacter::DamageColliderDxEndOverlap);
 	}
@@ -124,26 +123,23 @@ void ALiocarpioCharacter::MeleeAttackEnd()
 
 float ALiocarpioCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
-	if (bPlayDeathOnce)
+
+	if (LAnimInstance)
 	{
-		if (LAnimInstance)
+		if (bCanTakeDamage)
 		{
-			if (bCanTakeDamage)
-			{
-				LAnimInstance->TakeDamageAnim();
-				bCanTakeDamage = false;
-				GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &ALiocarpioCharacter::ResetTakeDamage, TakeDamageStop, false);
-			}
-		}
-		bIsGettingDameged = true;
-		if (Health - DamageAmount <= 0.f)
-		{
-			ALiocarpioCharacter::Die();
-			bEnemyIsAlive = false;
-			bPlayDeathOnce = false;
+			LAnimInstance->TakeDamageAnim();
+			bCanTakeDamage = false;
+			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &ALiocarpioCharacter::ResetTakeDamage, TakeDamageStop, false);
 		}
 	}
-	
+	bIsGettingDameged = true;
+	if (Health - DamageAmount <= 0.f)
+	{
+		ALiocarpioCharacter::Die();
+		bEnemyIsAlive = false;
+	}
+
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
 

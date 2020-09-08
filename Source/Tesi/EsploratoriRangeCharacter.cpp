@@ -23,13 +23,11 @@ AEsploratoriRangeCharacter::AEsploratoriRangeCharacter()
 	/**/
 	//Damage Collider (Collider that damage Main Character)
 	DamageColliderBastone = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderBastone"));
-	DamageColliderBastone->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("DamageColliderBastone"));
+//	DamageColliderBastone->SetupAttachment(GetMesh(), FName("DamageColliderBastone"));
 
 	bCanTakeDamage = true;
 	TakeDamageStop = 3.f;
 
-	//
-	bPlayDeathOnce = true;
 }
 
 void AEsploratoriRangeCharacter::BeginPlay()
@@ -61,6 +59,14 @@ void AEsploratoriRangeCharacter::BeginPlay()
 		DamageCollider->OnComponentBeginOverlap.AddDynamic(this, &AEsploratoriRangeCharacter::DamageColliderBeginOverlap);
 		DamageCollider->OnComponentEndOverlap.AddDynamic(this, &AEsploratoriRangeCharacter::DamageColliderEndOverlap);
 	}
+	if (!DamageColliderBastone)
+	{
+
+	}
+	else
+	{
+		DamageColliderBastone->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("DamageColliderBastone"));
+	}
 
 	/**/
 	/*AnimInstance Setting
@@ -89,25 +95,28 @@ void AEsploratoriRangeCharacter::DamageColliderEndOverlap(UPrimitiveComponent* O
 
 float AEsploratoriRangeCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
-	if (bPlayDeathOnce)
+	
+	if (ERAnimInstance)
 	{
-		if (ERAnimInstance)
+		if (bCanTakeDamage)
 		{
-			if (bCanTakeDamage)
-			{
-				ERAnimInstance->TakeDamageAnim();
-				bCanTakeDamage = false;
-				GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AEsploratoriRangeCharacter::ResetTakeDamage, TakeDamageStop, false);
-			}
+			ERAnimInstance->TakeDamageAnim();
+			bCanTakeDamage = false;
+			GetWorldTimerManager().SetTimer(TakeDamageHandle, this, &AEsploratoriRangeCharacter::ResetTakeDamage, TakeDamageStop, false);
+			bIsGettingDameged = true;
 		}
-		bIsGettingDameged = true;
+
+
 		if (Health - DamageAmount <= 0.f)
 		{
-			ERAnimInstance->DeathAnim();
+//			ERAnimInstance->DeathAnim();
 			bEnemyIsAlive = false;
 			AIController->StopTree();
 		}
-	}	
+
+	}
+			
+		
 	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
 

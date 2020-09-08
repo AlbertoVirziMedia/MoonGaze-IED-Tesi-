@@ -64,7 +64,8 @@ AEnemyCharacter::AEnemyCharacter()
 	/*Set Enemy Damage Collider
 	/**/
 	DamageCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("CombatCollsion"));
-	DamageCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("EnemySocket"));
+//	DamageCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("EnemySocket"));
+	DamageCollider->SetupAttachment(GetMesh(), FName("EnemySocket"));
 	bAttacking = false;
 
 	/**/

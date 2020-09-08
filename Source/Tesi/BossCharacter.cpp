@@ -22,14 +22,11 @@ ABossCharacter::ABossCharacter()
 	/*Create Component
 	/**/
 	//Damage Collider (Collider that damage Main Character)
-	DamageColliderDx = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderDX"));
-	DamageColliderDx->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("BossDxSocket"));
-
+	DamageColliderDx = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderDX"));	
+//	DamageColliderDx->SetupAttachment(GetMesh(), FName("BossDxSocket"));
+	
 	DamageColliderLanterna = CreateDefaultSubobject<UBoxComponent>(TEXT("DamageColliderLanterna"));
-	DamageColliderLanterna->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("BossLanternaSocket"));
-
-	//Death Anim bool
-	bPlayDeathOnce = true;
+//	DamageColliderLanterna->SetupAttachment(GetMesh(), FName("BossLanternaSocket"));
 }
 
 void ABossCharacter::BeginPlay()
@@ -62,6 +59,22 @@ void ABossCharacter::BeginPlay()
 		DamageCollider->OnComponentBeginOverlap.AddDynamic(this, &ABossCharacter::DamageColliderBeginOverlap);
 		DamageCollider->OnComponentEndOverlap.AddDynamic(this, &ABossCharacter::DamageColliderEndOverlap);
 	}
+	if (!DamageColliderDx)
+	{
+
+	}
+	else
+	{
+		DamageColliderDx->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("BossDxSocket"));
+	}
+	if (!DamageColliderLanterna)
+	{
+
+	}
+	else
+	{
+		DamageColliderLanterna->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("BossLanternaSocket"));
+	}
 
 
 	/**/
@@ -92,10 +105,6 @@ void ABossCharacter::DamageColliderEndOverlap(UPrimitiveComponent* OverlappedCom
 float ABossCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
 {
 	bIsGettingDameged = true;
-	if (bPlayDeathOnce)
-	{
-
-	}
 	if (Health - DamageAmount <= 0.f)
 	{
 //		BossAnimInstance->DeathAnim();
